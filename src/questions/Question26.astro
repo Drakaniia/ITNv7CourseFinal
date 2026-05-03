@@ -1,0 +1,76 @@
+<!--
+  --- Question 26 ---
+  This component represents the twenty-sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-25" data-qid="25" data-type="multi" data-choose="3">
+  <div class="card-header">
+    <span class="q-number">Q 26</span>
+    <span class="q-tag multi">Choose 3</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which three layers of the OSI model map to the application layer of the TCP/IP model? (Choose three.)
+    </p>
+    <div class="options" id="opts-25">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">transport</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">application</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">network</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">session</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">data link</span>
+      </button>
+      <button class="option-btn multi" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">presentation</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-25" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-25">0 / 3 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-25">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-25"></span>
+      </div>
+      <div class="exp-body">
+        The TCP/IP model and OSI model perform similar functions. However, the TCP/IP model uses four layers and the OSI model uses seven layers. The layers in each model can be mapped to each other as follows:
+        <ul>
+          <li>OSI application -> TCP/IP application</li>
+          <li>OSI presentation -> TCP/IP application</li>
+          <li>OSI session -> TCP/IP application</li>
+          <li>OSI transport -> TCP/IP transport</li>
+          <li>OSI network -> TCP/IP internet</li>
+          <li>OSI data link -> TCP/IP network access</li>
+          <li>OSI physical -> TCP/IP network access</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-25">Previous</button>
+      <span class="page-indicator">26 / 26</span>
+      <button class="nav-btn" id="next-25">Next</button>
+    </div>
+  </div>
+</div>

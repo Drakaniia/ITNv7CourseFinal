@@ -1,0 +1,56 @@
+<!--
+  --- Question 25 ---
+  This component represents the twenty-fifth question in the quiz.
+-->
+
+<div class="question-card" id="card-24" data-qid="24" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 25</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      If PC1 is sending a packet to PC2 and routing has been configured between the two routers, what will R1 do with the Ethernet frame header attached by PC1?
+    </p>
+    <div class="options" id="opts-24">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">open the header and use it to determine whether the data is to be sent out S0/0/0</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">open the header and replace the destination MAC address with a new one</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">nothing, because the router has a route to the destination network</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">remove the Ethernet header and configure a new Layer 2 header before sending it out S0/0/0</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-24" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-24">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-24"></span>
+      </div>
+      <div class="exp-body">
+        When PC1 forms the various headers attached to the data one of those headers is the Layer 2 header. Because PC1 connects to an Ethernet network, an Ethernet header is used. The source MAC address will be the MAC address of PC1 and the destination MAC address will be that of G0/0 on R1. When R1 gets that information, the router removes the Layer 2 header and creates a new one for the type of network the data will be placed onto (the serial link).
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-24">Previous</button>
+      <span class="page-indicator">25 / 25</span>
+      <button class="nav-btn" id="next-24">Next</button>
+    </div>
+  </div>
+</div>

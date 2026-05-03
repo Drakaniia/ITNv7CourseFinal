@@ -1,0 +1,72 @@
+<!--
+  --- Question 21 ---
+  This component represents the twenty-first question in the quiz.
+-->
+
+<div class="question-card" id="card-20" data-qid="20" data-type="multi" data-choose="2">
+  <div class="card-header">
+    <span class="q-number">Q 21</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What are two common causes of signal degradation when using UTP cabling? (Choose two.)
+    </p>
+    <div class="options" id="opts-20">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">loss of light over long distances</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">low-quality cable or connectors</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">low-quality shielding in cable</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">installing cables in conduit</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">improper termination</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-20" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-20">0 / 2 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-20">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-20"></span>
+      </div>
+      <div class="exp-body">
+        Signal degradation, also known as attenuation, in UTP (Unshielded Twisted Pair) cabling can be caused by various factors. The two common causes from the options provided are:
+        <ul>
+          <li><strong>Low-quality cable or connectors</strong>: The use of inferior materials can result in increased resistance and crosstalk between the wires inside the cable, which can degrade the signal strength and quality as it travels along the cable.</li>
+          <li><strong>Improper termination</strong>: If the UTP cables are not terminated correctly, it can lead to reflections, crosstalk, and insertion loss. Proper termination is critical to ensure that the signal integrity is maintained and that the connection is reliable.</li>
+        </ul>
+        The other options listed are not typically associated with UTP cable signal degradation:
+        <ul>
+          <li>Loss of light over long distances applies to fiber optic cables, which transmit light, not electrical signals as UTP does.</li>
+          <li>Low-quality shielding in cable refers to shielded twisted pair (STP) rather than UTP. UTP does not have shielding; its design relies on twisted pairs to counteract electromagnetic interference.</li>
+          <li>Installing cables in conduit does not inherently cause signal degradation; however, if the conduit is overfilled or if the cables are bent at sharp angles, it can potentially damage the cables and affect signal quality.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-20">Previous</button>
+      <span class="page-indicator">21 / 21</span>
+      <button class="nav-btn" id="next-20">Next</button>
+    </div>
+  </div>
+</div>

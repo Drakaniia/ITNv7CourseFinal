@@ -1,0 +1,64 @@
+<!--
+  --- Question 20 ---
+  This component represents the twentieth question in the quiz.
+-->
+
+<div class="question-card" id="card-19" data-qid="19" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 20</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What mechanism is used by a router to prevent a received IPv4 packet from traveling endlessly on a network?
+    </p>
+    <div class="options" id="opts-19">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">It checks the value of the TTL field and if it is 100, it discards the packet and sends a Destination Unreachable message to the source host.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">It increments the value of the TTL field by 1 and if the result is 100, it discards the packet and sends a Parameter Problem message to the source host.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">It checks the value of the TTL field and if it is 0, it discards the packet and sends a Destination Unreachable message to the source host.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">It decrements the value of the TTL field by 1 and if the result is 0, it discards the packet and sends a Time Exceeded message to the source host.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-19" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-19">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-19"></span>
+      </div>
+      <div class="exp-body">
+        The mechanism used by a router to prevent an IPv4 packet from traveling endlessly on a network is based on the Time to Live (TTL) field in the IP header. The correct process is:
+        It decrements the value of the TTL field by 1 and if the result is 0, it discards the packet and sends a Time Exceeded message to the source host.
+        Here’s how it works:
+        <ul>
+          <li>Each time an IPv4 packet passes through a router, the router reduces the TTL value in the packet’s header by 1.</li>
+          <li>If the TTL value reaches 0 (after being decremented), the router discards the packet to prevent it from circulating indefinitely.</li>
+          <li>When a packet is discarded due to TTL expiration, the router sends an ICMP (Internet Control Message Protocol) Time Exceeded message back to the source host, indicating that the packet was not delivered due to TTL expiration.</li>
+        </ul>
+        This mechanism is essential for preventing routing loops and ensuring efficient use of network resources. The other options you mentioned do not accurately describe the function and purpose of the TTL field in IP networking.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-19">Previous</button>
+      <span class="page-indicator">20 / 20</span>
+      <button class="nav-btn" id="next-19">Finish</button>
+    </div>
+  </div>
+</div>

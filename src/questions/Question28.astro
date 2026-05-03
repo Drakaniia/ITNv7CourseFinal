@@ -1,0 +1,71 @@
+<!--
+  --- Question 28 ---
+  This component represents the twenty-eighth question in the quiz.
+-->
+
+<div class="question-card" id="card-27" data-qid="27" data-type="multi" data-choose="2">
+  <div class="card-header">
+    <span class="q-number">Q 28</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What are two problems that can be caused by a large number of ARP request and reply messages? (Choose two.)
+    </p>
+    <div class="options" id="opts-27">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">A large number of ARP request and reply messages may slow down the switching process, leading the switch to make many changes in its MAC table.</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The ARP request is sent as a broadcast, and will flood the entire subnet.</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Switches become overloaded because they concentrate all the traffic from the attached subnets.</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">All ARP request messages must be processed by all nodes on the local network.</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">The network may become overloaded because ARP reply messages have a very large payload due to the 48-bit MAC address and 32-bit IP address that they contain.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-27" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-27">0 / 2 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-27">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-27"></span>
+      </div>
+      <div class="exp-body">
+        A large number of ARP (Address Resolution Protocol) request and reply messages can cause several issues on a network. The two problems from the given options are:
+        <ul>
+          <li><strong>The ARP request is sent as a broadcast, and will flood the entire subnet.</strong> ARP requests are broadcasted to all hosts on the local network segment because the source needs to discover the MAC address associated with a known IP address. If there is a large number of ARP requests, this can lead to a significant amount of broadcast traffic, which can consume a lot of the available bandwidth and processing power of the devices on the subnet.</li>
+          <li><strong>All ARP request messages must be processed by all nodes on the local network.</strong> Since ARP requests are broadcasted, every node on the local network must process these requests to check if they hold the IP address for which the MAC address is being queried. This can lead to unnecessary processing on each host, which can be particularly problematic on large networks or when a host is receiving more ARP requests than it can handle efficiently.</li>
+        </ul>
+        The other statements either describe scenarios that are not directly related to ARP traffic or are not accurate:
+        <ul>
+          <li>Switches do not become overloaded due to ARP traffic specifically; they become overloaded if they have to process more traffic than they are designed to handle, whether it’s ARP traffic or other types.</li>
+          <li>ARP messages do not have a very large payload; they are relatively small. The size of the ARP message is not typically a factor in network overload. The concern with ARP is the number of requests and their broadcast nature, not the size of the packets.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-27">Previous</button>
+      <span class="page-indicator">28 / 28</span>
+      <button class="nav-btn" id="next-27">Next</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<!--
+  --- Question 9 ---
+  This component represents the ninth question in the quiz.
+-->
+
+<div class="question-card" id="card-8" data-qid="8" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 09</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which range of link-local addresses can be assigned to an IPv6-enabled interface?
+    </p>
+    <div class="options" id="opts-8">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">FE80::/10</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">FDEE::/7</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">cc00::/8</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">FEC0::/10</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-8" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-8">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-8"></span>
+      </div>
+      <div class="exp-body">
+        The correct range for link-local addresses is:
+        <ul>
+          <li><strong>FE80::/10</strong> &mdash; Link-local addresses are in the range of FE80::/10 to FEBF::/10.</li>
+        </ul>
+        The other options are incorrect:
+        <ul>
+          <li>FDEE::/7 is a unique local address.</li>
+          <li>cc00::/8 is used for multicast addresses.</li>
+          <li>FEC0::/10 was used for site-local addresses but is now deprecated.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-8">Previous</button>
+      <span class="page-indicator">9 / 9</span>
+      <button class="nav-btn" id="next-8">Next</button>
+    </div>
+  </div>
+</div>

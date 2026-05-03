@@ -1,0 +1,67 @@
+<!--
+  --- Question 11 ---
+  This component represents the eleventh question in the quiz.
+-->
+
+<div class="question-card" id="card-10" data-qid="10" data-type="multi" data-choose="2">
+  <div class="card-header">
+    <span class="q-number">Q 11</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator notices that some newly installed Ethernet cabling is carrying corrupt and distorted data signals. The new cabling was installed in the ceiling close to fluorescent lights and electrical equipment. Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two.)
+    </p>
+    <div class="options" id="opts-10">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">EMI</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">signal attenuation</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">crosstalk</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">RFI</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">extended length of cabling</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-10" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-10">0 / 2 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-10">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-10"></span>
+      </div>
+      <div class="exp-body">
+        The two factors that may interfere with the copper cabling and result in signal distortion and data corruption are:
+        <ul>
+          <li><strong>EMI</strong> &mdash; Electromagnetic Interference from electrical equipment.</li>
+          <li><strong>RFI</strong> &mdash; Radio Frequency Interference from fluorescent lights.</li>
+        </ul>
+        The other options (signal attenuation, crosstalk, extended length of cabling) are not directly related to interference from fluorescent lights and electrical equipment.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-10">Previous</button>
+      <span class="page-indicator">11 / 12</span>
+      <button class="nav-btn" id="next-10">Next</button>
+    </div>
+  </div>
+</div>

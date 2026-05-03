@@ -1,0 +1,56 @@
+<!--
+  --- Question 19 ---
+  This component represents the nineteenth question in the quiz.
+-->
+
+<div class="question-card" id="card-18" data-qid="18" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 19</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which range of link-local addresses can be assigned to an IPv6-enabled interface?
+    </p>
+    <div class="options" id="opts-18">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">FE80::/10</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">FDEE::/7</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">cc00::/8</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">FEC0::/10</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-18" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-18">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-18"></span>
+      </div>
+      <div class="exp-body">
+        Link-local addresses are in the range of FE80::/10 to FEBF::/10. The original IPv6 specification defined site-local addresses and used the prefix range FEC0::/10, but these addresses were deprecated by the IETF in favor of unique local addresses. FDEE::/7 is a unique local address because it is in the range of FC00::/7 to FDcc::/7. IPv6 multicast addresses have the prefix cc00::/8.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-18">Previous</button>
+      <span class="page-indicator">19 / 19</span>
+      <button class="nav-btn" id="next-18">Next</button>
+    </div>
+  </div>
+</div>

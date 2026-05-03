@@ -1,0 +1,56 @@
+<!--
+  --- Question 30 ---
+  This component represents the thirtieth question in the quiz.
+-->
+
+<div class="question-card" id="card-29" data-qid="29" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 30</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      How does the service password-encryption command enhance password security on Cisco routers and switches?
+    </p>
+    <div class="options" id="opts-29">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">It encrypts passwords that are stored in router or switch configuration files.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">It requires that a user type encrypted passwords to gain console access to a router or switch.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">It encrypts passwords as they are sent across the network.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-29" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-29">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-29"></span>
+      </div>
+      <div class="exp-body">
+        The service password-encryption command encrypts plaintext passwords in the configuration file so that they cannot be viewed by unauthorized users.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-29">Previous</button>
+      <span class="page-indicator">30 / 30</span>
+      <button class="nav-btn" id="next-29">Finish</button>
+    </div>
+  </div>
+</div>

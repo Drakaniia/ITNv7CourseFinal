@@ -1,0 +1,56 @@
+<!--
+  --- Question 16 ---
+  This component represents the sixteenth question in the quiz.
+-->
+
+<div class="question-card" id="card-15" data-qid="15" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 16</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What happens when the transport input ssh command is entered on the switch vty lines?
+    </p>
+    <div class="options" id="opts-15">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">The switch requires a username/password combination for remote access.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The SSH client on the switch is enabled.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Communication between the switch and remote users is encrypted.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">The switch requires remote connections via a proprietary client software.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-15" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-15">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-15"></span>
+      </div>
+      <div class="exp-body">
+        The transport input ssh command when entered on the switch vty (virtual terminal lines) will encrypt all inbound controlled telnet connections.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-15">Previous</button>
+      <span class="page-indicator">16 / 16</span>
+      <button class="nav-btn" id="next-15">Next</button>
+    </div>
+  </div>
+</div>

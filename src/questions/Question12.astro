@@ -1,0 +1,73 @@
+<!--
+  --- Question 12 ---
+  This component represents the twelfth question in the quiz.
+-->
+
+<div class="question-card" id="card-11" data-qid="11" data-type="multi" data-choose="3">
+  <div class="card-header">
+    <span class="q-number">Q 12</span>
+    <span class="q-tag multi">Choose 3</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Data is being sent from a source PC to a destination server. Which three statements correctly describe the function of TCP or UDP in this situation? (Choose three.)
+    </p>
+    <div class="options" id="opts-11">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">TCP is the preferred protocol when a function requires lower network overhead.</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The source port field identifies the running application or service that will handle data returning to the PC.</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">The TCP source port number identifies the sending host on the network.</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">UDP segments are encapsulated within IP packets for transport across the network.</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">The UDP destination port number identifies the application or service on the server which will handle the data.</span>
+      </button>
+      <button class="option-btn multi" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">The TCP process running on the PC randomly selects the destination port when establishing a session with the server.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-11" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-11">0 / 3 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-11">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-11"></span>
+      </div>
+      <div class="exp-body">
+        The three correct statements about TCP or UDP are:
+        <ul>
+          <li><strong>The source port field identifies the running application or service that will handle data returning to the PC</strong> &mdash; This is a key function of both TCP and UDP.</li>
+          <li><strong>UDP segments are encapsulated within IP packets for transport across the network</strong> &mdash; This is true for UDP.</li>
+          <li><strong>The UDP destination port number identifies the application or service on the server which will handle the data</strong> &mdash; This is a key function of UDP.</li>
+        </ul>
+        The other statements are incorrect or describe functions not applicable to TCP or UDP.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-11">Previous</button>
+      <span class="page-indicator">12 / 12</span>
+      <button class="nav-btn" id="next-11">Next</button>
+    </div>
+  </div>
+</div>

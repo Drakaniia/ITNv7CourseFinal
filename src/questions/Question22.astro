@@ -1,0 +1,56 @@
+<!--
+  --- Question 22 ---
+  This component represents the twenty-second question in the quiz.
+-->
+
+<div class="question-card" id="card-21" data-qid="21" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 22</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which scenario describes a function provided by the transport layer?
+    </p>
+    <div class="options" id="opts-21">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-21" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-21">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-21"></span>
+      </div>
+      <div class="exp-body">
+        The source and destination port numbers are used to identify the correct application and window within that application.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-21">Previous</button>
+      <span class="page-indicator">22 / 22</span>
+      <button class="nav-btn" id="next-21">Next</button>
+    </div>
+  </div>
+</div>

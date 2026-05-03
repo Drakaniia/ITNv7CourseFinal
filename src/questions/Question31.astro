@@ -1,0 +1,73 @@
+<!--
+  --- Question 31 ---
+  This component represents the thirty-first question in the quiz.
+-->
+
+<div class="question-card" id="card-30" data-qid="30" data-type="multi" data-choose="3">
+  <div class="card-header">
+    <span class="q-number">Q 31</span>
+    <span class="q-tag multi">Choose 3</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      An administrator defined a local user account with a secret password on router R1 for use with SSH. Which three additional steps are required to configure R1 to accept only encrypted SSH connections? (Choose three.)
+    </p>
+    <div class="options" id="opts-30">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Configure the IP domain name on the router.</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Enable inbound vty Telnet sessions.</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Configure DNS on the router.</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">Generate the SSH keys.</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">Generate two-way pre-shared keys.</span>
+      </button>
+      <button class="option-btn multi" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">Enable inbound vty SSH sessions.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-30" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-30">0 / 3 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-30">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-30"></span>
+      </div>
+      <div class="exp-body">
+        There are four steps to configure SSH support on a Cisco router:
+        <ol>
+          <li>Set the domain name.</li>
+          <li>Generate one-way secret keys.</li>
+          <li>Create a local username and password.</li>
+          <li>Enable SSH inbound on a vty line.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-30">Previous</button>
+      <span class="page-indicator">31 / 31</span>
+      <button class="nav-btn" id="next-30">Next</button>
+    </div>
+  </div>
+</div>

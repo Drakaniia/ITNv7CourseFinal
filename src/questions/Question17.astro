@@ -1,0 +1,56 @@
+<!--
+  --- Question 17 ---
+  This component represents the seventeenth question in the quiz.
+-->
+
+<div class="question-card" id="card-16" data-qid="16" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 17</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What is the subnet ID associated with the IPv6 address 2001:DA48:FC5:A4:3D1B::1/64?
+    </p>
+    <div class="options" id="opts-16">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">2001:DA48::/64</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">2001::/64</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">2001:DA48:FC5:A4::/64</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">2001:DA48:FC5::A4:/64</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-16" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-16">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-16"></span>
+      </div>
+      <div class="exp-body">
+        The /64 represents the network and subnet IPv6 fields. The fourth field of hexadecimal digits is referred to as the subnet ID. The subnet ID for this address is 2001:DA48:FC5:A4::0/64.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-16">Previous</button>
+      <span class="page-indicator">17 / 17</span>
+      <button class="nav-btn" id="next-16">Next</button>
+    </div>
+  </div>
+</div>

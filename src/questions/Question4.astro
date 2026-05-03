@@ -1,0 +1,69 @@
+<!--
+  --- Question 4 ---
+  This component represents the fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-3" data-qid="3" data-type="multi" data-choose="2">
+  <div class="card-header">
+    <span class="q-number">Q 04</span>
+    <span class="q-case-tag">Case C</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which <strong>two</strong> functions are performed at the <strong>MAC sublayer</strong> of the OSI Data Link Layer
+      to facilitate Ethernet communication?
+    </p>
+    <div class="options" id="opts-3">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">implements CSMA/CD over legacy shared half-duplex media</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">handles communication between upper layer networking software and Ethernet NIC hardware</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">adds Ethernet control information to network protocol data</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">enables IPv4 and IPv6 to utilize the same physical medium</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-3" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-3">0 / 2 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-3">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-3"></span>
+      </div>
+      <div class="exp-body">
+        The <strong>MAC (Media Access Control)</strong> sublayer handles two core responsibilities in Ethernet:
+        <ul>
+          <li><strong>CSMA/CD</strong> &mdash; implements CSMA/CD over legacy shared half-duplex media</li>
+          <li><strong>Integration</strong> &mdash; integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper</li>
+        </ul>
+        The other options (C, D, E) describe LLC sublayer duties or higher-layer networking roles.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-3">Previous</button>
+      <span class="page-indicator">4 / 4</span>
+      <button class="nav-btn" id="next-3">Next</button>
+    </div>
+  </div>
+</div>
