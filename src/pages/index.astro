@@ -1,17 +1,94 @@
 ---
-
+import Question1 from '../questions/Question1.astro';
+import Question2 from '../questions/Question2.astro';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ITNv7 — Final Exam Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="progress-wrap">
+        <div class="progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+      <div class="header-inner">
+        <span class="badge">ITNv7</span>
+        <span class="header-title">Course Final Exam</span>
+        <span class="header-sub" id="headerProgress">0 / 2 answered</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Score strip -->
+      <div class="score-strip">
+        <div class="score-item right">
+          <span class="score-label">Correct</span>
+          <span class="score-val" id="scoreCorrect">0</span>
+        </div>
+        <div class="score-divider"></div>
+        <div class="score-item wrong">
+          <span class="score-label">Wrong</span>
+          <span class="score-val" id="scoreWrong">0</span>
+        </div>
+        <div class="score-divider"></div>
+        <div class="score-item">
+          <span class="score-label">Remaining</span>
+          <span class="score-val" id="scoreRemain">2</span>
+        </div>
+        <div class="score-item total">
+          <span class="score-label">Score</span>
+          <span class="score-val" id="scorePct">— %</span>
+        </div>
+      </div>
+
+      <!-- ── Question 1 ── -->
+      <Question1 client:load />
+
+      <!-- ── Question 2 ── -->
+      <Question2 client:load />
+    </main>
+
+    <!-- Footer nav dots -->
+    <footer>
+      <div class="footer-inner">
+        <span class="footer-label">Questions</span>
+        <div class="dot active" data-target="0" title="Q1"></div>
+        <div class="dot" data-target="1" title="Q2"></div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

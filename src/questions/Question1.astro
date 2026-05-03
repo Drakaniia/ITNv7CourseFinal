@@ -1,0 +1,63 @@
+<!--
+  --- Question 1 ---
+  This component represents the first question in the quiz.
+-->
+
+<div class="question-card" id="card-0" data-qid="0" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 01</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A client packet is received by a server. The packet has a destination port number of
+      <strong style="color:var(--accent)">143</strong>. What service is the client requesting?
+    </p>
+    <div class="options" id="opts-0">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Telnet</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">SSH</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">IMAP</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">FTP</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-0" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-0">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-0"></span>
+      </div>
+      <div class="exp-body">
+        Port <strong>143</strong> is assigned to <strong>IMAP (Internet Message Access Protocol)</strong>, used for retrieving emails from a mail server.
+        <ul>
+          <li><strong>Telnet</strong> &mdash; port 23 (remote command-line)</li>
+          <li><strong>SSH</strong> &mdash; port 22 (secure remote access)</li>
+          <li><strong>FTP</strong> &mdash; ports 20 &amp; 21 (file transfer)</li>
+          <li><strong>IMAP</strong> &mdash; port <em>143</em> ✓</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-0">Previous</button>
+      <span class="page-indicator">1 / 2</span>
+      <button class="nav-btn" id="next-0">Next</button>
+    </div>
+  </div>
+</div>
