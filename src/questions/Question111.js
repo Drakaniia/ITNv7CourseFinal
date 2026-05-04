@@ -1,15 +1,15 @@
 // Initialize Question111
-export function initQ110({ state, CORRECT, updateScoreStrip, updateDots }) {
-  const optsEl = document.getElementById("opts-110");
-  const submitEl = document.getElementById("submit-110");
-  const expEl = document.getElementById("exp-110");
-  const verdictEl = document.getElementById("verdict-110");
-  const card = document.getElementById("card-110");
+export function initQ111({ state, CORRECT, updateScoreStrip, updateDots }) {
+  const optsEl = document.getElementById("opts-111");
+  const submitEl = document.getElementById("submit-111");
+  const expEl = document.getElementById("exp-111");
+  const verdictEl = document.getElementById("verdict-111");
+  const card = document.getElementById("card-111");
   const btns = optsEl.querySelectorAll(".option-btn");
 
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      if (state.submitted[110]) return;
+      if (state.submitted[111]) return;
 
       // Select the clicked option
       btns.forEach((b) => b.classList.remove("selected"));
@@ -19,10 +19,10 @@ export function initQ110({ state, CORRECT, updateScoreStrip, updateDots }) {
         b.querySelector(".opt-indicator").innerHTML = "";
       });
       indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      state.answers[110] = parseInt(btn.dataset.idx);
+      state.answers[111] = parseInt(btn.dataset.idx);
 
       // Immediately reveal answer (direct reveal)
-      revealAnswer(110, btn);
+      revealAnswer(111, btn);
     });
   });
 

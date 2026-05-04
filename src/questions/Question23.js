@@ -1,15 +1,15 @@
 // Initialize Question23
-export function initQ22({ state, CORRECT, updateScoreStrip, updateDots }) {
-  const optsEl = document.getElementById("opts-22");
-  const submitEl = document.getElementById("submit-22");
-  const expEl = document.getElementById("exp-22");
-  const verdictEl = document.getElementById("verdict-22");
-  const card = document.getElementById("card-22");
+export function initQ23({ state, CORRECT, updateScoreStrip, updateDots }) {
+  const optsEl = document.getElementById("opts-23");
+  const submitEl = document.getElementById("submit-23");
+  const expEl = document.getElementById("exp-23");
+  const verdictEl = document.getElementById("verdict-23");
+  const card = document.getElementById("card-23");
   const btns = optsEl.querySelectorAll(".option-btn");
 
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      if (state.submitted[22]) return;
+      if (state.submitted[23]) return;
 
       // Select the clicked option
       btns.forEach((b) => b.classList.remove("selected"));
@@ -19,10 +19,10 @@ export function initQ22({ state, CORRECT, updateScoreStrip, updateDots }) {
         b.querySelector(".opt-indicator").innerHTML = "";
       });
       indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      state.answers[22] = parseInt(btn.dataset.idx);
+      state.answers[23] = parseInt(btn.dataset.idx);
 
       // Immediately reveal answer (direct reveal)
-      revealAnswer(22, btn);
+      revealAnswer(23, btn);
     });
   });
 
