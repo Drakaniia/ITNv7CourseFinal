@@ -1,38 +1,66 @@
 // Initialize Question57
-export function initQ56({ state, CORRECT, updateScoreStrip, updateDots }) {
+export function initQ56(ctx) {
+  const { state, CORRECT, updateScoreStrip, updateDots } = ctx;
   const optsEl = document.getElementById("opts-56");
   const submitEl = document.getElementById("submit-56");
   const expEl = document.getElementById("exp-56");
   const verdictEl = document.getElementById("verdict-56");
   const card = document.getElementById("card-56");
   const btns = optsEl.querySelectorAll(".option-btn");
+  const pendingCountEl = document.getElementById("pendingCount-56");
+
+  // Show submit button for multi-select
+  const submitWrap = submitEl.parentElement;
+  if (submitWrap) {
+    submitWrap.style.display = "flex";
+  }
 
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (state.submitted[56]) return;
 
-      // Select the clicked option
-      btns.forEach((b) => b.classList.remove("selected"));
-      btn.classList.add("selected");
+      // Toggle selection
+      btn.classList.toggle("selected");
       const indicator = btn.querySelector(".opt-indicator");
-      btns.forEach((b) => {
-        b.querySelector(".opt-indicator").innerHTML = "";
-      });
-      indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      state.answers[56] = parseInt(btn.dataset.idx);
+      const idx = parseInt(btn.dataset.idx);
+      const isSelected = btn.classList.contains("selected");
 
-      // Immediately reveal answer (direct reveal)
-      revealAnswer(56, btn);
+      if (isSelected) {
+        indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+        if (!state.answers[56].includes(idx)) {
+          state.answers[56].push(idx);
+        }
+      } else {
+        indicator.innerHTML = "";
+        state.answers[56] = state.answers[56].filter((i) => i !== idx);
+      }
+
+      // Update pending count
+      const pendingCount = state.answers[56].length;
+      pendingCountEl.textContent = `${pendingCount} / 2 selected`;
+
+      // Enable/disable submit button based on selection count
+      submitEl.disabled = pendingCount < 2;
+      
+      // Update button class
+      if (pendingCount < 2) {
+        submitEl.classList.add("multi-pending");
+      } else {
+        submitEl.classList.remove("multi-pending");
+      }
     });
   });
 
-  // Remove submit button since we're using direct reveal
-  submitEl.style.display = "none";
+  submitEl.addEventListener("click", () => {
+    revealAnswer(56);
+  });
 
-  function revealAnswer(questionIndex, clickedBtn) {
+  function revealAnswer(questionIndex) {
     state.submitted[questionIndex] = true;
     const chosen = state.answers[questionIndex];
-    const isCorrect = CORRECT[questionIndex].includes(chosen);
+    const isCorrect =
+      CORRECT[questionIndex].length === chosen.length &&
+      CORRECT[questionIndex].every((val) => chosen.includes(val));
     state.correct[questionIndex] = isCorrect;
 
     btns.forEach((btn) => {
@@ -42,7 +70,7 @@ export function initQ56({ state, CORRECT, updateScoreStrip, updateDots }) {
       btn.classList.remove("selected");
 
       const isAnswer = CORRECT[questionIndex].includes(idx);
-      const wasPicked = idx === chosen;
+      const wasPicked = chosen.includes(idx);
 
       if (isAnswer) btn.classList.add("correct");
       else if (wasPicked) btn.classList.add("wrong-pick");
@@ -57,6 +85,12 @@ export function initQ56({ state, CORRECT, updateScoreStrip, updateDots }) {
         ind.innerHTML = "";
       }
     });
+
+    // Hide submit button after submission
+    const submitWrap = submitEl.parentElement;
+    if (submitWrap) {
+      submitWrap.style.display = "none";
+    }
 
     card.classList.add(isCorrect ? "answered-correct" : "answered-wrong");
     verdictEl.textContent = isCorrect ? "✓ Correct" : "✗ Incorrect";

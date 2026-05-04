@@ -3,7 +3,7 @@
   This component represents the seventy-second question in the quiz.
 -->
 
-<div class="question-card" id="card-71" data-qid="71" data-type="multi">
+<div class="question-card" id="card-71" data-qid="71" data-type="multi" data-choose="3">
   <div class="card-header">
     <span class="q-number">Q 72</span>
     <span class="q-tag multi">Choose 3</span>
@@ -13,32 +13,32 @@
       Refer to the exhibit. What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)
     </p>
     <div class="options" id="opts-71">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
         <span class="opt-text">Two devices are attached to the switch.</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
         <span class="opt-text">The default SVI has been configured.</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
         <span class="opt-text">The switch can be remotely managed.</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
         <span class="opt-text">Two physical interfaces have been configured.</span>
       </button>
-      <button class="option-btn" data-idx="4">
+      <button class="option-btn multi" data-idx="4">
         <span class="opt-indicator"></span>
         <span class="opt-letter">E</span>
         <span class="opt-text">Passwords have been configured on the switch.</span>
       </button>
-      <button class="option-btn" data-idx="5">
+      <button class="option-btn multi" data-idx="5">
         <span class="opt-indicator"></span>
         <span class="opt-letter">F</span>
         <span class="opt-text">One device is attached to a physical interface.</span>
@@ -46,7 +46,8 @@
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-71" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-71" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-71">0 / 3 selected</span>
     </div>
 
     <div class="explanation" id="exp-71">

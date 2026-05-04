@@ -3,7 +3,7 @@
   This component represents the fifty-seventh question in the quiz.
 -->
 
-<div class="question-card" id="card-56" data-qid="56" data-type="multi">
+<div class="question-card" id="card-56" data-qid="56" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 57</span>
     <span class="q-tag multi">Choose 2</span>
@@ -13,27 +13,27 @@
       Which two traffic types use the Real-Time Transport Protocol (RTP)? (Choose two.)
     </p>
     <div class="options" id="opts-56">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
         <span class="opt-text">web</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
         <span class="opt-text">peer to peer</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
         <span class="opt-text">file transfer</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
         <span class="opt-text">video</span>
       </button>
-      <button class="option-btn" data-idx="4">
+      <button class="option-btn multi" data-idx="4">
         <span class="opt-indicator"></span>
         <span class="opt-letter">E</span>
         <span class="opt-text">voice</span>
@@ -41,7 +41,8 @@
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-56" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-56" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-56">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-56">

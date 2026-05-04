@@ -3,7 +3,7 @@
   This component represents the sixty-fifth question in the quiz.
 -->
 
-<div class="question-card" id="card-64" data-qid="64" data-type="multi">
+<div class="question-card" id="card-64" data-qid="64" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 65</span>
     <span class="q-tag multi">Choose 2</span>
@@ -13,32 +13,32 @@
       Which two statements describe features of an IPv4 routing table on a router? (Choose two.)​
     </p>
     <div class="options" id="opts-64">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
         <span class="opt-text">Directly connected interfaces will have two route source codes in the routing table: C and S .</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
         <span class="opt-text">The netstat -r command can be used to display the routing table of a router.​</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
         <span class="opt-text">If there are two or more possible routes to the same destination, the route associated with the higher metric value is included in the routing table.</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
         <span class="opt-text">The routing table lists the MAC addresses of each active interface.</span>
       </button>
-      <button class="option-btn" data-idx="4">
+      <button class="option-btn multi" data-idx="4">
         <span class="opt-indicator"></span>
         <span class="opt-letter">E</span>
         <span class="opt-text">If a default static route is configured in the router, an entry will be included in the routing table with source code S.</span>
       </button>
-      <button class="option-btn" data-idx="5">
+      <button class="option-btn multi" data-idx="5">
         <span class="opt-indicator"></span>
         <span class="opt-letter">F</span>
         <span class="opt-text">It stores information about routes derived from the active router interfaces.</span>
@@ -46,7 +46,8 @@
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-64" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-64" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-64">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-64">

@@ -3,7 +3,7 @@
   This component represents the ninety-seventh question in the quiz.
 -->
 
-<div class="question-card" id="card-96" data-qid="96" data-type="multi">
+<div class="question-card" id="card-96" data-qid="96" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 97</span>
     <span class="q-tag multi">Choose 2</span>
@@ -13,32 +13,32 @@
       What two ICMPv6 message types must be permitted through IPv6 access control lists to allow resolution of Layer 3 addresses to Layer 2 MAC addresses? (Choose two.)
     </p>
     <div class="options" id="opts-96">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
         <span class="opt-text">echo requests</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
         <span class="opt-text">router solicitations</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
         <span class="opt-text">router advertisements</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
         <span class="opt-text">neighbor advertisements</span>
       </button>
-      <button class="option-btn" data-idx="4">
+      <button class="option-btn multi" data-idx="4">
         <span class="opt-indicator"></span>
         <span class="opt-letter">E</span>
         <span class="opt-text">echo replies</span>
       </button>
-      <button class="option-btn" data-idx="5">
+      <button class="option-btn multi" data-idx="5">
         <span class="opt-indicator"></span>
         <span class="opt-letter">F</span>
         <span class="opt-text">neighbor solicitations</span>
@@ -46,7 +46,8 @@
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-96" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-96" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-96">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-96">

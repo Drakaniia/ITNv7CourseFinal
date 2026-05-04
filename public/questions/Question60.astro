@@ -3,7 +3,7 @@
   This component represents the sixtieth question in the quiz.
 -->
 
-<div class="question-card" id="card-59" data-qid="59" data-type="multi">
+<div class="question-card" id="card-59" data-qid="59" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 60</span>
     <span class="q-tag multi">Choose 2</span>
@@ -13,27 +13,27 @@
       A network technician is researching the use of fiber optic cabling in a new technology center. Which two issues should be considered before implementing fiber optic media? (Choose two.)
     </p>
     <div class="options" id="opts-59">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
         <span class="opt-text">Fiber optic cabling requires different termination and splicing expertise from what copper cabling requires.</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
         <span class="opt-text">Fiber optic cabling requires specific grounding to be immune to EMI.</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
         <span class="opt-text">Fiber optic cabling is susceptible to loss of signal due to RFI.</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
         <span class="opt-text">Fiber optic provides higher data capacity but is more expensive than copper cabling.</span>
       </button>
-      <button class="option-btn" data-idx="4">
+      <button class="option-btn multi" data-idx="4">
         <span class="opt-indicator"></span>
         <span class="opt-letter">E</span>
         <span class="opt-text">Fiber optic cable is able to withstand rough handling.</span>
@@ -41,7 +41,8 @@
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-59" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-59" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-59">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-59">

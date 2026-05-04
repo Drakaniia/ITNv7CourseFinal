@@ -3,7 +3,7 @@
   This component represents the seventy-first question in the quiz.
 -->
 
-<div class="question-card" id="card-70" data-qid="70" data-type="multi">
+<div class="question-card" id="card-70" data-qid="70" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 71</span>
     <span class="q-tag multi">Choose 2</span>
@@ -13,27 +13,27 @@
       Which two statements are correct about MAC and IP addresses during data transmission if NAT is not involved? (Choose two.)
     </p>
     <div class="options" id="opts-70">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
         <span class="opt-text">Destination MAC addresses will never change in a frame that goes across seven routers.</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
         <span class="opt-text">A packet that has crossed four routers has changed the destination IP address four times.</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
         <span class="opt-text">Every time a frame is encapsulated with a new destination MAC address, a new destination IP address is needed.</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
         <span class="opt-text">Destination and source MAC addresses have local significance and change every time a frame goes from one LAN to another.</span>
       </button>
-      <button class="option-btn" data-idx="4">
+      <button class="option-btn multi" data-idx="4">
         <span class="opt-indicator"></span>
         <span class="opt-letter">E</span>
         <span class="opt-text">Destination IP addresses in a packet header remain constant along the entire path to a target host.</span>
@@ -41,7 +41,8 @@
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-70" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-70" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-70">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-70">
