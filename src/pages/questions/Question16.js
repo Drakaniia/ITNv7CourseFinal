@@ -12,7 +12,6 @@ export function initQ15(ctx) {
     btn.addEventListener("click", () => {
       if (state.submitted[15]) return;
 
-      // Select the clicked option
       btns.forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
       const indicator = btn.querySelector(".opt-indicator");
@@ -22,12 +21,10 @@ export function initQ15(ctx) {
       indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
       state.answers[15] = parseInt(btn.dataset.idx);
 
-      // Immediately reveal answer (direct reveal)
       revealAnswer(15, btn);
     });
   });
 
-  // Remove submit button since we're using direct reveal
   submitEl.style.display = "none";
 
   function revealAnswer(questionIndex, clickedBtn) {
@@ -48,7 +45,6 @@ export function initQ15(ctx) {
       if (isAnswer) btn.classList.add("correct");
       else if (wasPicked) btn.classList.add("wrong-pick");
 
-      // update indicator
       const ind = btn.querySelector(".opt-indicator");
       if (isAnswer) {
         ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;

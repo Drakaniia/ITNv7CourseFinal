@@ -1,0 +1,63 @@
+<!--
+  --- Question 99 ---
+  This component represents the ninety-ninth question in the quiz.
+-->
+
+<div class="question-card" id="card-98" data-qid="98" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 99</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What service is provided by SMTP?
+    </p>
+    <div class="options" id="opts-98">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Allows remote access to network devices and servers.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Uses encryption to provide secure remote access to network devices and servers.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Allows clients to send email to a mail server and the servers to send email to other servers.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">An application that allows real-time chatting among remote users.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-98" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-98">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-98"></span>
+      </div>
+      <div class="exp-body">
+        SMTP (Simple Mail Transfer Protocol) provides the service that allows clients to send email to a mail server and the servers to send email to other servers. It is a protocol used for sending emails across the Internet. SMTP is involved in the process of mail dispatch from a client's email program to the recipient's mail server, and also between different mail servers for relaying email.
+        <br><br>
+        The other options you mentioned refer to different services:
+        <ul>
+          <li><strong>Allowing remote access to network devices and servers:</strong> This is generally the role of protocols like Telnet or SSH (Secure Shell).</li>
+          <li><strong>Using encryption to provide secure remote access to network devices and servers:</strong> This describes SSH (Secure Shell).</li>
+          <li><strong>An application that allows real-time chatting among remote users:</strong> This refers to instant messaging services or applications, but it is not specifically tied to a single protocol or service.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-98">Previous</button>
+      <span class="page-indicator">99 / 100</span>
+      <button class="nav-btn" id="next-98">Next</button>
+    </div>
+  </div>
+</div>

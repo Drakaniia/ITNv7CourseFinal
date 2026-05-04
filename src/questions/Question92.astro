@@ -1,0 +1,66 @@
+<!--
+  --- Question 92 ---
+  This component represents the ninety-second question in the quiz.
+-->
+
+<div class="question-card" id="card-91" data-qid="91" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 92</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator is adding a new LAN to a branch office. The new LAN must support 4 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+    </p>
+    <div class="options" id="opts-91">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.248</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-91" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-91">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-91"></span>
+      </div>
+      <div class="exp-body">
+        To support 4 connected devices, you need a subnet that can provide at least 4 usable IP addresses for hosts. Remember that in any given subnet, two IP addresses are always used up – one for the network address and one for the broadcast address, so you need a subnet that provides at least 6 addresses in total.
+        <br><br>
+        Here's how the subnet masks break down in terms of number of available hosts:
+        <ul>
+          <li><strong>255.255.255.192</strong> – This is a /26 subnet mask, which allows for 64 addresses in total, but with 2 addresses used for network and broadcast, you get 62 usable addresses.</li>
+          <li><strong>255.255.255.224</strong> – This is a /27 subnet mask, which allows for 32 addresses in total, with 30 usable addresses.</li>
+          <li><strong>255.255.255.240</strong> – This is a /28 subnet mask, which allows for 16 addresses in total, with 14 usable addresses.</li>
+          <li><strong>255.255.255.248</strong> – This is a /29 subnet mask, which allows for 8 addresses in total, with 6 usable addresses.</li>
+        </ul>
+        <br>
+        The smallest subnet mask that will support 4 connected devices (requiring 6 addresses in total) is <strong>255.255.255.248</strong> or a /29 subnet mask.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-91">Previous</button>
+      <span class="page-indicator">92 / 100</span>
+      <button class="nav-btn" id="next-91">Next</button>
+    </div>
+  </div>
+</div>

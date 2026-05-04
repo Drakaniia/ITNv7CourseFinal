@@ -1,0 +1,56 @@
+<!--
+  --- Question 105 ---
+  This component represents the one hundred and fifth question in the quiz.
+-->
+
+<div class="question-card" id="card-104" data-qid="104" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 105</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What service is provided by DHCP?
+    </p>
+    <div class="options" id="opts-104">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Dynamically assigns IP addresses to end and intermediary devices.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Allows remote access to network devices and servers.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Uses encryption to provide secure remote access to network devices and servers.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">An application that allows real-time chatting among remote users.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-104" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-104">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-104"></span>
+      </div>
+      <div class="exp-body">
+        DHCP (Dynamic Host Configuration Protocol) dynamically assigns IP addresses to end and intermediary devices. This service automates the process of configuring devices on IP networks, allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-104">Previous</button>
+      <span class="page-indicator">105 / 109</span>
+      <button class="nav-btn" id="next-104">Next</button>
+    </div>
+  </div>
+</div>

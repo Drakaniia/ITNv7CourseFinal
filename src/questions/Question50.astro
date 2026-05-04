@@ -1,0 +1,66 @@
+<!--
+  --- Question 50 ---
+  This component represents the 50th question in the quiz.
+-->
+
+<div class="question-card" id="card-49" data-qid="49" data-type="multi">
+  <div class="card-header">
+    <span class="q-number">Q 50</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What are two characteristics shared by TCP and UDP? (Choose two.)
+    </p>
+    <div class="options" id="opts-49">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">ability to to carry digitized voice</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">3-way handshake</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">default window size</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">connectionless communication</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">port numbering</span>
+      </button>
+      <button class="option-btn" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">use of checksum</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-49" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-49">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-49"></span>
+      </div>
+      <div class="exp-body">
+        Both TCP and UDP use source and destination port numbers to distinguish different data streams and to forward the right data segments to the right applications. Error checking the header and data is done by both protocols by using a checksum calculation to determine the integrity of the data that is received. TCP is connection-oriented and uses a 3-way handshake to establish an initial connection. TCP also uses window to regulate the amount of traffic sent before receiving an acknowledgment. UDP is connectionless and is the best protocol for carry digitized VoIP signals.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-49">Previous</button>
+      <span class="page-indicator">50 / 50</span>
+      <button class="nav-btn" id="next-49">Finish</button>
+    </div>
+  </div>
+</div>

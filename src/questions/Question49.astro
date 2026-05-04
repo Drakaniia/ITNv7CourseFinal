@@ -1,0 +1,58 @@
+<!--
+  --- Question 49 ---
+  This component represents the 49th question in the quiz.
+-->
+
+<div class="question-card" id="card-48" data-qid="48" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 49</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which wireless technology has low-power and data rate requirements making it popular in home automation applications?
+    </p>
+    <div class="options" id="opts-48">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">ZigBee</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">5G</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Wi-Fi</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">LoRaWAN</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-48" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-48">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-48"></span>
+      </div>
+      <div class="exp-body">
+        The wireless technology that has low-power and data rate requirements and is popular in home automation applications is ZigBee.
+        <br><br>
+        ZigBee is specifically designed for low-data rate, low-power applications and is based on the IEEE 802.15.4 standard. It is widely used in home automation, sensor networks, and IoT (Internet of Things) applications because it is optimized for intermittent data transmission from a sensor or input device. ZigBee networks can operate for years on inexpensive batteries, making them an ideal choice for these types of applications.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-48">Previous</button>
+      <span class="page-indicator">49 / 50</span>
+      <button class="nav-btn" id="next-48">Next</button>
+    </div>
+  </div>
+</div>

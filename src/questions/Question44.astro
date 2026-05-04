@@ -1,0 +1,65 @@
+<!--
+  --- Question 44 ---
+  This component represents the 44th question in the quiz.
+-->
+
+<div class="question-card" id="card-43" data-qid="43" data-type="multi">
+  <div class="card-header">
+    <span class="q-number">Q 44</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What are two primary responsibilities of the Ethernet MAC sublayer? (Choose two.)
+    </p>
+    <div class="options" id="opts-43">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">accessing the media</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">data encapsulation</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">logical addressing</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">error detection</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">frame delimiting</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-43" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-43">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-43"></span>
+      </div>
+      <div class="exp-body">
+        The two primary responsibilities of the Ethernet MAC sublayer based on the options provided are:
+        <ul>
+          <li><strong>Accessing the media:</strong> This involves controlling how a network device physically places an Ethernet frame onto the network medium. Ethernet networks can have multiple devices trying to use the same medium (like twisted pair cable, fiber optic, etc.), so there needs to be a method for preventing collisions and managing what happens if they occur. The MAC sublayer uses Carrier Sense Multiple Access with Collision Detection (CSMA/CD) for this purpose in traditional Ethernet networks. The device listens to the medium to check if it is idle before sending data. If two devices transmit at the same time and a collision is detected, CSMA/CD dictates how the devices handle the collision and when they can attempt to resend the data.</li>
+          <li><strong>Data encapsulation:</strong> In the context of the MAC sublayer, this involves creating the Ethernet frame structure that encapsulates the network layer data. This encapsulation includes adding a header and a trailer to the data packet. The header contains the source and destination MAC addresses, and the type/length field, which is used to identify the payload type or the length of the payload. The trailer contains a Frame Check Sequence (FCS), which is used for error detection. The encapsulation ensures that the payload is delivered correctly from one MAC address to another and can be checked for errors upon arrival.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-43">Previous</button>
+      <span class="page-indicator">44 / 50</span>
+      <button class="nav-btn" id="next-43">Next</button>
+    </div>
+  </div>
+</div>

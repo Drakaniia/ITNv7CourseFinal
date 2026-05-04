@@ -1,0 +1,56 @@
+<!--
+  --- Question 46 ---
+  This component represents the 46th question in the quiz.
+-->
+
+<div class="question-card" id="card-45" data-qid="45" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 46</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What is an advantage for small organizations of adopting IMAP instead of POP?
+    </p>
+    <div class="options" id="opts-45">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">IMAP sends and retrieves email, but POP only retrieves email.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">POP only allows the client to store messages in a centralized way, while IMAP allows distributed storage.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Messages are kept in the mail servers until they are manually deleted from the email client.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">When the user connects to a POP server, copies of the messages are kept in the mail server for a short time, but IMAP keeps them for a long time.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-45" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-45">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-45"></span>
+      </div>
+      <div class="exp-body">
+        IMAP and POP are protocols that are used to retrieve email messages. The advantage of using IMAP instead of POP is that when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application. IMAP then stores the email messages on the server until the user manually deletes those messages.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-45">Previous</button>
+      <span class="page-indicator">46 / 50</span>
+      <button class="nav-btn" id="next-45">Next</button>
+    </div>
+  </div>
+</div>

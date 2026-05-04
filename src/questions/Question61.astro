@@ -1,0 +1,62 @@
+<!--
+  --- Question 61 ---
+  This component represents the sixty-first question in the quiz.
+-->
+
+<div class="question-card" id="card-60" data-qid="60" data-type="match">
+  <div class="card-header">
+    <span class="q-number">Q 61</span>
+    <span class="q-tag match">Matching</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Match the type of threat with the cause. (Not all options are used.)
+    </p>
+    <div class="options" id="opts-60">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Hardware threats – physical damage to servers, routers, switches, cabling plants, and workstations</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Environmental threats – temperature extremes (too hot or too cold) or humidity extremes (too wet or too dry)</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Electrical threats – voltage spikes, insufficient supply voltage (brownouts), unconditioned power (noise), and total power loss</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">Maintenance threats – unauthorized access resulting in loss of data, poor maintenance practices</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-60" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-60">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-60"></span>
+      </div>
+      <div class="exp-body">
+        <strong>Hardware threats</strong> – These are typically associated with physical damage to servers, routers, switches, cabling plants, and workstations. Hardware threats can also include poor handling of key electrical components, which can lead to electrostatic discharge, and issues such as lack of critical spare parts, poor cabling, and poor labeling.
+        <br><br>
+        <strong>Environmental threats</strong> – These include temperature extremes (too hot or too cold) or humidity extremes (too wet or too dry). Environmental threats can cause equipment to fail prematurely or operate inefficiently.
+        <br><br>
+        <strong>Electrical threats</strong> – These refer to voltage spikes, insufficient supply voltage (brownouts), unconditioned power (noise), and total power loss. These threats can lead to equipment damage or data loss.
+        <br><br>
+        <strong>Maintenance threats</strong> – These might include unauthorized access resulting in loss of data. They can also be associated with poor maintenance practices that fail to prevent or predict the failure of systems.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-60">Previous</button>
+      <span class="page-indicator">61 / 70</span>
+      <button class="nav-btn" id="next-60">Next</button>
+    </div>
+  </div>
+</div>

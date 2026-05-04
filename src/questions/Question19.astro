@@ -3,40 +3,46 @@
   This component represents the nineteenth question in the quiz.
 -->
 
-<div class="question-card" id="card-18" data-qid="18" data-type="single">
+<div class="question-card" id="card-18" data-qid="18" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 19</span>
-    <span class="q-tag single">Single Choice</span>
+    <span class="q-tag multi">Choose 2</span>
   </div>
   <div class="card-body">
     <p class="question-text">
-      Which range of link-local addresses can be assigned to an IPv6-enabled interface?
+      What are two common causes of signal degradation when using UTP cabling? (Choose two.)
     </p>
     <div class="options" id="opts-18">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
-        <span class="opt-text">FE80::/10</span>
+        <span class="opt-text">loss of light over long distances</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
-        <span class="opt-text">FDEE::/7</span>
+        <span class="opt-text">low-quality cable or connectors</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
-        <span class="opt-text">cc00::/8</span>
+        <span class="opt-text">low-quality shielding in cable</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
-        <span class="opt-text">FEC0::/10</span>
+        <span class="opt-text">installing cables in conduit</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">improper termination</span>
       </button>
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-18" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-18" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-18">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-18">
@@ -44,12 +50,22 @@
         <span class="exp-verdict" id="verdict-18"></span>
       </div>
       <div class="exp-body">
-        Link-local addresses are in the range of FE80::/10 to FEBF::/10. The original IPv6 specification defined site-local addresses and used the prefix range FEC0::/10, but these addresses were deprecated by the IETF in favor of unique local addresses. FDEE::/7 is a unique local address because it is in the range of FC00::/7 to FDcc::/7. IPv6 multicast addresses have the prefix cc00::/8.
+        Signal degradation, also known as attenuation, in UTP (Unshielded Twisted Pair) cabling can be caused by various factors. The two common causes from the options provided are:
+        <ul>
+          <li><strong>Low-quality cable or connectors:</strong> The use of inferior materials can result in increased resistance and crosstalk between the wires inside the cable, which can degrade the signal strength and quality as it travels along the cable.</li>
+          <li><strong>Improper termination:</strong> If the UTP cables are not terminated correctly, it can lead to reflections, crosstalk, and insertion loss. Proper termination is critical to ensure that the signal integrity is maintained and that the connection is reliable.</li>
+        </ul>
+        The other options listed are not typically associated with UTP cable signal degradation:
+        <ul>
+          <li>Loss of light over long distances applies to fiber optic cables, which transmit light, not electrical signals as UTP does.</li>
+          <li>Low-quality shielding in cable refers to shielded twisted pair (STP) rather than UTP. UTP does not have shielding; its design relies on twisted pairs to counteract electromagnetic interference.</li>
+          <li>Installing cables in conduit does not inherently cause signal degradation; however, if the conduit is overfilled or if the cables are bent at sharp angles, it can potentially damage the cables and affect signal quality.</li>
+        </ul>
       </div>
     </div>
     <div class="pagination-controls">
       <button class="nav-btn" id="prev-18">Previous</button>
-      <span class="page-indicator">19 / 19</span>
+      <span class="page-indicator">19 / 109</span>
       <button class="nav-btn" id="next-18">Next</button>
     </div>
   </div>

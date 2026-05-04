@@ -1,0 +1,56 @@
+<!--
+  --- Question 63 ---
+  This component represents the sixty-third question in the quiz.
+-->
+
+<div class="question-card" id="card-62" data-qid="62" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 63</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which value, that is contained in an IPv4 header field, is decremented by each router that receives a packet?
+    </p>
+    <div class="options" id="opts-62">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Differentiated Services</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Fragment Occset</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Header Length</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">Time-to-Live</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-62" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-62">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-62"></span>
+      </div>
+      <div class="exp-body">
+        The value that is contained in an IPv4 header field and is decremented by each router that receives a packet is the Time-to-Live (TTL). This field is used to avoid a situation where an undeliverable packet circulates indefinitely. The TTL field is set by the sender of the packet and is decreased by one by each router that forwards the packet. When the TTL field reaches zero, the packet is discarded. This mechanism helps to ensure that packets do not loop endlessly due to routing errors.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-62">Previous</button>
+      <span class="page-indicator">63 / 70</span>
+      <button class="nav-btn" id="next-62">Next</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<!--
+  --- Question 95 ---
+  This component represents the ninety-fifth question in the quiz.
+-->
+
+<div class="question-card" id="card-94" data-qid="94" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 95</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A client packet is received by a server. The packet has a destination port number of 21. What service is the client requesting?
+    </p>
+    <div class="options" id="opts-94">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">DHCP</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">FTP</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">TFTP</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">DNS</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-94" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-94">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-94"></span>
+      </div>
+      <div class="exp-body">
+        The client is requesting the FTP (File Transfer Protocol) service. In networking, port numbers are used to distinguish between different services that run over the network. Port 21 is the standard port number for FTP control messages. FTP is used for the transfer of computer files between a client and server on a computer network.
+        <br><br>
+        Here's what the other port numbers are typically used for:
+        <ul>
+          <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> This service usually uses port 67/68.</li>
+          <li><strong>TFTP (Trivial File Transfer Protocol):</strong> This service uses port 69.</li>
+          <li><strong>DNS (Domain Name System):</strong> This service uses port 53.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-94">Previous</button>
+      <span class="page-indicator">95 / 100</span>
+      <button class="nav-btn" id="next-94">Next</button>
+    </div>
+  </div>
+</div>

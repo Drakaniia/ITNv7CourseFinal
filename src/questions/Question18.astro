@@ -10,28 +10,28 @@
   </div>
   <div class="card-body">
     <p class="question-text">
-      A client is using SLAAC to obtain an IPv6 address for its interface. After an address has been generated and applied to the interface, what must the client do before it can begin to use this IPv6 address?
+      A company has a file server that shares a folder named Public. The network security policy specifies that the Public folder is assigned Read-Only rights to anyone who can log into the server while the Edit rights are assigned only to the network admin group. Which component is addressed in the AAA network service framework?
     </p>
     <div class="options" id="opts-17">
       <button class="option-btn" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
-        <span class="opt-text">It must send an ICMPv6 Router Solicitation message to determine what default gateway it should use.</span>
+        <span class="opt-text">automation</span>
       </button>
       <button class="option-btn" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
-        <span class="opt-text">It must send a DHCPv6 INFORMATION-REQUEST message to request the address of the DNS server.</span>
+        <span class="opt-text">authorization</span>
       </button>
       <button class="option-btn" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
-        <span class="opt-text">It must send a DHCPv6 REQUEST message to the DHCPv6 server to request permission to use this address.</span>
+        <span class="opt-text">accounting</span>
       </button>
       <button class="option-btn" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
-        <span class="opt-text">It must send an ICMPv6 Neighbor Solicitation message to ensure that the address is not already in use on the network.</span>
+        <span class="opt-text">authentication</span>
       </button>
     </div>
 
@@ -44,12 +44,12 @@
         <span class="exp-verdict" id="verdict-17"></span>
       </div>
       <div class="exp-body">
-        Stateless DHCPv6 or stateful DHCPv6 uses a DHCP server, but Stateless Address Autoconfiguration (SLAAC) does not. A SLAAC client can automatically generate an address that is based on information from local routers via Router Advertisement (RA) messages. Once an address has been assigned to an interface via SLAAC, the client must ensure via Duplicate Address Detection (DAD) that the address is not already in use. It does this by sending out an ICMPv6 Neighbor Solicitation message and listening for a response. If a response is received, then it means that another device is already using this address.
+        After a user is successfully authenticated (logged into the server), the authorization is the process of determining what network resources the user can access and what operations (such as read or edit) the user can perform.
       </div>
     </div>
     <div class="pagination-controls">
       <button class="nav-btn" id="prev-17">Previous</button>
-      <span class="page-indicator">18 / 18</span>
+      <span class="page-indicator">18 / 109</span>
       <button class="nav-btn" id="next-17">Next</button>
     </div>
   </div>

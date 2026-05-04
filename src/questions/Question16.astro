@@ -10,28 +10,33 @@
   </div>
   <div class="card-body">
     <p class="question-text">
-      What happens when the transport input ssh command is entered on the switch vty lines?
+      What will happen if the default gateway address is incorrectly configured on a host?
     </p>
     <div class="options" id="opts-15">
       <button class="option-btn" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
-        <span class="opt-text">The switch requires a username/password combination for remote access.</span>
+        <span class="opt-text">The host cannot communicate with hosts in other networks.</span>
       </button>
       <button class="option-btn" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
-        <span class="opt-text">The SSH client on the switch is enabled.</span>
+        <span class="opt-text">The host cannot communicate with other hosts in the local network.</span>
       </button>
       <button class="option-btn" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
-        <span class="opt-text">Communication between the switch and remote users is encrypted.</span>
+        <span class="opt-text">A ping from the host to 127.0.0.1 would not be successful.</span>
       </button>
       <button class="option-btn" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
-        <span class="opt-text">The switch requires remote connections via a proprietary client software.</span>
+        <span class="opt-text">The switch will not forward packets initiated by the host.</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">The host will have to use ARP to determine the correct address of the default gateway.</span>
       </button>
     </div>
 
@@ -44,12 +49,12 @@
         <span class="exp-verdict" id="verdict-15"></span>
       </div>
       <div class="exp-body">
-        The transport input ssh command when entered on the switch vty (virtual terminal lines) will encrypt all inbound controlled telnet connections.
+        When a host needs to send a message to another host located on the same network, it can forward the message directly. However, when a host needs to send a message to a remote network, it must use the router, also known as the default gateway. This is because the data link frame address of the remote destination host cannot be used directly. Instead, the IP packet has to be sent to the router (default gateway) and the router will forward the packet toward its destination. Therefore, if the default gateway is incorrectly configured, the host can communicate with other hosts on the same network, but not with hosts on remote networks.
       </div>
     </div>
     <div class="pagination-controls">
       <button class="nav-btn" id="prev-15">Previous</button>
-      <span class="page-indicator">16 / 16</span>
+      <span class="page-indicator">16 / 109</span>
       <button class="nav-btn" id="next-15">Next</button>
     </div>
   </div>

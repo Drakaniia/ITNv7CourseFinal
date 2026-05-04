@@ -1,0 +1,72 @@
+<!--
+  --- Question 90 ---
+  This component represents the ninetieth question in the quiz.
+-->
+
+<div class="question-card" id="card-89" data-qid="89" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 90</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What subnet mask is needed if an IPv4 network has 40 devices that need IP addresses and address space is not to be wasted?
+    </p>
+    <div class="options" id="opts-89">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.128</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">255.255.255.0</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-89" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-89">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-89"></span>
+      </div>
+      <div class="exp-body">
+        To determine the subnet mask needed for a network with 40 devices, you need to calculate the subnet size that can accommodate at least 40 hosts. Remember that in a subnet, two IP addresses are reserved: one for the network address and one for the broadcast address. So, you need a subnet with at least 42 addresses.
+        <br><br>
+        Here's how the subnet masks correspond to the number of addresses they provide:
+        <ul>
+          <li><strong>255.255.255.224</strong> – This is a /27 subnet mask, which provides 32 addresses (30 usable for hosts).</li>
+          <li><strong>255.255.255.240</strong> – This is a /28 subnet mask, which provides 16 addresses (14 usable for hosts).</li>
+          <li><strong>255.255.255.192</strong> – This is a /26 subnet mask, which provides 64 addresses (62 usable for hosts).</li>
+          <li><strong>255.255.255.128</strong> – This is a /25 subnet mask, which provides 128 addresses (126 usable for hosts).</li>
+          <li><strong>255.255.255.0</strong> – This is a /24 subnet mask, which provides 256 addresses (254 usable for hosts).</li>
+        </ul>
+        <br>
+        The smallest subnet mask that can accommodate at least 42 addresses is <strong>255.255.255.192</strong>, which is a /26 subnet mask. This will allow for 62 usable IP addresses, which is more than enough for 40 devices without wasting too much address space.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-89">Previous</button>
+      <span class="page-indicator">90 / 90</span>
+      <button class="nav-btn" id="next-89">Finish</button>
+    </div>
+  </div>
+</div>

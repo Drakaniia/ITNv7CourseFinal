@@ -1,0 +1,56 @@
+<!--
+  --- Question 66 ---
+  This component represents the sixty-sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-65" data-qid="65" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 66</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?
+    </p>
+    <div class="options" id="opts-65">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">financial transactions, web page, audio conference</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">financial transactions, audio conference, web page</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">audio conference, financial transactions, web page</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">audio conference, web page, financial transactions</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-65" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-65">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-65"></span>
+      </div>
+      <div class="exp-body">
+        QoS mechanisms enable the establishment of queue management strategies that enforce priorities for different categories of application data. Thus, this queuing enables voice data to have priority over transaction data, which has priority over web data.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-65">Previous</button>
+      <span class="page-indicator">66 / 70</span>
+      <button class="nav-btn" id="next-65">Next</button>
+    </div>
+  </div>
+</div>

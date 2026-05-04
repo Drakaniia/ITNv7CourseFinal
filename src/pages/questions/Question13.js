@@ -1,39 +1,51 @@
 // Initialize Question13
-export function initQ12(ctx) {
-  const { state, CORRECT, updateScoreStrip, updateDots } = ctx;
+export function initQ12({ state, CORRECT, updateScoreStrip, updateDots }) {
   const optsEl = document.getElementById("opts-12");
   const submitEl = document.getElementById("submit-12");
   const expEl = document.getElementById("exp-12");
   const verdictEl = document.getElementById("verdict-12");
+  const countEl = document.getElementById("pendingCount-12");
   const card = document.getElementById("card-12");
   const btns = optsEl.querySelectorAll(".option-btn");
+  const CHOOSE = 2;
 
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (state.submitted[12]) return;
+      const idx = parseInt(btn.dataset.idx);
+      const arr = state.answers[12];
 
-      // Select the clicked option
-      btns.forEach((b) => b.classList.remove("selected"));
-      btn.classList.add("selected");
-      const indicator = btn.querySelector(".opt-indicator");
-      btns.forEach((b) => {
-        b.querySelector(".opt-indicator").innerHTML = "";
-      });
-      indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      state.answers[12] = parseInt(btn.dataset.idx);
+      if (btn.classList.contains("selected")) {
+        btn.classList.remove("selected");
+        btn.querySelector(".opt-indicator").innerHTML = "";
+        state.answers[12] = arr.filter((i) => i !== idx);
+      } else {
+        if (arr.length >= CHOOSE) return;
+        btn.classList.add("selected");
+        btn.querySelector(".opt-indicator").innerHTML =
+          `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+        state.answers[12] = [...arr, idx];
+      }
 
-      // Immediately reveal answer (direct reveal)
-      revealAnswer(12, btn);
+      const sel = state.answers[12].length;
+      countEl.textContent = `${sel} / ${CHOOSE} selected`;
+      submitEl.disabled = sel < CHOOSE;
+      submitEl.style.opacity = sel < CHOOSE ? "" : "1";
+
+      if (sel === CHOOSE) {
+        revealAnswer(12);
+      }
     });
   });
 
-  // Remove submit button since we're using direct reveal
   submitEl.style.display = "none";
 
-  function revealAnswer(questionIndex, clickedBtn) {
+  function revealAnswer(questionIndex) {
     state.submitted[questionIndex] = true;
     const chosen = state.answers[questionIndex];
-    const isCorrect = CORRECT[questionIndex].includes(chosen);
+    const isCorrect =
+      CORRECT[questionIndex].every((c) => chosen.includes(c)) &&
+      chosen.length === CORRECT[questionIndex].length;
     state.correct[questionIndex] = isCorrect;
 
     btns.forEach((btn) => {
@@ -43,16 +55,17 @@ export function initQ12(ctx) {
       btn.classList.remove("selected");
 
       const isAnswer = CORRECT[questionIndex].includes(idx);
-      const wasPicked = idx === chosen;
-
-      if (isAnswer) btn.classList.add("correct");
-      else if (wasPicked) btn.classList.add("wrong-pick");
-
-      // update indicator
+      const wasPicked = chosen.includes(idx);
       const ind = btn.querySelector(".opt-indicator");
-      if (isAnswer) {
+
+      if (isAnswer && wasPicked) {
+        btn.classList.add("correct");
         ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      } else if (wasPicked) {
+      } else if (isAnswer && !wasPicked) {
+        btn.classList.add("missed");
+        ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+      } else if (!isAnswer && wasPicked) {
+        btn.classList.add("wrong-pick");
         ind.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
       } else {
         ind.innerHTML = "";
@@ -63,6 +76,7 @@ export function initQ12(ctx) {
     verdictEl.textContent = isCorrect ? "✓ Correct" : "✗ Incorrect";
     verdictEl.className = "exp-verdict " + (isCorrect ? "correct" : "wrong");
     expEl.classList.add("show", isCorrect ? "correct-exp" : "wrong-exp");
+    countEl.textContent = "";
 
     updateScoreStrip();
     updateDots();

@@ -3,40 +3,46 @@
   This component represents the thirteenth question in the quiz.
 -->
 
-<div class="question-card" id="card-12" data-qid="12" data-type="single">
+<div class="question-card" id="card-12" data-qid="12" data-type="multi" data-choose="2">
   <div class="card-header">
     <span class="q-number">Q 13</span>
-    <span class="q-tag single">Single Choice</span>
+    <span class="q-tag multi">Choose 2</span>
   </div>
   <div class="card-body">
     <p class="question-text">
-      A client packet is received by a server. The packet has a destination port number of 143. What service is the client requesting?
+      What are two features of ARP? (Choose two.)
     </p>
     <div class="options" id="opts-12">
-      <button class="option-btn" data-idx="0">
+      <button class="option-btn multi" data-idx="0">
         <span class="opt-indicator"></span>
         <span class="opt-letter">A</span>
-        <span class="opt-text">Telnet</span>
+        <span class="opt-text">If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.</span>
       </button>
-      <button class="option-btn" data-idx="1">
+      <button class="option-btn multi" data-idx="1">
         <span class="opt-indicator"></span>
         <span class="opt-letter">B</span>
-        <span class="opt-text">SSH</span>
+        <span class="opt-text">When a host is encapsulating a packet into a frame, it refers to the MAC address table to determine the mapping of IP addresses to MAC addresses.</span>
       </button>
-      <button class="option-btn" data-idx="2">
+      <button class="option-btn multi" data-idx="2">
         <span class="opt-indicator"></span>
         <span class="opt-letter">C</span>
-        <span class="opt-text">IMAP</span>
+        <span class="opt-text">If no device responds to the ARP request, then the originating node will broadcast the data packet to all devices on the network segment.</span>
       </button>
-      <button class="option-btn" data-idx="3">
+      <button class="option-btn multi" data-idx="3">
         <span class="opt-indicator"></span>
         <span class="opt-letter">D</span>
-        <span class="opt-text">FTP</span>
+        <span class="opt-text">An ARP request is sent to all devices on the Ethernet LAN and contains the IP address of the destination host and its multicast MAC address.</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.</span>
       </button>
     </div>
 
     <div class="submit-wrap" style="display: none;">
-      <button class="submit-btn" id="submit-12" disabled>Submit Answer</button>
+      <button class="submit-btn multi-pending" id="submit-12" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-12">0 / 2 selected</span>
     </div>
 
     <div class="explanation" id="exp-12">
@@ -44,18 +50,12 @@
         <span class="exp-verdict" id="verdict-12"></span>
       </div>
       <div class="exp-body">
-        The client is requesting the IMAP (Internet Message Access Protocol) service. In TCP/IP networking, port numbers are used to distinguish different services. Port number 143 is specifically assigned to the IMAP service, which is used for retrieving emails from a mail server.
-        This is different from the other services you mentioned:
-        <ul>
-          <li><strong>Telnet</strong>, typically used for remote command-line access, uses port 23.</li>
-          <li><strong>SSH (Secure Shell)</strong>, used for secure remote access, uses port 22.</li>
-          <li><strong>FTP (File Transfer Protocol)</strong>, used for transferring files, uses ports 20 and 21.</li>
-        </ul>
+        When a node encapsulates a data packet into a frame, it needs the destination MAC address. First it determines if the destination device is on the local network or on a remote network. Then it checks the ARP table (not the MAC table) to see if a pair of IP address and MAC address exists for either the destination IP address (if the destination host is on the local network) or the default gateway IP address (if the destination host is on a remote network). If the match does not exist, it generates an ARP broadcast to seek the IP address to MAC address resolution. Because the destination MAC address is unknown, the ARP request is broadcast with the MAC address ffff.ffff.ffff. Either the destination device or the default gateway will respond with its MAC address, which enables the sending node to assemble the frame. If no device responds to the ARP request, then the originating node will discard the packet because a frame cannot be created.
       </div>
     </div>
     <div class="pagination-controls">
       <button class="nav-btn" id="prev-12">Previous</button>
-      <span class="page-indicator">13 / 13</span>
+      <span class="page-indicator">13 / 109</span>
       <button class="nav-btn" id="next-12">Next</button>
     </div>
   </div>

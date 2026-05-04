@@ -1,0 +1,56 @@
+<!--
+  --- Question 108 ---
+  This component represents the one hundred and eighth question in the quiz.
+-->
+
+<div class="question-card" id="card-107" data-qid="107" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 108</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator is adding a new LAN to a branch office. The new LAN must support 61 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+    </p>
+    <div class="options" id="opts-107">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.128</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-107" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-107">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-107"></span>
+      </div>
+      <div class="exp-body">
+        To support 61 connected devices, the network administrator needs a subnet mask that provides at least 61 usable IP addresses. The subnet mask 255.255.255.192 (/26) provides 62 usable IP addresses (64 - 2 for network and broadcast addresses), which is sufficient for 61 devices. This is the smallest mask that can accommodate the requirement.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-107">Previous</button>
+      <span class="page-indicator">108 / 109</span>
+      <button class="nav-btn" id="next-107">Next</button>
+    </div>
+  </div>
+</div>

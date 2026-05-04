@@ -241,6 +241,42 @@ Replace the following placeholders:
 - Test the quiz thoroughly after adding a new question to ensure all functionality works as expected.
 - If the new question is a multiple-choice question, update the initialization logic to handle multiple selections.
 
+## Multi-Choice Question Behavior
+For questions that require selecting multiple answers (e.g., "Choose 2", "Choose 3"):
+
+### Interactive Feedback System
+- **Selection Process**: Users can select up to the required number of answers (e.g., 2 for "Choose 2" questions)
+- **Immediate Validation**: Once the required number of selections is made, the answer is automatically revealed
+- **Visual Feedback**:
+  - **Correct selections** (right answer picked): Turn green with a checkmark ✓
+  - **Wrong selections** (wrong answer picked): Turn red with an X mark ✗
+  - **Missed answers** (correct answer not picked): Show with a checkmark but different styling to indicate it was missed
+  - **Unselected wrong answers**: Remain neutral (no special styling)
+
+### Progressive Selection
+- Users can click options one by one
+- Each click toggles the selection (click again to deselect)
+- The question automatically submits when the exact number of required selections is reached
+- If a wrong answer is selected first, it will turn red upon submission
+- If all correct answers are selected, they will all turn green upon submission
+- The question is marked correct only if ALL correct answers are selected and NO wrong answers are selected
+
+### Example Scenarios
+**Scenario 1: "Choose 2" question with correct answers A and C**
+- User selects A (correct) → shows checkmark, waiting for second selection
+- User selects B (wrong) → automatically reveals: A turns green ✓, B turns red ✗, C shows as missed ✓
+- Result: Marked incorrect
+
+**Scenario 2: Same question**
+- User selects A (correct) → shows checkmark, waiting for second selection  
+- User selects C (correct) → automatically reveals: A turns green ✓, C turns green ✓
+- Result: Marked correct
+
+**Scenario 3: User changes mind**
+- User selects A → shows checkmark
+- User clicks A again → deselects it (checkmark removed)
+- User selects B and C → automatically reveals and shows results
+
 ## Source Text Fidelity Rule
 > **CRITICAL: When copying questions, answer options, or explanation text from `modified_text_with_answers.txt`, the content MUST be reproduced exactly as written in the source file.**
 
@@ -250,3 +286,4 @@ Replace the following placeholders:
 - The only permitted changes are adding HTML tags for formatting (e.g., `<strong>`, `<ul>`, `<li>`) around the exact text, and stripping trailing markers like `(answer)` from option text since correct answers are tracked in `script.js` via the `CORRECT` array instead.
 - If the source text includes special characters (e.g., `​` zero-width spaces, `​` Unicode variants), preserve them as-is or use the nearest standard HTML equivalent.
 - **Any deviation from the source text is a bug** and must be corrected by re-reading `modified_text_with_answers.txt` and restoring the original wording.
+

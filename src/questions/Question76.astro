@@ -1,0 +1,65 @@
+<!--
+  --- Question 76 ---
+  This component represents the seventy-sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-75" data-qid="75" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 76</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in the ARP cache. How will the device obtain a destination MAC address?
+    </p>
+    <div class="options" id="opts-75">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">It will send an ARP request for the MAC address of the destination device.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">It will send the frame with a broadcast MAC address.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">It will send the frame and use the device MAC address as the destination.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">It will send an ARP request for the MAC address of the default gateway.</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">It will send an ARP request to the DNS server for the destination MAC address.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-75" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-75">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-75"></span>
+      </div>
+      <div class="exp-body">
+        If a host is trying to send a packet to a device on a remote LAN segment and there are no mappings in the ARP cache, the device will:
+        <br><br>
+        <strong>It will send an ARP request for the MAC address of the default gateway.</strong>
+        <br><br>
+        In a typical network, a device knows the IP address of the default gateway from its network configuration. When it needs to communicate with a device on a different network, it will use ARP to resolve the MAC address of the default gateway, because the packet needs to be sent there first to be routed to the remote network. The default gateway will then forward the packet to the destination on the remote LAN segment using its own ARP process and routing table.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-75">Previous</button>
+      <span class="page-indicator">76 / 80</span>
+      <button class="nav-btn" id="next-75">Next</button>
+    </div>
+  </div>
+</div>

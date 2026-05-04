@@ -1,0 +1,67 @@
+<!--
+  --- Question 86 ---
+  This component represents the eighty-sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-85" data-qid="85" data-type="multi">
+  <div class="card-header">
+    <span class="q-number">Q 86</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A user is attempting to access http://www.cisco.com/ without success. Which two configuration values must be set on the host to allow this access? (Choose two.)
+    </p>
+    <div class="options" id="opts-85">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">source port number</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">HTTP server</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">source MAC address</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">DNS server</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">default gateway</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-85" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-85">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-85"></span>
+      </div>
+      <div class="exp-body">
+        To access a website like "http://www.cisco.com/", the host requires the following configuration values to be set:
+        <ul>
+          <li><strong>DNS server:</strong> The Domain Name System (DNS) server is necessary for resolving the domain name "www.cisco.com" into its corresponding IP address. Without this, the host would not be able to translate the URL into an address it can connect to.</li>
+          <li><strong>Default gateway:</strong> The default gateway is used to send packets from the local network to devices on other networks. If the host doesn't have a default gateway configured, it wouldn't be able to route packets to the destination outside of its local network.</li>
+        </ul>
+        <br>
+        The source port number is determined dynamically by the host for the duration of the session and is not something that is typically manually configured for web access. The HTTP server is a remote server that hosts the website content and is not a configuration value on the host. The source MAC address is also not a configuration that needs to be manually set for web access; it's inherent to the network interface of the host device.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-85">Previous</button>
+      <span class="page-indicator">86 / 90</span>
+      <button class="nav-btn" id="next-85">Next</button>
+    </div>
+  </div>
+</div>

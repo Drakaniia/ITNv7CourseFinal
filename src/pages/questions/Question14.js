@@ -1,71 +1,71 @@
 // Initialize Question14
-export function initQ13(ctx) {
-  const { state, CORRECT, updateScoreStrip, updateDots } = ctx;
+export function initQ13({ state, CORRECT, updateScoreStrip, updateDots }) {
   const optsEl = document.getElementById("opts-13");
   const submitEl = document.getElementById("submit-13");
   const expEl = document.getElementById("exp-13");
   const verdictEl = document.getElementById("verdict-13");
+  const countEl = document.getElementById("pendingCount-13");
   const card = document.getElementById("card-13");
   const btns = optsEl.querySelectorAll(".option-btn");
-  const pendingCountEl = document.getElementById("pendingCount-13");
+  const CHOOSE = 2;
 
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (state.submitted[13]) return;
-
-      // Toggle selection
-      btn.classList.toggle("selected");
-      const indicator = btn.querySelector(".opt-indicator");
       const idx = parseInt(btn.dataset.idx);
-      const isSelected = btn.classList.contains("selected");
+      const arr = state.answers[13];
 
-      if (isSelected) {
-        indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-        if (!state.answers[13].includes(idx)) {
-          state.answers[13].push(idx);
-        }
+      if (btn.classList.contains("selected")) {
+        btn.classList.remove("selected");
+        btn.querySelector(".opt-indicator").innerHTML = "";
+        state.answers[13] = arr.filter((i) => i !== idx);
       } else {
-        indicator.innerHTML = "";
-        state.answers[13] = state.answers[13].filter((i) => i !== idx);
+        if (arr.length >= CHOOSE) return;
+        btn.classList.add("selected");
+        btn.querySelector(".opt-indicator").innerHTML =
+          `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+        state.answers[13] = [...arr, idx];
       }
 
-      // Update pending count
-      const pendingCount = state.answers[13].length;
-      pendingCountEl.textContent = `${pendingCount} / 2 selected`;
+      const sel = state.answers[13].length;
+      countEl.textContent = `${sel} / ${CHOOSE} selected`;
+      submitEl.disabled = sel < CHOOSE;
+      submitEl.style.opacity = sel < CHOOSE ? "" : "1";
 
-      // Enable/disable submit button
-      submitEl.disabled = pendingCount === 0;
+      if (sel === CHOOSE) {
+        revealAnswer(13);
+      }
     });
   });
 
-  submitEl.addEventListener("click", () => {
-    revealAnswer(13);
-  });
+  submitEl.style.display = "none";
 
   function revealAnswer(questionIndex) {
     state.submitted[questionIndex] = true;
     const chosen = state.answers[questionIndex];
     const isCorrect =
-      CORRECT[questionIndex].length === chosen.length &&
-      CORRECT[questionIndex].every((val) => chosen.includes(val));
+      CORRECT[questionIndex].every((c) => chosen.includes(c)) &&
+      chosen.length === CORRECT[questionIndex].length;
     state.correct[questionIndex] = isCorrect;
 
     btns.forEach((btn) => {
       const idx = parseInt(btn.dataset.idx);
       btn.disabled = true;
       btn.classList.add("revealed");
+      btn.classList.remove("selected");
 
       const isAnswer = CORRECT[questionIndex].includes(idx);
       const wasPicked = chosen.includes(idx);
-
-      if (isAnswer) btn.classList.add("correct");
-      else if (wasPicked) btn.classList.add("wrong-pick");
-
-      // update indicator
       const ind = btn.querySelector(".opt-indicator");
-      if (isAnswer) {
+
+      if (isAnswer && wasPicked) {
+        btn.classList.add("correct");
         ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      } else if (wasPicked) {
+      } else if (isAnswer && !wasPicked) {
+        btn.classList.add("missed");
+        ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+      } else if (!isAnswer && wasPicked) {
+        btn.classList.add("wrong-pick");
         ind.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
       } else {
         ind.innerHTML = "";
@@ -76,6 +76,7 @@ export function initQ13(ctx) {
     verdictEl.textContent = isCorrect ? "✓ Correct" : "✗ Incorrect";
     verdictEl.className = "exp-verdict " + (isCorrect ? "correct" : "wrong");
     expEl.classList.add("show", isCorrect ? "correct-exp" : "wrong-exp");
+    countEl.textContent = "";
 
     updateScoreStrip();
     updateDots();

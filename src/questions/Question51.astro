@@ -1,0 +1,58 @@
+<!--
+  --- Question 51 ---
+  This component represents the fifty-first question in the quiz.
+-->
+
+<div class="question-card" id="card-50" data-qid="50" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 51</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A client packet is received by a server. The packet has a destination port number of 69. What service is the client requesting?
+    </p>
+    <div class="options" id="opts-50">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">DHCP</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">SMTP</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">TFTP</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">DNS</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-50" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-50">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-50"></span>
+      </div>
+      <div class="exp-body">
+        The client is requesting the TFTP (Trivial File Transfer Protocol) service. In networking, port numbers are used to identify specific services or protocols, and port number 69 is designated for TFTP.
+        <br><br>
+        TFTP is a simple protocol to transfer files, and it is used where the simplicity of implementation is more critical than the advanced features of a more robust file transfer protocol like FTP. It is commonly used for transferring small files such as system boot files or configurations over a network.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-50">Previous</button>
+      <span class="page-indicator">51 / 60</span>
+      <button class="nav-btn" id="next-50">Next</button>
+    </div>
+  </div>
+</div>

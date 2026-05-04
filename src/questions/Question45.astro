@@ -1,0 +1,65 @@
+<!--
+  --- Question 45 ---
+  This component represents the 45th question in the quiz.
+-->
+
+<div class="question-card" id="card-44" data-qid="44" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 45</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which switching method drops frames that fail the FCS check?
+    </p>
+    <div class="options" id="opts-44">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">store-and-forward switching</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">ingress port buffering</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">cut-through switching</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">borderless switching</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-44" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-44">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-44"></span>
+      </div>
+      <div class="exp-body">
+        The switching method that drops frames that fail the FCS (Frame Check Sequence) check is store-and-forward switching.
+        <br><br>
+        In store-and-forward switching, the switch accepts the entire frame into its buffer, checks the FCS for errors, and only forwards the frame if no errors are detected. If the FCS check fails, indicating that there are errors in the frame, the switch drops the frame. This method ensures that corrupt frames are not propagated through the network.
+        <br><br>
+        The other methods listed have different characteristics:
+        <ul>
+          <li>Ingress port buffering refers to the practice of using buffers on the switch's ports to hold incoming frames before processing, which can help manage congestion but isn't directly related to FCS checking.</li>
+          <li>Cut-through switching begins forwarding the frame as soon as the destination MAC address is read, without waiting for the entire frame to come in, and thus it does not typically check the FCS before forwarding. Some advanced cut-through switches may have mechanisms to check FCS after they have started forwarding the frame and stop forwarding if an error is detected.</li>
+          <li>Borderless switching is a marketing term used by some vendors to describe switches designed for modern networking needs, providing integrated security, mobility, and application optimization across a network without borders. It is not specific to a method of error checking or frame forwarding.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-44">Previous</button>
+      <span class="page-indicator">45 / 50</span>
+      <button class="nav-btn" id="next-44">Next</button>
+    </div>
+  </div>
+</div>
