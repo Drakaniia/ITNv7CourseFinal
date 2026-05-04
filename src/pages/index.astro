@@ -108,6 +108,8 @@ import Question106 from '../questions/Question106.astro';
 import Question107 from '../questions/Question107.astro';
 import Question108 from '../questions/Question108.astro';
 import Question109 from '../questions/Question109.astro';
+import Question110 from '../questions/Question110.astro';
+import Question111 from '../questions/Question111.astro';
 ---
 
 <html lang="en">
@@ -136,7 +138,7 @@ import Question109 from '../questions/Question109.astro';
       <div class="header-inner">
         <span class="badge">ITNv7</span>
         <span class="header-title">Course Final Exam</span>
-        <span class="header-sub" id="headerProgress">0 / 109 answered</span>
+        <span class="header-sub" id="headerProgress">0 / 111 answered</span>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="sun-icon" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="5"/>
@@ -172,7 +174,7 @@ import Question109 from '../questions/Question109.astro';
         <div class="score-divider"></div>
         <div class="score-item">
           <span class="score-label">Remaining</span>
-          <span class="score-val" id="scoreRemain">109</span>
+          <span class="score-val" id="scoreRemain">111</span>
         </div>
         <div class="score-item total">
           <span class="score-label">Score</span>
@@ -506,6 +508,12 @@ import Question109 from '../questions/Question109.astro';
 
       <!-- ── Question 109 ── -->
       <Question109 client:load />
+
+      <!-- ── Question 110 ── -->
+      <Question110 client:load />
+
+      <!-- ── Question 111 ── -->
+      <Question111 client:load />
     </main>
 
     <!-- Footer nav dots -->
@@ -621,6 +629,8 @@ import Question109 from '../questions/Question109.astro';
         <div class="dot" data-target="106" title="Q107"></div>
         <div class="dot" data-target="107" title="Q108"></div>
         <div class="dot" data-target="108" title="Q109"></div>
+        <div class="dot" data-target="109" title="Q110"></div>
+        <div class="dot" data-target="110" title="Q111"></div>
       </div>
     </footer>
 

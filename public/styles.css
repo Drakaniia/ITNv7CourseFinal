@@ -238,12 +238,14 @@ main {
 .q-case-tag {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
-  font-weight: 600;
-  color: var(--text-3);
-  background: var(--surface-2);
-  border: 1px solid var(--border);
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(99,102,241,.12);
+  border: 1px solid rgba(99,102,241,.3);
   border-radius: 5px;
-  padding: 2px 7px;
+  padding: 3px 9px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 .card-body { padding: 16px 24px 24px; }

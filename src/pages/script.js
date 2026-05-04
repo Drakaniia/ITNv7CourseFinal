@@ -108,32 +108,32 @@ import { initQ105 } from "./questions/Question106.js";
 import { initQ106 } from "./questions/Question107.js";
 import { initQ107 } from "./questions/Question108.js";
 import { initQ108 } from "./questions/Question109.js";
+import { initQ109 } from "./questions/Question110.js";
+import { initQ110 } from "./questions/Question111.js";
 
 // ── State ────────────────────────────────────────────────────────────
 const state = {
   answers: [
     null,
     [],
-    null,
-    [],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    [],
-    [],
-    [],
     [],
     [],
     null,
     null,
     null,
-    [],
+    null,
+    null,
     null,
     [],
     [],
+    [],
+    [],
+    [],
+    null,
+    null,
+    null,
+    [],
+    null,
     [],
     [],
     [],
@@ -150,6 +150,8 @@ const state = {
     [],
     [],
     [],
+    [],
+    [],
     null,
     null,
     [],
@@ -223,6 +225,8 @@ const state = {
     null,
     null,
     null,
+    null,
+    [],
     null,
   ],
   submitted: [
@@ -326,8 +330,12 @@ const state = {
     false,
     false,
     false,
+    false,
+    false,
   ],
   correct: [
+    false,
+    false,
     false,
     false,
     false,
@@ -538,6 +546,8 @@ const CORRECT = [
   [0],
   [0],
   [0],
+  [1, 2, 3],
+  [0],
 ];
 const questions = document.querySelectorAll(".question-card");
 const totalQuestions = questions.length;
@@ -577,13 +587,13 @@ function updateScoreStrip() {
   const wrong = done - right;
   document.getElementById("scoreCorrect").textContent = right;
   document.getElementById("scoreWrong").textContent = wrong;
-  document.getElementById("scoreRemain").textContent = 109 - done;
+  document.getElementById("scoreRemain").textContent = 111 - done;
   document.getElementById("scorePct").textContent = done
     ? Math.round((right / done) * 100) + " %"
     : "— %";
   document.getElementById("headerProgress").textContent =
-    `${done} / 109 answered`;
-  document.getElementById("progressBar").style.width = (done / 109) * 100 + "%";
+    `${done} / 111 answered`;
+  document.getElementById("progressBar").style.width = (done / 111) * 100 + "%";
 }
 
 function updateDots() {
@@ -706,6 +716,8 @@ initQ105(ctx);
 initQ106(ctx);
 initQ107(ctx);
 initQ108(ctx);
+initQ109(ctx);
+initQ110(ctx);
 
 // ── Footer dots navigation ──────────────────────────────────────────
 document.querySelectorAll(".dot[data-target]").forEach((dot, i) => {
