@@ -24,9 +24,13 @@ export function initQ24(ctx) {
       const idx = parseInt(btn.dataset.idx);
       const isCorrectAnswer = CORRECT[24].includes(idx);
       const isAlreadySelected = btn.classList.contains("selected");
+      const isWrongPick = btn.classList.contains("wrong-pick");
 
-      // If already selected, allow deselection
-      if (isAlreadySelected) {
+      // Don't allow interaction with wrong answers
+      if (isWrongPick) return;
+
+      // If already selected (and correct), allow deselection
+      if (isAlreadySelected && isCorrectAnswer) {
         btn.classList.remove("selected");
         const indicator = btn.querySelector(".opt-indicator");
         indicator.innerHTML = "";
@@ -36,8 +40,9 @@ export function initQ24(ctx) {
 
       // Check if this is a wrong answer
       if (!isCorrectAnswer) {
-        // Mark as wrong immediately
+        // Mark as wrong immediately and disable
         btn.classList.add("wrong-pick");
+        btn.disabled = true;
         const indicator = btn.querySelector(".opt-indicator");
         indicator.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
         
@@ -99,7 +104,6 @@ export function initQ24(ctx) {
       btn.classList.add("revealed");
 
       const isAnswer = CORRECT[questionIndex].includes(idx);
-      const wasPicked = state.answers[questionIndex].includes(idx);
 
       if (isAnswer && !btn.classList.contains("correct")) {
         btn.classList.add("correct");

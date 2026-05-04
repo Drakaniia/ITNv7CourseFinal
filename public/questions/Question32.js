@@ -1,5 +1,6 @@
 // Initialize Question32
-export function initQ31({ state, CORRECT, updateScoreStrip, updateDots }) {
+export function initQ31(ctx) {
+  const { state, CORRECT, updateScoreStrip, updateDots } = ctx;
   const optsEl = document.getElementById("opts-31");
   const submitEl = document.getElementById("submit-31");
   const expEl = document.getElementById("exp-31");
@@ -7,54 +8,111 @@ export function initQ31({ state, CORRECT, updateScoreStrip, updateDots }) {
   const card = document.getElementById("card-31");
   const btns = optsEl.querySelectorAll(".option-btn");
 
+  // Hide submit button - we use immediate feedback
+  const submitWrap = submitEl?.parentElement;
+  if (submitWrap) {
+    submitWrap.style.display = "none";
+  }
+
+  let wrongAttempts = 0;
+  const MAX_WRONG_ATTEMPTS = 2;
+
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (state.submitted[31]) return;
 
-      // Select the clicked option
-      btns.forEach((b) => b.classList.remove("selected"));
+      const idx = parseInt(btn.dataset.idx);
+      const isCorrectAnswer = CORRECT[31].includes(idx);
+      const isAlreadySelected = btn.classList.contains("selected");
+      const isWrongPick = btn.classList.contains("wrong-pick");
+
+      // Don't allow interaction with wrong answers
+      if (isWrongPick) return;
+
+      // If already selected (and correct), allow deselection
+      if (isAlreadySelected && isCorrectAnswer) {
+        btn.classList.remove("selected");
+        const indicator = btn.querySelector(".opt-indicator");
+        indicator.innerHTML = "";
+        state.answers[31] = state.answers[31].filter((i) => i !== idx);
+        return;
+      }
+
+      // Check if this is a wrong answer
+      if (!isCorrectAnswer) {
+        // Mark as wrong immediately and disable
+        btn.classList.add("wrong-pick");
+        btn.disabled = true;
+        const indicator = btn.querySelector(".opt-indicator");
+        indicator.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
+        
+        wrongAttempts++;
+        
+        // If 2 wrong attempts, reveal all correct answers
+        if (wrongAttempts >= MAX_WRONG_ATTEMPTS) {
+          revealAllCorrectAnswers();
+        }
+        return;
+      }
+
+      // Correct answer - select it
       btn.classList.add("selected");
       const indicator = btn.querySelector(".opt-indicator");
-      btns.forEach((b) => {
-        b.querySelector(".opt-indicator").innerHTML = "";
-      });
       indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      state.answers[31] = parseInt(btn.dataset.idx);
+      
+      if (!state.answers[31].includes(idx)) {
+        state.answers[31].push(idx);
+      }
 
-      // Immediately reveal answer (direct reveal)
-      revealAnswer(31, btn);
+      // Check if all correct answers are selected
+      const allCorrectSelected = CORRECT[31].every(correctIdx => 
+        state.answers[31].includes(correctIdx)
+      );
+
+      if (allCorrectSelected && state.answers[31].length === CORRECT[31].length) {
+        // All correct answers found!
+        revealAnswer(31, true);
+      }
     });
   });
 
-  // Remove submit button since we're using direct reveal
-  submitEl.style.display = "none";
+  function revealAllCorrectAnswers() {
+    // Auto-reveal after 2 wrong attempts
+    btns.forEach((btn) => {
+      const idx = parseInt(btn.dataset.idx);
+      if (CORRECT[31].includes(idx)) {
+        btn.classList.add("selected", "correct");
+        const indicator = btn.querySelector(".opt-indicator");
+        indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+        if (!state.answers[31].includes(idx)) {
+          state.answers[31].push(idx);
+        }
+      }
+      btn.disabled = true;
+    });
+    
+    revealAnswer(31, false);
+  }
 
-  function revealAnswer(questionIndex, clickedBtn) {
+  function revealAnswer(questionIndex, isCorrect) {
     state.submitted[questionIndex] = true;
-    const chosen = state.answers[questionIndex];
-    const isCorrect = CORRECT[questionIndex].includes(chosen);
     state.correct[questionIndex] = isCorrect;
 
     btns.forEach((btn) => {
       const idx = parseInt(btn.dataset.idx);
       btn.disabled = true;
       btn.classList.add("revealed");
-      btn.classList.remove("selected");
 
       const isAnswer = CORRECT[questionIndex].includes(idx);
-      const wasPicked = idx === chosen;
 
-      if (isAnswer) btn.classList.add("correct");
-      else if (wasPicked) btn.classList.add("wrong-pick");
+      if (isAnswer && !btn.classList.contains("correct")) {
+        btn.classList.add("correct");
+      }
 
-      // update indicator
+      // Update indicator
       const ind = btn.querySelector(".opt-indicator");
-      if (isAnswer) {
+      if (isAnswer && !ind.innerHTML) {
         ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      } else if (wasPicked) {
-        ind.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
-      } else {
-        ind.innerHTML = "";
       }
     });
 

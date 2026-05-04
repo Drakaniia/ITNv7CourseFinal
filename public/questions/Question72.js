@@ -7,90 +7,114 @@ export function initQ71(ctx) {
   const verdictEl = document.getElementById("verdict-71");
   const card = document.getElementById("card-71");
   const btns = optsEl.querySelectorAll(".option-btn");
-  const pendingCountEl = document.getElementById("pendingCount-71");
 
-  // Show submit button for multi-select
-  const submitWrap = submitEl.parentElement;
+  // Hide submit button - we use immediate feedback
+  const submitWrap = submitEl?.parentElement;
   if (submitWrap) {
-    submitWrap.style.display = "flex";
+    submitWrap.style.display = "none";
   }
+
+  let wrongAttempts = 0;
+  const MAX_WRONG_ATTEMPTS = 2;
 
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (state.submitted[71]) return;
 
-      // Toggle selection
-      btn.classList.toggle("selected");
-      const indicator = btn.querySelector(".opt-indicator");
       const idx = parseInt(btn.dataset.idx);
-      const isSelected = btn.classList.contains("selected");
+      const isCorrectAnswer = CORRECT[71].includes(idx);
+      const isAlreadySelected = btn.classList.contains("selected");
+      const isWrongPick = btn.classList.contains("wrong-pick");
 
-      if (isSelected) {
-        indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-        if (!state.answers[71].includes(idx)) {
-          state.answers[71].push(idx);
-        }
-      } else {
+      // Don't allow interaction with wrong answers
+      if (isWrongPick) return;
+
+      // If already selected (and correct), allow deselection
+      if (isAlreadySelected && isCorrectAnswer) {
+        btn.classList.remove("selected");
+        const indicator = btn.querySelector(".opt-indicator");
         indicator.innerHTML = "";
         state.answers[71] = state.answers[71].filter((i) => i !== idx);
+        return;
       }
 
-      // Update pending count
-      const pendingCount = state.answers[71].length;
-      pendingCountEl.textContent = `${pendingCount} / 3 selected`;
+      // Check if this is a wrong answer
+      if (!isCorrectAnswer) {
+        // Mark as wrong immediately and disable
+        btn.classList.add("wrong-pick");
+        btn.disabled = true;
+        const indicator = btn.querySelector(".opt-indicator");
+        indicator.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
+        
+        wrongAttempts++;
+        
+        // If 2 wrong attempts, reveal all correct answers
+        if (wrongAttempts >= MAX_WRONG_ATTEMPTS) {
+          revealAllCorrectAnswers();
+        }
+        return;
+      }
 
-      // Enable/disable submit button based on selection count
-      submitEl.disabled = pendingCount < 3;
+      // Correct answer - select it
+      btn.classList.add("selected");
+      const indicator = btn.querySelector(".opt-indicator");
+      indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
       
-      // Update button class
-      if (pendingCount < 3) {
-        submitEl.classList.add("multi-pending");
-      } else {
-        submitEl.classList.remove("multi-pending");
+      if (!state.answers[71].includes(idx)) {
+        state.answers[71].push(idx);
+      }
+
+      // Check if all correct answers are selected
+      const allCorrectSelected = CORRECT[71].every(correctIdx => 
+        state.answers[71].includes(correctIdx)
+      );
+
+      if (allCorrectSelected && state.answers[71].length === CORRECT[71].length) {
+        // All correct answers found!
+        revealAnswer(71, true);
       }
     });
   });
 
-  submitEl.addEventListener("click", () => {
-    revealAnswer(71);
-  });
+  function revealAllCorrectAnswers() {
+    // Auto-reveal after 2 wrong attempts
+    btns.forEach((btn) => {
+      const idx = parseInt(btn.dataset.idx);
+      if (CORRECT[71].includes(idx)) {
+        btn.classList.add("selected", "correct");
+        const indicator = btn.querySelector(".opt-indicator");
+        indicator.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
+        if (!state.answers[71].includes(idx)) {
+          state.answers[71].push(idx);
+        }
+      }
+      btn.disabled = true;
+    });
+    
+    revealAnswer(71, false);
+  }
 
-  function revealAnswer(questionIndex) {
+  function revealAnswer(questionIndex, isCorrect) {
     state.submitted[questionIndex] = true;
-    const chosen = state.answers[questionIndex];
-    const isCorrect =
-      CORRECT[questionIndex].length === chosen.length &&
-      CORRECT[questionIndex].every((val) => chosen.includes(val));
     state.correct[questionIndex] = isCorrect;
 
     btns.forEach((btn) => {
       const idx = parseInt(btn.dataset.idx);
       btn.disabled = true;
       btn.classList.add("revealed");
-      btn.classList.remove("selected");
 
       const isAnswer = CORRECT[questionIndex].includes(idx);
-      const wasPicked = chosen.includes(idx);
 
-      if (isAnswer) btn.classList.add("correct");
-      else if (wasPicked) btn.classList.add("wrong-pick");
+      if (isAnswer && !btn.classList.contains("correct")) {
+        btn.classList.add("correct");
+      }
 
-      // update indicator
+      // Update indicator
       const ind = btn.querySelector(".opt-indicator");
-      if (isAnswer) {
+      if (isAnswer && !ind.innerHTML) {
         ind.innerHTML = `<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>`;
-      } else if (wasPicked) {
-        ind.innerHTML = `<svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>`;
-      } else {
-        ind.innerHTML = "";
       }
     });
-
-    // Hide submit button after submission
-    const submitWrap = submitEl.parentElement;
-    if (submitWrap) {
-      submitWrap.style.display = "none";
-    }
 
     card.classList.add(isCorrect ? "answered-correct" : "answered-wrong");
     verdictEl.textContent = isCorrect ? "✓ Correct" : "✗ Incorrect";
