@@ -1,0 +1,64 @@
+<!--
+  --- Question 67 ---
+  This component represents the sixty-seventh question in the quiz.
+-->
+
+<div class="question-card" id="card-66" data-qid="66" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 67</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What is the consequence of configuring a router with the ipv6 unicast-routing global configuration command?​
+    </p>
+    <div class="options" id="opts-66">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">All router interfaces will be automatically activated.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Each router interface will generate an IPv6 link-local address.​</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">The IPv6 enabled router interfaces begin sending ICMPv6 Router Advertisement messages.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">It statically creates a global unicast address on this router.​</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-66" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-66">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-66"></span>
+      </div>
+      <div class="exp-body">
+        The consequence of configuring a router with the ipv6 unicast-routing global configuration command is that it enables the router to forward IPv6 unicast packets. This command does not automatically activate all router interfaces or create global unicast addresses on them. Rather, it enables the IPv6 routing capability of the router, allowing it to route IPv6 traffic between different networks.
+        <br><br>
+        Here's what happens when the command is applied:
+        <ul>
+          <li>The router becomes capable of forwarding IPv6 packets, acting as an IPv6 router.</li>
+          <li>IPv6 enabled router interfaces can then send ICMPv6 Router Advertisement (RA) messages if they are configured with an IPv6 address and the interface is activated. These RA messages are used to announce the presence of the router to other devices on the network and provide necessary network information for configuration.</li>
+          <li>Router interfaces can generate an IPv6 link-local address, but this is not directly due to the ipv6 unicast-routing command. Link-local addresses are automatically generated for IPv6-enabled interfaces, regardless of the routing configuration, as part of the IPv6 protocol standards.</li>
+        </ul>
+        Therefore, the most accurate consequence of the command is that the IPv6-enabled router interfaces begin sending ICMPv6 Router Advertisement messages, assuming that the interfaces are configured properly with IPv6 addresses.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-66">Previous</button>
+      <span class="page-indicator">67 / 70</span>
+      <button class="nav-btn" id="next-66">Next</button>
+    </div>
+  </div>
+</div>

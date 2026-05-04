@@ -1,0 +1,63 @@
+<!--
+  --- Question 100 ---
+  This component represents the one hundredth question in the quiz.
+-->
+
+<div class="question-card" id="card-99" data-qid="99" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 100</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A client packet is received by a server. The packet has a destination port number of 22. What service is the client requesting?
+    </p>
+    <div class="options" id="opts-99">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">SSH</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">DNS</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">DHCP</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">TFTP</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-99" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-99">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-99"></span>
+      </div>
+      <div class="exp-body">
+        The client is requesting SSH (Secure Shell) service. In networking, port numbers are used to distinguish different services or processes. Port 22 is the default port for SSH, which is a protocol used for secure logins, file transfers, and other secure network services over an unsecured network.
+        <br><br>
+        Here's a brief overview of the other services mentioned and their typical port numbers:
+        <ul>
+          <li><strong>DNS (Domain Name System):</strong> Usually uses port 53. It translates domain names into IP addresses.</li>
+          <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> Typically uses port 67 for the DHCP server and port 68 for the DHCP client. It is used for automatically assigning IP addresses and other network configuration parameters.</li>
+          <li><strong>TFTP (Trivial File Transfer Protocol):</strong> Generally uses port 69. It's a simple file transfer protocol, with less functionality compared to FTP.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-99">Previous</button>
+      <span class="page-indicator">100 / 100</span>
+      <button class="nav-btn" id="next-99">Finish</button>
+    </div>
+  </div>
+</div>

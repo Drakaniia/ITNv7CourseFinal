@@ -1,0 +1,61 @@
+<!--
+  --- Question 73 ---
+  This component represents the seventy-third question in the quiz.
+-->
+
+<div class="question-card" id="card-72" data-qid="72" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 73</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A user is executing a tracert to a remote device. At what point would a router, which is in the path to the destination device, stop forwarding the packet?
+    </p>
+    <div class="options" id="opts-72">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">when the values of both the Echo Request and Echo Reply messages reach zero</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">when the value in the TTL field reaches zero</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">when the router receives an ICMP Time Exceeded message</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">when the host responds with an ICMP Echo Reply message</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">when the RTT value reaches zero</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-72" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-72">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-72"></span>
+      </div>
+      <div class="exp-body">
+        When a router receives a traceroute packet, the value in the TTL field is decremented by 1. When the value in the field reaches zero, the receiving router will not forward the packet, and will send an ICMP Time Exceeded message back to the source.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-72">Previous</button>
+      <span class="page-indicator">73 / 80</span>
+      <button class="nav-btn" id="next-72">Next</button>
+    </div>
+  </div>
+</div>

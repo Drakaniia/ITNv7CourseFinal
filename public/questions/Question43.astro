@@ -1,0 +1,58 @@
+<!--
+  --- Question 43 ---
+  This component represents the 43rd question in the quiz.
+-->
+
+<div class="question-card" id="card-42" data-qid="42" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 43</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which information does the show startup-config command display?​
+    </p>
+    <div class="options" id="opts-42">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">the IOS image copied into RAM</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">the bootstrap program in the ROM</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">the contents of the saved configuration file in the NVRAM</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">the contents of the current running configuration file in the RAM</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-42" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-42">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-42"></span>
+      </div>
+      <div class="exp-body">
+        The show startup-config command displays the contents of the saved configuration file in the NVRAM. When you run this command on a Cisco device, it shows you the configuration that will be used the next time the device is restarted. This is the configuration that has been saved using the copy running-config startup-config command.
+        <br><br>
+        It does not display the IOS image, the bootstrap program, or the current running configuration, which are all different components of the device's operation. The IOS image is the operating system file, the bootstrap program is the initial code that runs when the device is powered on, and the current running configuration is the active configuration that the device is currently using (which can be viewed using the show running-config command).
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-42">Previous</button>
+      <span class="page-indicator">43 / 50</span>
+      <button class="nav-btn" id="next-42">Next</button>
+    </div>
+  </div>
+</div>

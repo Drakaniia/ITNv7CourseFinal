@@ -1,0 +1,70 @@
+<!--
+  --- Question 89 ---
+  This component represents the eighty-ninth question in the quiz.
+-->
+
+<div class="question-card" id="card-88" data-qid="88" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 89</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      An organization is assigned an IPv6 address block of 2001:db8:0:ca00::/56. How many subnets can be created without using bits in the interface ID space?
+    </p>
+    <div class="options" id="opts-88">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">4096</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">256</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">512</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">1024</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-88" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-88">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-88"></span>
+      </div>
+      <div class="exp-body">
+        The organization has been assigned a /56 IPv6 address block. IPv6 addresses are 128 bits in length. When subnetting an IPv6 address, you generally do not touch the last 64 bits as they are typically reserved for the interface ID (the actual host address).
+        <br><br>
+        Starting with a /56 block, you have:
+        <br>
+        128 bits (total IPv6 address length) – 56 bits (assigned block) = 72 bits remaining for subnetting and interface ID.
+        <br><br>
+        Since you do not use the last 64 bits for subnetting (because that's the interface ID), you have:
+        <br>
+        72 bits – 64 bits (reserved for interface ID) = 8 bits available for subnetting.
+        <br><br>
+        With 8 bits available for subnetting, you can create 2^8 subnets, because each bit can be either a 0 or a 1, and there are two possibilities for each bit.
+        <br><br>
+        So, 2^8 = 256.
+        <br><br>
+        Therefore, the organization can create 256 subnets without using bits in the interface ID space.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-88">Previous</button>
+      <span class="page-indicator">89 / 90</span>
+      <button class="nav-btn" id="next-88">Next</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<!--
+  --- Question 56 ---
+  This component represents the fifty-sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-55" data-qid="55" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 56</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Refer to the exhibit. Which protocol was responsible for building the table that is shown?
+    </p>
+    <div class="options" id="opts-55">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">ARP</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">DNS</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">DHCP</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">ICMP</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-55" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-55">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-55"></span>
+      </div>
+      <div class="exp-body">
+        The table shown in the image is an ARP (Address Resolution Protocol) table. It is responsible for mapping IP addresses to their corresponding physical MAC addresses. The entries show the IP addresses and their associated physical (MAC) addresses along with the type of entry, whether it is dynamic or static.
+        <br><br>
+        ARP is used within a local area network to find the hardware address of a device associated with an IPv4 address. The "dynamic" type means that the ARP has automatically discovered the MAC address, and "static" means that it has been manually entered into the ARP table and does not change.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-55">Previous</button>
+      <span class="page-indicator">56 / 60</span>
+      <button class="nav-btn" id="next-55">Next</button>
+    </div>
+  </div>
+</div>

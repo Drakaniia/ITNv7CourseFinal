@@ -1,0 +1,72 @@
+<!--
+  --- Question 72 ---
+  This component represents the seventy-second question in the quiz.
+-->
+
+<div class="question-card" id="card-71" data-qid="71" data-type="multi">
+  <div class="card-header">
+    <span class="q-number">Q 72</span>
+    <span class="q-tag multi">Choose 3</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Refer to the exhibit. What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)
+    </p>
+    <div class="options" id="opts-71">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Two devices are attached to the switch.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The default SVI has been configured.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">The switch can be remotely managed.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">Two physical interfaces have been configured.</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">Passwords have been configured on the switch.</span>
+      </button>
+      <button class="option-btn" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">One device is attached to a physical interface.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-71" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-71">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-71"></span>
+      </div>
+      <div class="exp-body">
+        Based on the output provided from the show ip interface brief command, three facts can be determined:
+        <ul>
+          <li><strong>The switch can be remotely managed:</strong> This is indicated by the IP address assigned to the VLAN1 interface, which is up and running. The IP address 192.168.11.3 allows remote management if routing and access control lists permit it.</li>
+          <li><strong>One device is attached to a physical interface:</strong> FastEthernet0/1 has a status of "up" and a protocol of "up", which typically means that a device is connected and operational on that interface.</li>
+          <li><strong>The default SVI has been configured:</strong> The VLAN1 interface is configured with an IP address, suggesting that the default SVI has been set up.</li>
+        </ul>
+        The output does not provide enough information to conclude that two devices are attached to the switch, that passwords have been configured on the switch, or that two physical interfaces have been configured (beyond the one that is up). The "unassigned" status for the IP address field on the physical interfaces also indicates that no IP addresses have been assigned to these interfaces, which is typical for layer 2 switch ports.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-71">Previous</button>
+      <span class="page-indicator">72 / 80</span>
+      <button class="nav-btn" id="next-71">Next</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<!--
+  --- Question 41 ---
+  This component represents the 41st question in the quiz.
+-->
+
+<div class="question-card" id="card-40" data-qid="40" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 41</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Refer to the exhibit. A network engineer has been given the network address of 192.168.99.0 and a subnet mask of 255.255.255.192 to subnet across the four networks shown. How many total host addresses are unused across all four subnets?
+    </p>
+    <div class="options" id="opts-40">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">158</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">200</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">224</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">88</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">72</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-40" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-40">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-40"></span>
+      </div>
+      <div class="exp-body">
+        The network IP address 192.168.99.0 and a subnet mask of 255.255.255.192 provides 62 usable IP addresses for each subnet. Subnet A needs 30 host addresses. There are 32 addresses wasted. Subnet B uses 2 of the 62 available IP addresses, because it is a serial link. Consequently, it wastes 60 addresses. Likewise, subnet C wastes 60 addresses. Subnet D needs 14 addresses, so it wastes 48 addresses. The total wasted addresses are 32+60+60+48=200 addresses.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-40">Previous</button>
+      <span class="page-indicator">41 / 50</span>
+      <button class="nav-btn" id="next-40">Next</button>
+    </div>
+  </div>
+</div>

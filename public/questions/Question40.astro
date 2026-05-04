@@ -1,0 +1,68 @@
+<!--
+  --- Question 40 ---
+  This component represents the fortieth question in the quiz.
+-->
+
+<div class="question-card" id="card-39" data-qid="39" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 40</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      The network administrator has assigned the LAN of LBMISS an address range of 192.168.10.0. This address range has been subnetted using a /29 prefix. In order to accommodate a new building, the technician has decided to use the fifth subnet for configuring the new network (subnet zero is the first subnet). By company policies, the router interface is always assigned the first usable host address and the workgroup server is given the last usable host address. Which configuration should be entered into the properties of the workgroup server to allow connectivity to the Internet?
+    </p>
+    <div class="options" id="opts-39">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">IP address: 192.168.10.38 subnet mask: 255.255.255.248, default gateway: 192.168.10.33</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">IP address: 192.168.10.38 subnet mask: 255.255.255.240, default gateway: 192.168.10.33</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">IP address: 192.168.10.254 subnet mask: 255.255.255.0, default gateway: 192.168.10.1</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">IP address: 192.168.10.41 subnet mask: 255.255.255.248, default gateway: 192.168.10.46</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">IP address: 192.168.10.65 subnet mask: 255.255.255.240, default gateway: 192.168.10.76</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-39" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-39">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-39"></span>
+      </div>
+      <div class="exp-body">
+        Using a /29 prefix to subnet 192.168.10.0 results in subnets that increment by 8:
+        <ul>
+          <li>192.168.10.0 (1)</li>
+          <li>192.168.10.8 (2)</li>
+          <li>192.168.10.16 (3)</li>
+          <li>192.168.10.24 (4)</li>
+          <li>192.168.10.32 (5)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-39">Previous</button>
+      <span class="page-indicator">40 / 40</span>
+      <button class="nav-btn" id="next-39">Finish</button>
+    </div>
+  </div>
+</div>

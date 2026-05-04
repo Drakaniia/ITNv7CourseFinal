@@ -1,0 +1,65 @@
+<!--
+  --- Question 75 ---
+  This component represents the seventy-fifth question in the quiz.
+-->
+
+<div class="question-card" id="card-74" data-qid="74" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 75</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator is adding a new LAN to a branch office. The new LAN must support 61 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+    </p>
+    <div class="options" id="opts-74">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.128</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-74" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-74">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-74"></span>
+      </div>
+      <div class="exp-body">
+        To support 61 connected devices, you need a subnet that can provide at least 61 usable IP addresses (remembering that in any given subnet, two IP addresses are always used up – one for the network address and one for the broadcast address).
+        <br><br>
+        Here's how the subnet masks break down in terms of number of available hosts:
+        <ul>
+          <li>255.255.255.224 – This is a /27 subnet mask, which allows for 32 addresses in total, but with 2 addresses used for network and broadcast, you get 30 usable addresses.</li>
+          <li>255.255.255.240 – This is a /28 subnet mask, which allows for 16 addresses in total, with 14 usable addresses.</li>
+          <li>255.255.255.192 – This is a /26 subnet mask, which allows for 64 addresses in total, but with 2 addresses used for network and broadcast, you get 62 usable addresses.</li>
+          <li>255.255.255.128 – This is a /25 subnet mask, which allows for 128 addresses in total, with 126 usable addresses.</li>
+        </ul>
+        The smallest subnet mask that will support 61 connected devices, allowing for the network and broadcast addresses, is 255.255.255.192 or a /26 subnet mask. This will allow for 62 usable IP addresses, just enough for the 61 devices needed.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-74">Previous</button>
+      <span class="page-indicator">75 / 80</span>
+      <button class="nav-btn" id="next-74">Next</button>
+    </div>
+  </div>
+</div>

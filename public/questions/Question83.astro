@@ -1,0 +1,61 @@
+<!--
+  --- Question 83 ---
+  This component represents the eighty-third question in the quiz.
+-->
+
+<div class="question-card" id="card-82" data-qid="82" data-type="multi">
+  <div class="card-header">
+    <span class="q-number">Q 83</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which two commands can be used on a Windows host to display the routing table? (Choose two.)
+    </p>
+    <div class="options" id="opts-82">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">route print</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">show ip route</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">netstat -r</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">netstat -s</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">tracert</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-82" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-82">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-82"></span>
+      </div>
+      <div class="exp-body">
+        On a Windows host, the <strong>route print</strong> or <strong>netstat -r</strong> commands can be used to display the host routing table. Both commands generate the same output. On a router, the <strong>show ip route</strong> command is used to display the routing table. The <strong>netstat –s</strong> command is used to display per-protocol statistics. The <strong>tracert</strong> command is used to display the path that a packet travels to its destination.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-82">Previous</button>
+      <span class="page-indicator">83 / 90</span>
+      <button class="nav-btn" id="next-82">Next</button>
+    </div>
+  </div>
+</div>

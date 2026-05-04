@@ -1,0 +1,56 @@
+<!--
+  --- Question 69 ---
+  This component represents the sixty-ninth question in the quiz.
+-->
+
+<div class="question-card" id="card-68" data-qid="68" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 69</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      The global configuration command ip default-gateway 172.16.100.1 is applied to a switch. What is the effect of this command?
+    </p>
+    <div class="options" id="opts-68">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">The switch can communicate with other hosts on the 172.16.100.0 network.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The switch can be remotely managed from a host on another network.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">The switch will have a management interface with the address 172.16.100.1.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">The switch is limited to sending and receiving frames to and from the gateway 172.16.100.1.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-68" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-68">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-68"></span>
+      </div>
+      <div class="exp-body">
+        A default gateway address is typically configured on all devices to allow them to communicate beyond just their local network. In a switch this is achieved using the command ip default-gateway &lt;ip address&gt;.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-68">Previous</button>
+      <span class="page-indicator">69 / 70</span>
+      <button class="nav-btn" id="next-68">Next</button>
+    </div>
+  </div>
+</div>

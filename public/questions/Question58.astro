@@ -1,0 +1,68 @@
+<!--
+  --- Question 58 ---
+  This component represents the fifty-eighth question in the quiz.
+-->
+
+<div class="question-card" id="card-57" data-qid="57" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 58</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What is the purpose of the TCP sliding window?
+    </p>
+    <div class="options" id="opts-57">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">to ensure that segments arrive in order at the destination</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">to request that a source decrease the rate at which it transmits data</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">to inform a source to retransmit data from a specific point forward</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">to end communication when data transmission is complete</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-57" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-57">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-57"></span>
+      </div>
+      <div class="exp-body">
+        The purpose of the TCP sliding window is not specifically any of the options listed. The sliding window mechanism in TCP serves multiple purposes:
+        <ul>
+          <li>It controls the flow of data between the sender and the receiver to ensure that the sender does not overwhelm the receiver's buffer.</li>
+          <li>It allows for more efficient use of the network by enabling the sender to transmit multiple segments before needing an acknowledgment, rather than waiting for an acknowledgment after each individual segment (which would be inefficient and increase latency).</li>
+          <li>It dynamically adjusts the rate of data transmission based on the receiver's ability to process data and the condition of the network (congestion control).</li>
+        </ul>
+        So, while it indirectly ensures that segments are processed in order by the receiver and can be involved in mechanisms that decrease the rate of data transmission or result in retransmission requests, its primary purpose is flow control—managing the amount of outstanding data (data sent but not yet acknowledged) to match the receiver's processing capabilities and current network conditions.
+        <br><br>
+        If we were to choose the option closest to the primary function of the TCP sliding window from the ones provided, it would be:
+        <br><br>
+        to request that a source decrease the rate at which it transmits data
+        <br><br>
+        This is because the sliding window can scale down the window size if the network is congested or the receiver's buffer is full, effectively reducing the rate at which the sender can transmit data. However, it should be noted that the primary purpose is still flow control, which includes managing transmission rates as just one aspect.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-57">Previous</button>
+      <span class="page-indicator">58 / 60</span>
+      <button class="nav-btn" id="next-57">Next</button>
+    </div>
+  </div>
+</div>

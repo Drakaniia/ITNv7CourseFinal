@@ -1,0 +1,181 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: ITNv7
+      - generic [ref=e6]: Course Final Exam
+      - generic [ref=e7]: 0 / 111 answered
+      - button "Toggle theme" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Correct
+        - generic [ref=e15]: "0"
+      - generic [ref=e17]:
+        - generic [ref=e18]: Wrong
+        - generic [ref=e19]: "0"
+      - generic [ref=e21]:
+        - generic [ref=e22]: Remaining
+        - generic [ref=e23]: "111"
+      - generic [ref=e24]:
+        - generic [ref=e25]: Score
+        - generic [ref=e26]: — %
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]: Q 03
+        - generic [ref=e90]: Case B
+        - generic [ref=e91]: Choose 2
+      - generic [ref=e92]:
+        - paragraph [ref=e93]:
+          - text: Which
+          - strong [ref=e94]: two
+          - text: functions are performed at the
+          - strong [ref=e95]: MAC sublayer
+          - text: of the OSI Data Link Layer to facilitate Ethernet communication?
+        - generic [ref=e96]:
+          - button "B implements trailer with frame check sequence for error detection" [ref=e97] [cursor=pointer]:
+            - generic [ref=e99]: B
+            - generic [ref=e100]: implements trailer with frame check sequence for error detection
+          - button "E places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame" [ref=e101] [cursor=pointer]:
+            - generic [ref=e103]: E
+            - generic [ref=e104]: places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame
+          - button "C handles communication between upper layer networking software and Ethernet NIC hardware" [ref=e105] [cursor=pointer]:
+            - generic [ref=e107]: C
+            - generic [ref=e108]: handles communication between upper layer networking software and Ethernet NIC hardware
+          - button "A implements a process to delimit fields within an Ethernet 2 frame" [ref=e109] [cursor=pointer]:
+            - generic [ref=e111]: A
+            - generic [ref=e112]: implements a process to delimit fields within an Ethernet 2 frame
+          - button "D adds Ethernet control information to network protocol data" [ref=e113] [cursor=pointer]:
+            - generic [ref=e115]: D
+            - generic [ref=e116]: adds Ethernet control information to network protocol data
+        - generic [ref=e117]:
+          - button "Previous" [ref=e118] [cursor=pointer]
+          - generic [ref=e119]: 3 / 3
+          - button "Next" [ref=e120] [cursor=pointer]
+  - contentinfo [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e63]: Questions
+      - generic "Q1"
+      - generic "Q2"
+      - generic "Q3"
+      - generic "Q4"
+      - generic "Q5"
+      - generic "Q6"
+      - generic "Q7"
+      - generic "Q8"
+      - generic "Q9"
+      - generic "Q10"
+      - generic "Q11"
+      - generic "Q12"
+      - generic "Q13"
+      - generic "Q14"
+      - generic "Q15"
+      - generic "Q16"
+      - generic "Q17"
+      - generic "Q18"
+      - generic "Q19"
+      - generic "Q20"
+      - generic "Q21"
+      - generic "Q22"
+      - generic "Q23"
+      - generic "Q24"
+      - generic "Q25"
+      - generic "Q26"
+      - generic "Q27"
+      - generic "Q28"
+      - generic "Q29"
+      - generic "Q30"
+      - generic "Q31"
+      - generic "Q32"
+      - generic "Q33"
+      - generic "Q34"
+      - generic "Q35"
+      - generic "Q36"
+      - generic "Q37"
+      - generic "Q38"
+      - generic "Q39"
+      - generic "Q40"
+      - generic "Q41"
+      - generic "Q42"
+      - generic "Q43"
+      - generic "Q44"
+      - generic "Q45"
+      - generic "Q46"
+      - generic "Q47"
+      - generic "Q48"
+      - generic "Q49"
+      - generic "Q50"
+      - generic "Q51"
+      - generic "Q52"
+      - generic "Q53"
+      - generic "Q54"
+      - generic "Q55"
+      - generic "Q56"
+      - generic "Q57"
+      - generic "Q58"
+      - generic "Q59"
+      - generic "Q60"
+      - generic "Q61"
+      - generic "Q62"
+      - generic "Q63"
+      - generic "Q64"
+      - generic "Q65"
+      - generic "Q66"
+      - generic "Q67"
+      - generic "Q68"
+      - generic "Q69"
+      - generic "Q70"
+      - generic "Q71"
+      - generic "Q72"
+      - generic "Q73"
+      - generic "Q74"
+      - generic "Q75"
+      - generic "Q76"
+      - generic "Q77"
+      - generic "Q78"
+      - generic "Q79"
+      - generic "Q80"
+      - generic "Q81"
+      - generic "Q82"
+      - generic "Q83"
+      - generic "Q84"
+      - generic "Q85"
+      - generic "Q86"
+      - generic "Q87"
+      - generic "Q88"
+      - generic "Q89"
+      - generic "Q90"
+      - generic "Q91"
+      - generic "Q92"
+      - generic "Q93"
+      - generic "Q94"
+      - generic "Q95"
+      - generic "Q96"
+      - generic "Q97"
+      - generic "Q98"
+      - generic "Q99"
+      - generic "Q100"
+      - generic "Q101"
+      - generic "Q102"
+      - generic "Q103"
+      - generic "Q104"
+      - generic "Q105"
+      - generic "Q106"
+      - generic "Q107"
+      - generic "Q108"
+      - generic "Q109"
+      - generic "Q110"
+      - generic "Q111"
+  - generic [ref=e66]:
+    - button "Menu" [ref=e67]:
+      - img [ref=e69]
+      - generic: Menu
+    - button "Inspect" [ref=e73]:
+      - img [ref=e75]
+      - generic: Inspect
+    - button "Audit" [ref=e77]:
+      - img [ref=e79]
+      - generic: Audit
+    - button "Settings" [ref=e82]:
+      - img [ref=e84]
+      - generic: Settings

@@ -1,0 +1,69 @@
+<!--
+  --- Question 101 ---
+  This component represents the one hundred and first question in the quiz.
+-->
+
+<div class="question-card" id="card-100" data-qid="100" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 101</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator is adding a new LAN to a branch office. The new LAN must support 10 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+    </p>
+    <div class="options" id="opts-100">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.248</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-100" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-100">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-100"></span>
+      </div>
+      <div class="exp-body">
+        To determine the smallest network mask that can support 10 connected devices, we need to consider the number of host bits required in the subnet mask to accommodate at least 10 devices. In IP addressing, the number of usable host addresses in a subnet can be calculated using the formula:
+        <br><br>
+        Number of usable hosts=2^n−2
+        <br><br>
+        Where n is the number of host bits. The subtraction of 2 accounts for the network address and the broadcast address, which cannot be assigned to hosts.
+        <br><br>
+        Let's calculate the minimum number of host bits required to support at least 10 devices:
+        <ul>
+          <li>For a subnet mask of 255.255.255.248 (/29), there are 3 host bits (2<sup>3</sup>=8), which gives 6 usable addresses (8 – 2), not enough for 10 devices.</li>
+          <li>For a subnet mask of 255.255.255.240 (/28), there are 4 host bits (2<sup>4</sup>=16), which gives 14 usable addresses (16 – 2), enough for 10 devices.</li>
+          <li>For a subnet mask of 255.255.255.224 (/27), there are 5 host bits (2<sup>5</sup>=32), which gives 30 usable addresses (32 – 2), more than needed.</li>
+          <li>For a subnet mask of 255.255.255.192 (/26), there are 6 host bits (2<sup>6</sup>=64), which gives 62 usable addresses (64 – 2), more than needed.</li>
+        </ul>
+        Therefore, the smallest network mask that the network administrator can use to support 10 devices is 255.255.255.240 (/28), which provides up to 14 usable IP addresses.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-100">Previous</button>
+      <span class="page-indicator">101 / 109</span>
+      <button class="nav-btn" id="next-100">Next</button>
+    </div>
+  </div>
+</div>

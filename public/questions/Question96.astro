@@ -1,0 +1,56 @@
+<!--
+  --- Question 96 ---
+  This component represents the ninety-sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-95" data-qid="95" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 96</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A technician can ping the IP address of the web server of a remote company but cannot successfully ping the URL address of the same web server. Which software utility can the technician use to diagnose the problem?
+    </p>
+    <div class="options" id="opts-95">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">tracert</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">netstat</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">nslookup</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">ipconfig</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-95" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-95">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-95"></span>
+      </div>
+      <div class="exp-body">
+        Traceroute (tracert) is a utility that generates a list of hops that were successfully reached along the path from source to destination.This list can provide important verification and troubleshooting information. The ipconfig utility is used to display the IP configuration settings on a Windows PC. The Netstat utility is used to identify which active TCP connections are open and running on a networked host. Nslookup is a utility that allows the user to manually query the name servers to resolve a given host name. This utility can also be used to troubleshoot name resolution issues and to verify the current status of the name servers.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-95">Previous</button>
+      <span class="page-indicator">96 / 100</span>
+      <button class="nav-btn" id="next-95">Next</button>
+    </div>
+  </div>
+</div>

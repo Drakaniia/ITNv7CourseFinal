@@ -1,0 +1,63 @@
+<!--
+  --- Question 14 ---
+  This component represents the fourteenth question in the quiz.
+-->
+
+<div class="question-card" id="card-13" data-qid="13" data-type="multi" data-choose="2">
+  <div class="card-header">
+    <span class="q-number">Q 14</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Refer to the exhibit. On the basis of the output, which two statements about network connectivity are correct? (Choose two.)
+      <br><em>CCNA1 v7 – ITNv7 – Final Exam Answers 05</em>
+    </p>
+    <div class="options" id="opts-13">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">This host does not have a default gateway configured.</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">There are 4 hops between this device and the device at 192.168.100.1.</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">The average transmission time between the two hosts is 2 milliseconds.</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">There is connectivity between this device and the device at 192.168.100.1.</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">The connectivity between these two hosts allows for videoconferencing calls.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-13" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-13">0 / 2 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-13">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-13"></span>
+      </div>
+      <div class="exp-body">
+        The output displays a successful Layer 3 connection between a host computer and a host at 19.168.100.1. It can be determined that 4 hops exist between them and the average transmission time is 1 milliseconds. Layer 3 connectivity does not necessarily mean that an application can run between the hosts.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-13">Previous</button>
+      <span class="page-indicator">14 / 109</span>
+      <button class="nav-btn" id="next-13">Next</button>
+    </div>
+  </div>
+</div>

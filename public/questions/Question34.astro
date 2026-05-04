@@ -1,0 +1,58 @@
+<!--
+  --- Question 34 ---
+  This component represents the thirty-fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-33" data-qid="33" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 34</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      When a switch configuration includes a user-defined error threshold on a per-port basis, to which switching method will the switch revert when the error threshold is reached?
+    </p>
+    <div class="options" id="opts-33">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">fast-forward</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">cut-through</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">store-and-forward</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">fragment-free</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-33" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-33">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-33"></span>
+      </div>
+      <div class="exp-body">
+        When a switch configuration includes a user-defined error threshold on a per-port basis, and this threshold is reached, the switch will revert to the store-and-forward switching method.
+        Store-and-forward switching reads the entire frame into the switch’s buffer and checks it for errors (using the Frame Check Sequence, FCS) before forwarding it on to its destination. This method ensures that the frame is error-free, which is particularly useful when the network experiences a high level of errors. If a frame does not pass the FCS check, the switch discards it rather than forwarding it.
+        Other switching methods like cut-through and fragment-free begin forwarding the frame before it’s entirely received, which is faster but doesn’t allow for thorough error checking. Fast-forward is a type of cut-through switching that forwards the frame as soon as the destination MAC address is read, without waiting for error checking. Fragment-free is another form of cut-through switching that waits for the collision window (64 bytes) to pass before forwarding to minimize the chance of collision-related errors. When an error threshold is set and reached, these methods would not be suitable since they do not provide comprehensive error checking like store-and-forward does.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-33">Previous</button>
+      <span class="page-indicator">34 / 34</span>
+      <button class="nav-btn" id="next-33">Next</button>
+    </div>
+  </div>
+</div>

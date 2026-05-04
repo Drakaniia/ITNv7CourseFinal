@@ -1,0 +1,58 @@
+<!--
+  --- Question 82 ---
+  This component represents the eighty-second question in the quiz.
+-->
+
+<div class="question-card" id="card-81" data-qid="81" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 82</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A user sends an HTTP request to a web server on a remote network. During encapsulation for this request, what information is added to the address field of a frame to indicate the destination?
+    </p>
+    <div class="options" id="opts-81">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">the network domain of the destination host</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">the MAC address of the default gateway</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">the IP address of the default gateway</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">the MAC address of the destination host</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-81" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-81">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-81"></span>
+      </div>
+      <div class="exp-body">
+        During encapsulation for an HTTP request to a web server on a remote network, the information that is added to the address field of a frame to indicate the destination would be the MAC address of the default gateway.
+        <br><br>
+        Here's why: The destination web server is on a remote network, so the user's computer cannot directly address the frame to the web server's MAC address. Instead, it sends the frame to the MAC address of its configured default gateway (typically the router on the local network), which then takes responsibility for routing the packet towards the destination server across the internet.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-81">Previous</button>
+      <span class="page-indicator">82 / 90</span>
+      <button class="nav-btn" id="next-81">Next</button>
+    </div>
+  </div>
+</div>

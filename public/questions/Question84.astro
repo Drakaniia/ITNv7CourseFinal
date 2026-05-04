@@ -1,0 +1,56 @@
+<!--
+  --- Question 84 ---
+  This component represents the eighty-fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-83" data-qid="83" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 84</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?
+    </p>
+    <div class="options" id="opts-83">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">The data flow is being tracked based on the source port number that is used by each application.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The data flow is being tracked based on the destination IP address that is used by the PC of the technician.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">The data flow is being tracked based on the source IP address that is used by the PC of the technician.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">The data flow is being tracked based on the destination MAC address of the technician PC.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-83" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-83">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-83"></span>
+      </div>
+      <div class="exp-body">
+        The source port number of an application is randomly generated and used to individually keep track of each session connecting out to the Internet. Each application will use a unique source port number to provide simultaneous communication from multiple applications through the Internet.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-83">Previous</button>
+      <span class="page-indicator">84 / 90</span>
+      <button class="nav-btn" id="next-83">Next</button>
+    </div>
+  </div>
+</div>

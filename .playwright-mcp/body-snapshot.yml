@@ -1,0 +1,2910 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: ITNv7
+      - generic [ref=e6]: Course Final Exam
+      - generic [ref=e7]: 0 / 111 answered
+      - button "Toggle theme" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Correct
+        - generic [ref=e15]: "0"
+      - generic [ref=e17]:
+        - generic [ref=e18]: Wrong
+        - generic [ref=e19]: "0"
+      - generic [ref=e21]:
+        - generic [ref=e22]: Remaining
+        - generic [ref=e23]: "111"
+      - generic [ref=e24]:
+        - generic [ref=e25]: Score
+        - generic [ref=e26]: — %
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Q 01
+        - generic [ref=e30]: Single Choice
+      - generic [ref=e31]:
+        - paragraph [ref=e32]:
+          - text: A client packet is received by a server. The packet has a destination port number of
+          - strong [ref=e33]: "143"
+          - text: . What service is the client requesting?
+        - generic [ref=e34]:
+          - button "A Telnet" [ref=e35] [cursor=pointer]:
+            - generic [ref=e37]: A
+            - generic [ref=e38]: Telnet
+          - button "B SSH" [ref=e39] [cursor=pointer]:
+            - generic [ref=e41]: B
+            - generic [ref=e42]: SSH
+          - button "C IMAP" [ref=e43] [cursor=pointer]:
+            - generic [ref=e45]: C
+            - generic [ref=e46]: IMAP
+          - button "D FTP" [ref=e47] [cursor=pointer]:
+            - generic [ref=e49]: D
+            - generic [ref=e50]: FTP
+        - generic [ref=e51]:
+          - button "Previous" [ref=e52] [cursor=pointer]
+          - generic [ref=e53]: 1 / 2
+          - button "Next" [ref=e54] [cursor=pointer]
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]: Q 02
+        - generic [ref=e58]: Case A
+        - generic [ref=e59]: Choose 2
+      - generic [ref=e60]:
+        - paragraph [ref=e61]:
+          - text: Which
+          - strong [ref=e62]: two
+          - text: functions are performed at the
+          - strong [ref=e63]: MAC sublayer
+          - text: of the OSI Data Link Layer to facilitate Ethernet communication?
+        - generic [ref=e64]:
+          - button "A applies delimiting of Ethernet frame fields to synchronize communication between nodes" [ref=e65] [cursor=pointer]:
+            - generic [ref=e67]: A
+            - generic [ref=e68]: applies delimiting of Ethernet frame fields to synchronize communication between nodes
+          - button "B applies source and destination MAC addresses to Ethernet frame" [ref=e69] [cursor=pointer]:
+            - generic [ref=e71]: B
+            - generic [ref=e72]: applies source and destination MAC addresses to Ethernet frame
+          - button "C places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame" [ref=e73] [cursor=pointer]:
+            - generic [ref=e75]: C
+            - generic [ref=e76]: places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame
+          - button "D handles communication between upper layer networking software and Ethernet NIC hardware" [ref=e77] [cursor=pointer]:
+            - generic [ref=e79]: D
+            - generic [ref=e80]: handles communication between upper layer networking software and Ethernet NIC hardware
+          - button "E adds Ethernet control information to network protocol data" [ref=e81] [cursor=pointer]:
+            - generic [ref=e83]: E
+            - generic [ref=e84]: adds Ethernet control information to network protocol data
+        - generic [ref=e85]:
+          - button "Previous" [ref=e86] [cursor=pointer]
+          - generic [ref=e87]: 2 / 2
+          - button "Finish" [ref=e88] [cursor=pointer]
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]: Q 03
+        - generic [ref=e92]: Case B
+        - generic [ref=e93]: Choose 2
+      - generic [ref=e94]:
+        - paragraph [ref=e95]:
+          - text: Which
+          - strong [ref=e96]: two
+          - text: functions are performed at the
+          - strong [ref=e97]: MAC sublayer
+          - text: of the OSI Data Link Layer to facilitate Ethernet communication?
+        - generic [ref=e98]:
+          - button "A implements a process to delimit fields within an Ethernet 2 frame" [ref=e99] [cursor=pointer]:
+            - generic [ref=e101]: A
+            - generic [ref=e102]: implements a process to delimit fields within an Ethernet 2 frame
+          - button "B implements trailer with frame check sequence for error detection" [ref=e103] [cursor=pointer]:
+            - generic [ref=e105]: B
+            - generic [ref=e106]: implements trailer with frame check sequence for error detection
+          - button "C handles communication between upper layer networking software and Ethernet NIC hardware" [ref=e107] [cursor=pointer]:
+            - generic [ref=e109]: C
+            - generic [ref=e110]: handles communication between upper layer networking software and Ethernet NIC hardware
+          - button "D adds Ethernet control information to network protocol data" [ref=e111] [cursor=pointer]:
+            - generic [ref=e113]: D
+            - generic [ref=e114]: adds Ethernet control information to network protocol data
+          - button "E places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame" [ref=e115] [cursor=pointer]:
+            - generic [ref=e117]: E
+            - generic [ref=e118]: places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame
+        - generic [ref=e119]:
+          - button "Previous" [ref=e120] [cursor=pointer]
+          - generic [ref=e121]: 3 / 3
+          - button "Next" [ref=e122] [cursor=pointer]
+    - generic [ref=e123]:
+      - generic [ref=e124]:
+        - generic [ref=e125]: Q 04
+        - generic [ref=e126]: Case C
+        - generic [ref=e127]: Choose 2
+      - generic [ref=e128]:
+        - paragraph [ref=e129]:
+          - text: Which
+          - strong [ref=e130]: two
+          - text: functions are performed at the
+          - strong [ref=e131]: MAC sublayer
+          - text: of the OSI Data Link Layer to facilitate Ethernet communication?
+        - generic [ref=e132]:
+          - button "A implements CSMA/CD over legacy shared half-duplex media" [ref=e133] [cursor=pointer]:
+            - generic [ref=e135]: A
+            - generic [ref=e136]: implements CSMA/CD over legacy shared half-duplex media
+          - button "B integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper" [ref=e137] [cursor=pointer]:
+            - generic [ref=e139]: B
+            - generic [ref=e140]: integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper
+          - button "C handles communication between upper layer networking software and Ethernet NIC hardware" [ref=e141] [cursor=pointer]:
+            - generic [ref=e143]: C
+            - generic [ref=e144]: handles communication between upper layer networking software and Ethernet NIC hardware
+          - button "D adds Ethernet control information to network protocol data" [ref=e145] [cursor=pointer]:
+            - generic [ref=e147]: D
+            - generic [ref=e148]: adds Ethernet control information to network protocol data
+          - button "E enables IPv4 and IPv6 to utilize the same physical medium" [ref=e149] [cursor=pointer]:
+            - generic [ref=e151]: E
+            - generic [ref=e152]: enables IPv4 and IPv6 to utilize the same physical medium
+        - generic [ref=e153]:
+          - button "Previous" [ref=e154] [cursor=pointer]
+          - generic [ref=e155]: 4 / 4
+          - button "Next" [ref=e156] [cursor=pointer]
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]: Q 05
+        - generic [ref=e160]: Single Choice
+      - generic [ref=e161]:
+        - paragraph [ref=e162]: A new network administrator has been asked to enter a banner message on a Cisco device. What is the fastest way a network administrator could test whether the banner is properly configured?
+        - generic [ref=e163]:
+          - button "A Enter CTRL-Z at the privileged mode prompt." [ref=e164] [cursor=pointer]:
+            - generic [ref=e166]: A
+            - generic [ref=e167]: Enter CTRL-Z at the privileged mode prompt.
+          - button "B Power cycle the device." [ref=e168] [cursor=pointer]:
+            - generic [ref=e170]: B
+            - generic [ref=e171]: Power cycle the device.
+          - button "C Exit privileged EXEC mode and press Enter." [ref=e172] [cursor=pointer]:
+            - generic [ref=e174]: C
+            - generic [ref=e175]: Exit privileged EXEC mode and press Enter.
+          - button "D Exit global configuration mode." [ref=e176] [cursor=pointer]:
+            - generic [ref=e178]: D
+            - generic [ref=e179]: Exit global configuration mode.
+          - button "E Reboot the device." [ref=e180] [cursor=pointer]:
+            - generic [ref=e182]: E
+            - generic [ref=e183]: Reboot the device.
+        - generic [ref=e184]:
+          - button "Previous" [ref=e185] [cursor=pointer]
+          - generic [ref=e186]: 5 / 5
+          - button "Next" [ref=e187] [cursor=pointer]
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - generic [ref=e190]: Q 06
+        - generic [ref=e191]: Single Choice
+      - generic [ref=e192]:
+        - paragraph [ref=e193]:
+          - text: What happens when the
+          - strong [ref=e194]: transport input ssh
+          - text: command is entered on the switch vty lines?
+        - generic [ref=e195]:
+          - button "A The switch requires a username/password combination for remote access." [ref=e196] [cursor=pointer]:
+            - generic [ref=e198]: A
+            - generic [ref=e199]: The switch requires a username/password combination for remote access.
+          - button "B The SSH client on the switch is enabled." [ref=e200] [cursor=pointer]:
+            - generic [ref=e202]: B
+            - generic [ref=e203]: The SSH client on the switch is enabled.
+          - button "C Communication between the switch and remote users is encrypted." [ref=e204] [cursor=pointer]:
+            - generic [ref=e206]: C
+            - generic [ref=e207]: Communication between the switch and remote users is encrypted.
+          - button "D The switch requires remote connections via a proprietary client software." [ref=e208] [cursor=pointer]:
+            - generic [ref=e210]: D
+            - generic [ref=e211]: The switch requires remote connections via a proprietary client software.
+        - generic [ref=e212]:
+          - button "Previous" [ref=e213] [cursor=pointer]
+          - generic [ref=e214]: 6 / 6
+          - button "Next" [ref=e215] [cursor=pointer]
+    - generic [ref=e216]:
+      - generic [ref=e217]:
+        - generic [ref=e218]: Q 07
+        - generic [ref=e219]: Single Choice
+      - generic [ref=e220]:
+        - paragraph [ref=e221]:
+          - text: What is the subnet ID associated with the IPv6 address
+          - strong [ref=e222]: 2001:DA48:FC5:A4:3D1B::1/64
+          - text: "?"
+        - generic [ref=e223]:
+          - button "A 2001:DA48::/64" [ref=e224] [cursor=pointer]:
+            - generic [ref=e226]: A
+            - generic [ref=e227]: 2001:DA48::/64
+          - button "B 2001::/64" [ref=e228] [cursor=pointer]:
+            - generic [ref=e230]: B
+            - generic [ref=e231]: 2001::/64
+          - button "C 2001:DA48:FC5:A4::/64" [ref=e232] [cursor=pointer]:
+            - generic [ref=e234]: C
+            - generic [ref=e235]: 2001:DA48:FC5:A4::/64
+          - button "D 2001:DA48:FC5::A4:/64" [ref=e236] [cursor=pointer]:
+            - generic [ref=e238]: D
+            - generic [ref=e239]: 2001:DA48:FC5::A4:/64
+        - generic [ref=e240]:
+          - button "Previous" [ref=e241] [cursor=pointer]
+          - generic [ref=e242]: 7 / 7
+          - button "Next" [ref=e243] [cursor=pointer]
+    - generic [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]: Q 08
+        - generic [ref=e247]: Single Choice
+      - generic [ref=e248]:
+        - paragraph [ref=e249]: A client is using SLAAC to obtain an IPv6 address for its interface. After an address has been generated and applied to the interface, what must the client do before it can begin to use this IPv6 address?
+        - generic [ref=e250]:
+          - button "A It must send an ICMPv6 Router Solicitation message to determine what default gateway it should use." [ref=e251] [cursor=pointer]:
+            - generic [ref=e253]: A
+            - generic [ref=e254]: It must send an ICMPv6 Router Solicitation message to determine what default gateway it should use.
+          - button "B It must send a DHCPv6 INFORMATION-REQUEST message to request the address of the DNS server." [ref=e255] [cursor=pointer]:
+            - generic [ref=e257]: B
+            - generic [ref=e258]: It must send a DHCPv6 INFORMATION-REQUEST message to request the address of the DNS server.
+          - button "C It must send a DHCPv6 REQUEST message to the DHCPv6 server to request permission to use this address." [ref=e259] [cursor=pointer]:
+            - generic [ref=e261]: C
+            - generic [ref=e262]: It must send a DHCPv6 REQUEST message to the DHCPv6 server to request permission to use this address.
+          - button "D It must send an ICMPv6 Neighbor Solicitation message to ensure that the address is not already in use on the network." [ref=e263] [cursor=pointer]:
+            - generic [ref=e265]: D
+            - generic [ref=e266]: It must send an ICMPv6 Neighbor Solicitation message to ensure that the address is not already in use on the network.
+        - generic [ref=e267]:
+          - button "Previous" [ref=e268] [cursor=pointer]
+          - generic [ref=e269]: 8 / 8
+          - button "Next" [ref=e270] [cursor=pointer]
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - generic [ref=e273]: Q 09
+        - generic [ref=e274]: Single Choice
+      - generic [ref=e275]:
+        - paragraph [ref=e276]: Which range of link-local addresses can be assigned to an IPv6-enabled interface?
+        - generic [ref=e277]:
+          - button "A FE80::/10" [ref=e278] [cursor=pointer]:
+            - generic [ref=e280]: A
+            - generic [ref=e281]: FE80::/10
+          - button "B FDEE::/7" [ref=e282] [cursor=pointer]:
+            - generic [ref=e284]: B
+            - generic [ref=e285]: FDEE::/7
+          - button "C cc00::/8" [ref=e286] [cursor=pointer]:
+            - generic [ref=e288]: C
+            - generic [ref=e289]: cc00::/8
+          - button "D FEC0::/10" [ref=e290] [cursor=pointer]:
+            - generic [ref=e292]: D
+            - generic [ref=e293]: FEC0::/10
+        - generic [ref=e294]:
+          - button "Previous" [ref=e295] [cursor=pointer]
+          - generic [ref=e296]: 9 / 9
+          - button "Next" [ref=e297] [cursor=pointer]
+    - generic [ref=e298]:
+      - generic [ref=e299]:
+        - generic [ref=e300]: Q 10
+        - generic [ref=e301]: Single Choice
+      - generic [ref=e302]:
+        - paragraph [ref=e303]: What mechanism is used by a router to prevent a received IPv4 packet from traveling endlessly on a network?
+        - generic [ref=e304]:
+          - button "A It checks the value of the TTL field and if it is 100, it discards the packet and sends a Destination Unreachable message to the source host." [ref=e305] [cursor=pointer]:
+            - generic [ref=e307]: A
+            - generic [ref=e308]: It checks the value of the TTL field and if it is 100, it discards the packet and sends a Destination Unreachable message to the source host.
+          - button "B It increments the value of the TTL field by 1 and if the result is 100, it discards the packet and sends a Parameter Problem message to the source host." [ref=e309] [cursor=pointer]:
+            - generic [ref=e311]: B
+            - generic [ref=e312]: It increments the value of the TTL field by 1 and if the result is 100, it discards the packet and sends a Parameter Problem message to the source host.
+          - button "C It checks the value of the TTL field and if it is 0, it discards the packet and sends a Destination Unreachable message to the source host." [ref=e313] [cursor=pointer]:
+            - generic [ref=e315]: C
+            - generic [ref=e316]: It checks the value of the TTL field and if it is 0, it discards the packet and sends a Destination Unreachable message to the source host.
+          - button "D It decrements the value of the TTL field by 1 and if the result is 0, it discards the packet and sends a Time Exceeded message to the source host." [ref=e317] [cursor=pointer]:
+            - generic [ref=e319]: D
+            - generic [ref=e320]: It decrements the value of the TTL field by 1 and if the result is 0, it discards the packet and sends a Time Exceeded message to the source host.
+        - generic [ref=e321]:
+          - button "Previous" [ref=e322] [cursor=pointer]
+          - generic [ref=e323]: 10 / 10
+          - button "Next" [ref=e324] [cursor=pointer]
+    - generic [ref=e325]:
+      - generic [ref=e326]:
+        - generic [ref=e327]: Q 11
+        - generic [ref=e328]: Choose 2
+      - generic [ref=e329]:
+        - paragraph [ref=e330]: A network administrator notices that some newly installed Ethernet cabling is carrying corrupt and distorted data signals. The new cabling was installed in the ceiling close to fluorescent lights and electrical equipment. Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two.)
+        - generic [ref=e331]:
+          - button "A EMI" [ref=e332] [cursor=pointer]:
+            - generic [ref=e334]: A
+            - generic [ref=e335]: EMI
+          - button "B signal attenuation" [ref=e336] [cursor=pointer]:
+            - generic [ref=e338]: B
+            - generic [ref=e339]: signal attenuation
+          - button "C crosstalk" [ref=e340] [cursor=pointer]:
+            - generic [ref=e342]: C
+            - generic [ref=e343]: crosstalk
+          - button "D RFI" [ref=e344] [cursor=pointer]:
+            - generic [ref=e346]: D
+            - generic [ref=e347]: RFI
+          - button "E extended length of cabling" [ref=e348] [cursor=pointer]:
+            - generic [ref=e350]: E
+            - generic [ref=e351]: extended length of cabling
+        - generic [ref=e352]:
+          - button "Previous" [ref=e353] [cursor=pointer]
+          - generic [ref=e354]: 11 / 12
+          - button "Next" [ref=e355] [cursor=pointer]
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - generic [ref=e358]: Q 12
+        - generic [ref=e359]: Choose 3
+      - generic [ref=e360]:
+        - paragraph [ref=e361]: Data is being sent from a source PC to a destination server. Which three statements correctly describe the function of TCP or UDP in this situation? (Choose three.)
+        - generic [ref=e362]:
+          - button "A TCP is the preferred protocol when a function requires lower network overhead." [ref=e363] [cursor=pointer]:
+            - generic [ref=e365]: A
+            - generic [ref=e366]: TCP is the preferred protocol when a function requires lower network overhead.
+          - button "B The source port field identifies the running application or service that will handle data returning to the PC." [ref=e367] [cursor=pointer]:
+            - generic [ref=e369]: B
+            - generic [ref=e370]: The source port field identifies the running application or service that will handle data returning to the PC.
+          - button "C The TCP source port number identifies the sending host on the network." [ref=e371] [cursor=pointer]:
+            - generic [ref=e373]: C
+            - generic [ref=e374]: The TCP source port number identifies the sending host on the network.
+          - button "D UDP segments are encapsulated within IP packets for transport across the network." [ref=e375] [cursor=pointer]:
+            - generic [ref=e377]: D
+            - generic [ref=e378]: UDP segments are encapsulated within IP packets for transport across the network.
+          - button "E The UDP destination port number identifies the application or service on the server which will handle the data." [ref=e379] [cursor=pointer]:
+            - generic [ref=e381]: E
+            - generic [ref=e382]: The UDP destination port number identifies the application or service on the server which will handle the data.
+          - button "F The TCP process running on the PC randomly selects the destination port when establishing a session with the server." [ref=e383] [cursor=pointer]:
+            - generic [ref=e385]: F
+            - generic [ref=e386]: The TCP process running on the PC randomly selects the destination port when establishing a session with the server.
+        - generic [ref=e387]:
+          - button "Previous" [ref=e388] [cursor=pointer]
+          - generic [ref=e389]: 12 / 12
+          - button "Next" [ref=e390] [cursor=pointer]
+    - generic [ref=e391]:
+      - generic [ref=e392]:
+        - generic [ref=e393]: Q 13
+        - generic [ref=e394]: Choose 2
+      - generic [ref=e395]:
+        - paragraph [ref=e396]: What are two features of ARP? (Choose two.)
+        - generic [ref=e397]:
+          - button "A If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply." [ref=e398] [cursor=pointer]:
+            - generic [ref=e400]: A
+            - generic [ref=e401]: If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.
+          - button "B When a host is encapsulating a packet into a frame, it refers to the MAC address table to determine the mapping of IP addresses to MAC addresses." [ref=e402] [cursor=pointer]:
+            - generic [ref=e404]: B
+            - generic [ref=e405]: When a host is encapsulating a packet into a frame, it refers to the MAC address table to determine the mapping of IP addresses to MAC addresses.
+          - button "C If no device responds to the ARP request, then the originating node will broadcast the data packet to all devices on the network segment." [ref=e406] [cursor=pointer]:
+            - generic [ref=e408]: C
+            - generic [ref=e409]: If no device responds to the ARP request, then the originating node will broadcast the data packet to all devices on the network segment.
+          - button "D An ARP request is sent to all devices on the Ethernet LAN and contains the IP address of the destination host and its multicast MAC address." [ref=e410] [cursor=pointer]:
+            - generic [ref=e412]: D
+            - generic [ref=e413]: An ARP request is sent to all devices on the Ethernet LAN and contains the IP address of the destination host and its multicast MAC address.
+          - button "E If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast." [ref=e414] [cursor=pointer]:
+            - generic [ref=e416]: E
+            - generic [ref=e417]: If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.
+        - generic [ref=e418]:
+          - button "Previous" [ref=e419] [cursor=pointer]
+          - generic [ref=e420]: 13 / 109
+          - button "Next" [ref=e421] [cursor=pointer]
+    - generic [ref=e422]:
+      - generic [ref=e423]:
+        - generic [ref=e424]: Q 14
+        - generic [ref=e425]: Choose 2
+      - generic [ref=e426]:
+        - paragraph [ref=e427]:
+          - text: Refer to the exhibit. On the basis of the output, which two statements about network connectivity are correct? (Choose two.)
+          - emphasis [ref=e428]: CCNA1 v7 – ITNv7 – Final Exam Answers 05
+        - generic [ref=e429]:
+          - button "A This host does not have a default gateway configured." [ref=e430] [cursor=pointer]:
+            - generic [ref=e432]: A
+            - generic [ref=e433]: This host does not have a default gateway configured.
+          - button "B There are 4 hops between this device and the device at 192.168.100.1." [ref=e434] [cursor=pointer]:
+            - generic [ref=e436]: B
+            - generic [ref=e437]: There are 4 hops between this device and the device at 192.168.100.1.
+          - button "C The average transmission time between the two hosts is 2 milliseconds." [ref=e438] [cursor=pointer]:
+            - generic [ref=e440]: C
+            - generic [ref=e441]: The average transmission time between the two hosts is 2 milliseconds.
+          - button "D There is connectivity between this device and the device at 192.168.100.1." [ref=e442] [cursor=pointer]:
+            - generic [ref=e444]: D
+            - generic [ref=e445]: There is connectivity between this device and the device at 192.168.100.1.
+          - button "E The connectivity between these two hosts allows for videoconferencing calls." [ref=e446] [cursor=pointer]:
+            - generic [ref=e448]: E
+            - generic [ref=e449]: The connectivity between these two hosts allows for videoconferencing calls.
+        - generic [ref=e450]:
+          - button "Previous" [ref=e451] [cursor=pointer]
+          - generic [ref=e452]: 14 / 109
+          - button "Next" [ref=e453] [cursor=pointer]
+    - generic [ref=e454]:
+      - generic [ref=e455]:
+        - generic [ref=e456]: Q 15
+        - generic [ref=e457]: Choose 2
+      - generic [ref=e458]:
+        - paragraph [ref=e459]: What are two characteristics of IP? (Choose two.)
+        - generic [ref=e460]:
+          - button "A retransmits packets if errors occur" [ref=e461] [cursor=pointer]:
+            - generic [ref=e463]: A
+            - generic [ref=e464]: retransmits packets if errors occur
+          - button "B guarantees delivery of packets" [ref=e465] [cursor=pointer]:
+            - generic [ref=e467]: B
+            - generic [ref=e468]: guarantees delivery of packets
+          - button "C does not require a dedicated end-to-end connection" [ref=e469] [cursor=pointer]:
+            - generic [ref=e471]: C
+            - generic [ref=e472]: does not require a dedicated end-to-end connection
+          - button "D operates independently of the network media" [ref=e473] [cursor=pointer]:
+            - generic [ref=e475]: D
+            - generic [ref=e476]: operates independently of the network media
+          - button "E re-assembles out of order packets into the correct order at the receiver end" [ref=e477] [cursor=pointer]:
+            - generic [ref=e479]: E
+            - generic [ref=e480]: re-assembles out of order packets into the correct order at the receiver end
+        - generic [ref=e481]:
+          - button "Previous" [ref=e482] [cursor=pointer]
+          - generic [ref=e483]: 15 / 109
+          - button "Next" [ref=e484] [cursor=pointer]
+    - generic [ref=e485]:
+      - generic [ref=e486]:
+        - generic [ref=e487]: Q 16
+        - generic [ref=e488]: Single Choice
+      - generic [ref=e489]:
+        - paragraph [ref=e490]: What will happen if the default gateway address is incorrectly configured on a host?
+        - generic [ref=e491]:
+          - button "A The host cannot communicate with hosts in other networks." [ref=e492] [cursor=pointer]:
+            - generic [ref=e494]: A
+            - generic [ref=e495]: The host cannot communicate with hosts in other networks.
+          - button "B The host cannot communicate with other hosts in the local network." [ref=e496] [cursor=pointer]:
+            - generic [ref=e498]: B
+            - generic [ref=e499]: The host cannot communicate with other hosts in the local network.
+          - button "C A ping from the host to 127.0.0.1 would not be successful." [ref=e500] [cursor=pointer]:
+            - generic [ref=e502]: C
+            - generic [ref=e503]: A ping from the host to 127.0.0.1 would not be successful.
+          - button "D The switch will not forward packets initiated by the host." [ref=e504] [cursor=pointer]:
+            - generic [ref=e506]: D
+            - generic [ref=e507]: The switch will not forward packets initiated by the host.
+          - button "E The host will have to use ARP to determine the correct address of the default gateway." [ref=e508] [cursor=pointer]:
+            - generic [ref=e510]: E
+            - generic [ref=e511]: The host will have to use ARP to determine the correct address of the default gateway.
+        - generic [ref=e512]:
+          - button "Previous" [ref=e513] [cursor=pointer]
+          - generic [ref=e514]: 16 / 109
+          - button "Next" [ref=e515] [cursor=pointer]
+    - generic [ref=e516]:
+      - generic [ref=e517]:
+        - generic [ref=e518]: Q 17
+        - generic [ref=e519]: Single Choice
+      - generic [ref=e520]:
+        - paragraph [ref=e521]: Users report that the network access is slow. After questioning the employees, the network administrator learned that one employee downloaded a third-party scanning program for the printer. What type of malware might be introduced that causes slow performance of the network?
+        - generic [ref=e522]:
+          - button "A spam" [ref=e523] [cursor=pointer]:
+            - generic [ref=e525]: A
+            - generic [ref=e526]: spam
+          - button "B virus" [ref=e527] [cursor=pointer]:
+            - generic [ref=e529]: B
+            - generic [ref=e530]: virus
+          - button "C worm" [ref=e531] [cursor=pointer]:
+            - generic [ref=e533]: C
+            - generic [ref=e534]: worm
+          - button "D phishing" [ref=e535] [cursor=pointer]:
+            - generic [ref=e537]: D
+            - generic [ref=e538]: phishing
+        - generic [ref=e539]:
+          - button "Previous" [ref=e540] [cursor=pointer]
+          - generic [ref=e541]: 17 / 109
+          - button "Next" [ref=e542] [cursor=pointer]
+    - generic [ref=e543]:
+      - generic [ref=e544]:
+        - generic [ref=e545]: Q 18
+        - generic [ref=e546]: Single Choice
+      - generic [ref=e547]:
+        - paragraph [ref=e548]: A company has a file server that shares a folder named Public. The network security policy specifies that the Public folder is assigned Read-Only rights to anyone who can log into the server while the Edit rights are assigned only to the network admin group. Which component is addressed in the AAA network service framework?
+        - generic [ref=e549]:
+          - button "A automation" [ref=e550] [cursor=pointer]:
+            - generic [ref=e552]: A
+            - generic [ref=e553]: automation
+          - button "B authorization" [ref=e554] [cursor=pointer]:
+            - generic [ref=e556]: B
+            - generic [ref=e557]: authorization
+          - button "C accounting" [ref=e558] [cursor=pointer]:
+            - generic [ref=e560]: C
+            - generic [ref=e561]: accounting
+          - button "D authentication" [ref=e562] [cursor=pointer]:
+            - generic [ref=e564]: D
+            - generic [ref=e565]: authentication
+        - generic [ref=e566]:
+          - button "Previous" [ref=e567] [cursor=pointer]
+          - generic [ref=e568]: 18 / 109
+          - button "Next" [ref=e569] [cursor=pointer]
+    - generic [ref=e570]:
+      - generic [ref=e571]:
+        - generic [ref=e572]: Q 19
+        - generic [ref=e573]: Choose 2
+      - generic [ref=e574]:
+        - paragraph [ref=e575]: What are two common causes of signal degradation when using UTP cabling? (Choose two.)
+        - generic [ref=e576]:
+          - button "A loss of light over long distances" [ref=e577] [cursor=pointer]:
+            - generic [ref=e579]: A
+            - generic [ref=e580]: loss of light over long distances
+          - button "B low-quality cable or connectors" [ref=e581] [cursor=pointer]:
+            - generic [ref=e583]: B
+            - generic [ref=e584]: low-quality cable or connectors
+          - button "C low-quality shielding in cable" [ref=e585] [cursor=pointer]:
+            - generic [ref=e587]: C
+            - generic [ref=e588]: low-quality shielding in cable
+          - button "D installing cables in conduit" [ref=e589] [cursor=pointer]:
+            - generic [ref=e591]: D
+            - generic [ref=e592]: installing cables in conduit
+          - button "E improper termination" [ref=e593] [cursor=pointer]:
+            - generic [ref=e595]: E
+            - generic [ref=e596]: improper termination
+        - generic [ref=e597]:
+          - button "Previous" [ref=e598] [cursor=pointer]
+          - generic [ref=e599]: 19 / 109
+          - button "Next" [ref=e600] [cursor=pointer]
+    - generic [ref=e601]:
+      - generic [ref=e602]:
+        - generic [ref=e603]: Q 20
+        - generic [ref=e604]: Single Choice
+      - generic [ref=e605]:
+        - paragraph [ref=e606]: Which scenario describes a function provided by the transport layer?
+        - generic [ref=e607]:
+          - button "A A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window." [ref=e608] [cursor=pointer]:
+            - generic [ref=e610]: A
+            - generic [ref=e611]: A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.
+          - button "B A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network." [ref=e612] [cursor=pointer]:
+            - generic [ref=e614]: B
+            - generic [ref=e615]: A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.
+          - button "C A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site." [ref=e616] [cursor=pointer]:
+            - generic [ref=e618]: C
+            - generic [ref=e619]: A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site.
+          - button "D A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header." [ref=e620] [cursor=pointer]:
+            - generic [ref=e622]: D
+            - generic [ref=e623]: A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.
+        - generic [ref=e624]:
+          - button "Previous" [ref=e625] [cursor=pointer]
+          - generic [ref=e626]: 20 / 109
+          - button "Next" [ref=e627] [cursor=pointer]
+    - generic [ref=e628]:
+      - generic [ref=e629]:
+        - generic [ref=e630]: Q 21
+        - generic [ref=e631]: Choose 2
+      - generic [ref=e632]:
+        - paragraph [ref=e633]: What are two common causes of signal degradation when using UTP cabling? (Choose two.)
+        - generic [ref=e634]:
+          - button "A loss of light over long distances" [ref=e635] [cursor=pointer]:
+            - generic [ref=e637]: A
+            - generic [ref=e638]: loss of light over long distances
+          - button "B low-quality cable or connectors" [ref=e639] [cursor=pointer]:
+            - generic [ref=e641]: B
+            - generic [ref=e642]: low-quality cable or connectors
+          - button "C low-quality shielding in cable" [ref=e643] [cursor=pointer]:
+            - generic [ref=e645]: C
+            - generic [ref=e646]: low-quality shielding in cable
+          - button "D installing cables in conduit" [ref=e647] [cursor=pointer]:
+            - generic [ref=e649]: D
+            - generic [ref=e650]: installing cables in conduit
+          - button "E improper termination" [ref=e651] [cursor=pointer]:
+            - generic [ref=e653]: E
+            - generic [ref=e654]: improper termination
+        - generic [ref=e655]:
+          - button "Previous" [ref=e656] [cursor=pointer]
+          - generic [ref=e657]: 21 / 21
+          - button "Next" [ref=e658] [cursor=pointer]
+    - generic [ref=e659]:
+      - generic [ref=e660]:
+        - generic [ref=e661]: Q 22
+        - generic [ref=e662]: Single Choice
+      - generic [ref=e663]:
+        - paragraph [ref=e664]: Which scenario describes a function provided by the transport layer?
+        - generic [ref=e665]:
+          - button "A A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window." [ref=e666] [cursor=pointer]:
+            - generic [ref=e668]: A
+            - generic [ref=e669]: A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.
+          - button "B A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network." [ref=e670] [cursor=pointer]:
+            - generic [ref=e672]: B
+            - generic [ref=e673]: A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.
+          - button "C A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site." [ref=e674] [cursor=pointer]:
+            - generic [ref=e676]: C
+            - generic [ref=e677]: A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site.
+          - button "D A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header." [ref=e678] [cursor=pointer]:
+            - generic [ref=e680]: D
+            - generic [ref=e681]: A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.
+        - generic [ref=e682]:
+          - button "Previous" [ref=e683] [cursor=pointer]
+          - generic [ref=e684]: 22 / 22
+          - button "Next" [ref=e685] [cursor=pointer]
+    - generic [ref=e686]:
+      - generic [ref=e687]:
+        - generic [ref=e688]: Q 23
+        - generic [ref=e689]: Choose 2
+      - generic [ref=e690]:
+        - paragraph [ref=e691]: Which two protocols operate at the top layer of the TCP/IP protocol suite? (Choose two.)
+        - generic [ref=e692]:
+          - button "A POP" [ref=e693] [cursor=pointer]:
+            - generic [ref=e695]: A
+            - generic [ref=e696]: POP
+          - button "B DNS" [ref=e697] [cursor=pointer]:
+            - generic [ref=e699]: B
+            - generic [ref=e700]: DNS
+          - button "C IP" [ref=e701] [cursor=pointer]:
+            - generic [ref=e703]: C
+            - generic [ref=e704]: IP
+          - button "D TCP" [ref=e705] [cursor=pointer]:
+            - generic [ref=e707]: D
+            - generic [ref=e708]: TCP
+          - button "E Ethernet" [ref=e709] [cursor=pointer]:
+            - generic [ref=e711]: E
+            - generic [ref=e712]: Ethernet
+          - button "F UDP" [ref=e713] [cursor=pointer]:
+            - generic [ref=e715]: F
+            - generic [ref=e716]: UDP
+        - generic [ref=e717]:
+          - button "Previous" [ref=e718] [cursor=pointer]
+          - generic [ref=e719]: 23 / 23
+          - button "Next" [ref=e720] [cursor=pointer]
+    - generic [ref=e721]:
+      - generic [ref=e722]:
+        - generic [ref=e723]: Q 24
+        - generic [ref=e724]: Choose 3
+      - generic [ref=e725]:
+        - paragraph [ref=e726]: An employee of a large corporation remotely logs into the company using the appropriate username and password. The employee is attending an important video conference with a customer concerning a large sale. It is important for the video quality to be excellent during the meeting. The employee is unaware that after a successful login, the connection to the company ISP failed. The secondary connection, however, activated within seconds. The disruption was not noticed by the employee or other employees. What three network characteristics are described in this scenario? (Choose three.)
+        - generic [ref=e727]:
+          - button "A integrity" [ref=e728] [cursor=pointer]:
+            - generic [ref=e730]: A
+            - generic [ref=e731]: integrity
+          - button "B scalability" [ref=e732] [cursor=pointer]:
+            - generic [ref=e734]: B
+            - generic [ref=e735]: scalability
+          - button "C quality of service" [ref=e736] [cursor=pointer]:
+            - generic [ref=e738]: C
+            - generic [ref=e739]: quality of service
+          - button "D fault tolerance" [ref=e740] [cursor=pointer]:
+            - generic [ref=e742]: D
+            - generic [ref=e743]: fault tolerance
+          - button "E powerline networking" [ref=e744] [cursor=pointer]:
+            - generic [ref=e746]: E
+            - generic [ref=e747]: powerline networking
+          - button "F security" [ref=e748] [cursor=pointer]:
+            - generic [ref=e750]: F
+            - generic [ref=e751]: security
+        - generic [ref=e752]:
+          - button "Previous" [ref=e753] [cursor=pointer]
+          - generic [ref=e754]: 24 / 24
+          - button "Next" [ref=e755] [cursor=pointer]
+    - generic [ref=e756]:
+      - generic [ref=e757]:
+        - generic [ref=e758]: Q 25
+        - generic [ref=e759]: Single Choice
+      - generic [ref=e760]:
+        - paragraph [ref=e761]: If PC1 is sending a packet to PC2 and routing has been configured between the two routers, what will R1 do with the Ethernet frame header attached by PC1?
+        - generic [ref=e762]:
+          - button "A open the header and use it to determine whether the data is to be sent out S0/0/0" [ref=e763] [cursor=pointer]:
+            - generic [ref=e765]: A
+            - generic [ref=e766]: open the header and use it to determine whether the data is to be sent out S0/0/0
+          - button "B open the header and replace the destination MAC address with a new one" [ref=e767] [cursor=pointer]:
+            - generic [ref=e769]: B
+            - generic [ref=e770]: open the header and replace the destination MAC address with a new one
+          - button "C nothing, because the router has a route to the destination network" [ref=e771] [cursor=pointer]:
+            - generic [ref=e773]: C
+            - generic [ref=e774]: nothing, because the router has a route to the destination network
+          - button "D remove the Ethernet header and configure a new Layer 2 header before sending it out S0/0/0" [ref=e775] [cursor=pointer]:
+            - generic [ref=e777]: D
+            - generic [ref=e778]: remove the Ethernet header and configure a new Layer 2 header before sending it out S0/0/0
+        - generic [ref=e779]:
+          - button "Previous" [ref=e780] [cursor=pointer]
+          - generic [ref=e781]: 25 / 25
+          - button "Next" [ref=e782] [cursor=pointer]
+    - generic [ref=e783]:
+      - generic [ref=e784]:
+        - generic [ref=e785]: Q 26
+        - generic [ref=e786]: Choose 3
+      - generic [ref=e787]:
+        - paragraph [ref=e788]: Which three layers of the OSI model map to the application layer of the TCP/IP model? (Choose three.)
+        - generic [ref=e789]:
+          - button "A transport" [ref=e790] [cursor=pointer]:
+            - generic [ref=e792]: A
+            - generic [ref=e793]: transport
+          - button "B application" [ref=e794] [cursor=pointer]:
+            - generic [ref=e796]: B
+            - generic [ref=e797]: application
+          - button "C network" [ref=e798] [cursor=pointer]:
+            - generic [ref=e800]: C
+            - generic [ref=e801]: network
+          - button "D session" [ref=e802] [cursor=pointer]:
+            - generic [ref=e804]: D
+            - generic [ref=e805]: session
+          - button "E data link" [ref=e806] [cursor=pointer]:
+            - generic [ref=e808]: E
+            - generic [ref=e809]: data link
+          - button "F presentation" [ref=e810] [cursor=pointer]:
+            - generic [ref=e812]: F
+            - generic [ref=e813]: presentation
+        - generic [ref=e814]:
+          - button "Previous" [ref=e815] [cursor=pointer]
+          - generic [ref=e816]: 26 / 26
+          - button "Next" [ref=e817] [cursor=pointer]
+    - generic [ref=e818]:
+      - generic [ref=e819]:
+        - generic [ref=e820]: Q 27
+        - generic [ref=e821]: Single Choice
+      - generic [ref=e822]:
+        - paragraph [ref=e823]: Which subnet would include the address 192.168.1.96 as a usable host address?
+        - generic [ref=e824]:
+          - button "A 192.168.1.32/27" [ref=e825] [cursor=pointer]:
+            - generic [ref=e827]: A
+            - generic [ref=e828]: 192.168.1.32/27
+          - button "B 192.168.1.32/28" [ref=e829] [cursor=pointer]:
+            - generic [ref=e831]: B
+            - generic [ref=e832]: 192.168.1.32/28
+          - button "C 192.168.1.64/29" [ref=e833] [cursor=pointer]:
+            - generic [ref=e835]: C
+            - generic [ref=e836]: 192.168.1.64/29
+          - button "D 192.168.1.64/26" [ref=e837] [cursor=pointer]:
+            - generic [ref=e839]: D
+            - generic [ref=e840]: 192.168.1.64/26
+        - generic [ref=e841]:
+          - button "Previous" [ref=e842] [cursor=pointer]
+          - generic [ref=e843]: 27 / 27
+          - button "Next" [ref=e844] [cursor=pointer]
+    - generic [ref=e845]:
+      - generic [ref=e846]:
+        - generic [ref=e847]: Q 28
+        - generic [ref=e848]: Choose 2
+      - generic [ref=e849]:
+        - paragraph [ref=e850]: What are two problems that can be caused by a large number of ARP request and reply messages? (Choose two.)
+        - generic [ref=e851]:
+          - button "A A large number of ARP request and reply messages may slow down the switching process, leading the switch to make many changes in its MAC table." [ref=e852] [cursor=pointer]:
+            - generic [ref=e854]: A
+            - generic [ref=e855]: A large number of ARP request and reply messages may slow down the switching process, leading the switch to make many changes in its MAC table.
+          - button "B The ARP request is sent as a broadcast, and will flood the entire subnet." [ref=e856] [cursor=pointer]:
+            - generic [ref=e858]: B
+            - generic [ref=e859]: The ARP request is sent as a broadcast, and will flood the entire subnet.
+          - button "C Switches become overloaded because they concentrate all the traffic from the attached subnets." [ref=e860] [cursor=pointer]:
+            - generic [ref=e862]: C
+            - generic [ref=e863]: Switches become overloaded because they concentrate all the traffic from the attached subnets.
+          - button "D All ARP request messages must be processed by all nodes on the local network." [ref=e864] [cursor=pointer]:
+            - generic [ref=e866]: D
+            - generic [ref=e867]: All ARP request messages must be processed by all nodes on the local network.
+          - button "E The network may become overloaded because ARP reply messages have a very large payload due to the 48-bit MAC address and 32-bit IP address that they contain." [ref=e868] [cursor=pointer]:
+            - generic [ref=e870]: E
+            - generic [ref=e871]: The network may become overloaded because ARP reply messages have a very large payload due to the 48-bit MAC address and 32-bit IP address that they contain.
+        - generic [ref=e872]:
+          - button "Previous" [ref=e873] [cursor=pointer]
+          - generic [ref=e874]: 28 / 28
+          - button "Next" [ref=e875] [cursor=pointer]
+    - generic [ref=e876]:
+      - generic [ref=e877]:
+        - generic [ref=e878]: Q 29
+        - generic [ref=e879]: Single Choice
+      - generic [ref=e880]:
+        - paragraph [ref=e881]: Why would a Layer 2 switch need an IP address?
+        - generic [ref=e882]:
+          - button "A to enable the switch to be managed remotely" [ref=e883] [cursor=pointer]:
+            - generic [ref=e885]: A
+            - generic [ref=e886]: to enable the switch to be managed remotely
+          - button "B to enable the switch to receive frames from attached PCs" [ref=e887] [cursor=pointer]:
+            - generic [ref=e889]: B
+            - generic [ref=e890]: to enable the switch to receive frames from attached PCs
+          - button "C to enable the switch to send broadcast frames to attached PCs" [ref=e891] [cursor=pointer]:
+            - generic [ref=e893]: C
+            - generic [ref=e894]: to enable the switch to send broadcast frames to attached PCs
+          - button "D to enable the switch to function as a default gateway" [ref=e895] [cursor=pointer]:
+            - generic [ref=e897]: D
+            - generic [ref=e898]: to enable the switch to function as a default gateway
+        - generic [ref=e899]:
+          - button "Previous" [ref=e900] [cursor=pointer]
+          - generic [ref=e901]: 29 / 29
+          - button "Next" [ref=e902] [cursor=pointer]
+    - generic [ref=e903]:
+      - generic [ref=e904]:
+        - generic [ref=e905]: Q 30
+        - generic [ref=e906]: Single Choice
+      - generic [ref=e907]:
+        - paragraph [ref=e908]: How does the service password-encryption command enhance password security on Cisco routers and switches?
+        - generic [ref=e909]:
+          - button "A It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet." [ref=e910] [cursor=pointer]:
+            - generic [ref=e912]: A
+            - generic [ref=e913]: It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet.
+          - button "B It encrypts passwords that are stored in router or switch configuration files." [ref=e914] [cursor=pointer]:
+            - generic [ref=e916]: B
+            - generic [ref=e917]: It encrypts passwords that are stored in router or switch configuration files.
+          - button "C It requires that a user type encrypted passwords to gain console access to a router or switch." [ref=e918] [cursor=pointer]:
+            - generic [ref=e920]: C
+            - generic [ref=e921]: It requires that a user type encrypted passwords to gain console access to a router or switch.
+          - button "D It encrypts passwords as they are sent across the network." [ref=e922] [cursor=pointer]:
+            - generic [ref=e924]: D
+            - generic [ref=e925]: It encrypts passwords as they are sent across the network.
+        - generic [ref=e926]:
+          - button "Previous" [ref=e927] [cursor=pointer]
+          - generic [ref=e928]: 30 / 30
+          - button "Finish" [ref=e929] [cursor=pointer]
+    - generic [ref=e930]:
+      - generic [ref=e931]:
+        - generic [ref=e932]: Q 31
+        - generic [ref=e933]: Choose 3
+      - generic [ref=e934]:
+        - paragraph [ref=e935]: An administrator defined a local user account with a secret password on router R1 for use with SSH. Which three additional steps are required to configure R1 to accept only encrypted SSH connections? (Choose three.)
+        - generic [ref=e936]:
+          - button "A Configure the IP domain name on the router." [ref=e937] [cursor=pointer]:
+            - generic [ref=e939]: A
+            - generic [ref=e940]: Configure the IP domain name on the router.
+          - button "B Enable inbound vty Telnet sessions." [ref=e941] [cursor=pointer]:
+            - generic [ref=e943]: B
+            - generic [ref=e944]: Enable inbound vty Telnet sessions.
+          - button "C Configure DNS on the router." [ref=e945] [cursor=pointer]:
+            - generic [ref=e947]: C
+            - generic [ref=e948]: Configure DNS on the router.
+          - button "D Generate the SSH keys." [ref=e949] [cursor=pointer]:
+            - generic [ref=e951]: D
+            - generic [ref=e952]: Generate the SSH keys.
+          - button "E Generate two-way pre-shared keys." [ref=e953] [cursor=pointer]:
+            - generic [ref=e955]: E
+            - generic [ref=e956]: Generate two-way pre-shared keys.
+          - button "F Enable inbound vty SSH sessions." [ref=e957] [cursor=pointer]:
+            - generic [ref=e959]: F
+            - generic [ref=e960]: Enable inbound vty SSH sessions.
+        - generic [ref=e961]:
+          - button "Previous" [ref=e962] [cursor=pointer]
+          - generic [ref=e963]: 31 / 31
+          - button "Next" [ref=e964] [cursor=pointer]
+    - generic [ref=e965]:
+      - generic [ref=e966]:
+        - generic [ref=e967]: Q 32
+        - generic [ref=e968]: Single Choice
+      - generic [ref=e969]:
+        - paragraph [ref=e970]: A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in its ARP cache. How will the device obtain a destination MAC address?
+        - generic [ref=e971]:
+          - button "A It will send the frame and use its own MAC address as the destination." [ref=e972] [cursor=pointer]:
+            - generic [ref=e974]: A
+            - generic [ref=e975]: It will send the frame and use its own MAC address as the destination.
+          - button "B It will send the frame with a broadcast MAC address." [ref=e976] [cursor=pointer]:
+            - generic [ref=e978]: B
+            - generic [ref=e979]: It will send the frame with a broadcast MAC address.
+          - button "C It will send an ARP request for the MAC address of the destination device." [ref=e980] [cursor=pointer]:
+            - generic [ref=e982]: C
+            - generic [ref=e983]: It will send an ARP request for the MAC address of the destination device.
+          - button "D It will send a request to the DNS server for the destination MAC address." [ref=e984] [cursor=pointer]:
+            - generic [ref=e986]: D
+            - generic [ref=e987]: It will send a request to the DNS server for the destination MAC address.
+          - button "E It will send an ARP request for the MAC address of the default gateway." [ref=e988] [cursor=pointer]:
+            - generic [ref=e990]: E
+            - generic [ref=e991]: It will send an ARP request for the MAC address of the default gateway.
+        - generic [ref=e992]:
+          - button "Previous" [ref=e993] [cursor=pointer]
+          - generic [ref=e994]: 32 / 32
+          - button "Next" [ref=e995] [cursor=pointer]
+    - generic [ref=e996]:
+      - generic [ref=e997]:
+        - generic [ref=e998]: Q 33
+        - generic [ref=e999]: Single Choice
+      - generic [ref=e1000]:
+        - paragraph [ref=e1001]: Match the header field with the appropriate layer of the OSI model. (Not all options are used.)
+        - generic [ref=e1002]:
+          - button "A 802.2 header - Layer 2" [ref=e1003] [cursor=pointer]:
+            - generic [ref=e1005]: A
+            - generic [ref=e1006]: 802.2 header - Layer 2
+          - button "B FCS - Layer 2" [ref=e1007] [cursor=pointer]:
+            - generic [ref=e1009]: B
+            - generic [ref=e1010]: FCS - Layer 2
+          - button "C Destination MAC Address - Layer 2" [ref=e1011] [cursor=pointer]:
+            - generic [ref=e1013]: C
+            - generic [ref=e1014]: Destination MAC Address - Layer 2
+          - button "D TTL - Layer 3" [ref=e1015] [cursor=pointer]:
+            - generic [ref=e1017]: D
+            - generic [ref=e1018]: TTL - Layer 3
+          - button "E Source IP Address - Layer 3" [ref=e1019] [cursor=pointer]:
+            - generic [ref=e1021]: E
+            - generic [ref=e1022]: Source IP Address - Layer 3
+          - button "F Acknowledgment Number - Layer 4" [ref=e1023] [cursor=pointer]:
+            - generic [ref=e1025]: F
+            - generic [ref=e1026]: Acknowledgment Number - Layer 4
+          - button "G Destination Port Number - Layer 4" [ref=e1027] [cursor=pointer]:
+            - generic [ref=e1029]: G
+            - generic [ref=e1030]: Destination Port Number - Layer 4
+        - generic [ref=e1031]:
+          - button "Previous" [ref=e1032] [cursor=pointer]
+          - generic [ref=e1033]: 33 / 33
+          - button "Next" [ref=e1034] [cursor=pointer]
+    - generic [ref=e1035]:
+      - generic [ref=e1036]:
+        - generic [ref=e1037]: Q 34
+        - generic [ref=e1038]: Single Choice
+      - generic [ref=e1039]:
+        - paragraph [ref=e1040]: When a switch configuration includes a user-defined error threshold on a per-port basis, to which switching method will the switch revert when the error threshold is reached?
+        - generic [ref=e1041]:
+          - button "A fast-forward" [ref=e1042] [cursor=pointer]:
+            - generic [ref=e1044]: A
+            - generic [ref=e1045]: fast-forward
+          - button "B cut-through" [ref=e1046] [cursor=pointer]:
+            - generic [ref=e1048]: B
+            - generic [ref=e1049]: cut-through
+          - button "C store-and-forward" [ref=e1050] [cursor=pointer]:
+            - generic [ref=e1052]: C
+            - generic [ref=e1053]: store-and-forward
+          - button "D fragment-free" [ref=e1054] [cursor=pointer]:
+            - generic [ref=e1056]: D
+            - generic [ref=e1057]: fragment-free
+        - generic [ref=e1058]:
+          - button "Previous" [ref=e1059] [cursor=pointer]
+          - generic [ref=e1060]: 34 / 34
+          - button "Next" [ref=e1061] [cursor=pointer]
+    - generic [ref=e1062]:
+      - generic [ref=e1063]:
+        - generic [ref=e1064]: Q 35
+        - generic [ref=e1065]: Single Choice
+      - generic [ref=e1066]:
+        - paragraph [ref=e1067]: What are proprietary protocols?
+        - generic [ref=e1068]:
+          - button "A protocols that can be freely used by any organization or vendor" [ref=e1069] [cursor=pointer]:
+            - generic [ref=e1071]: A
+            - generic [ref=e1072]: protocols that can be freely used by any organization or vendor
+          - button "B protocols developed by private organizations to operate on any vendor hardware" [ref=e1073] [cursor=pointer]:
+            - generic [ref=e1075]: B
+            - generic [ref=e1076]: protocols developed by private organizations to operate on any vendor hardware
+          - button "C a collection of protocols known as the TCP/IP protocol suite" [ref=e1077] [cursor=pointer]:
+            - generic [ref=e1079]: C
+            - generic [ref=e1080]: a collection of protocols known as the TCP/IP protocol suite
+          - button "D protocols developed by organizations who have control over their definition and operation" [ref=e1081] [cursor=pointer]:
+            - generic [ref=e1083]: D
+            - generic [ref=e1084]: protocols developed by organizations who have control over their definition and operation
+        - generic [ref=e1085]:
+          - button "Previous" [ref=e1086] [cursor=pointer]
+          - generic [ref=e1087]: 35 / 35
+          - button "Next" [ref=e1088] [cursor=pointer]
+    - generic [ref=e1089]:
+      - generic [ref=e1090]:
+        - generic [ref=e1091]: Q 36
+        - generic [ref=e1092]: Single Choice
+      - generic [ref=e1093]:
+        - paragraph [ref=e1094]: What is an advantage to using a protocol that is defined by an open standard?
+        - generic [ref=e1095]:
+          - button "A An open standard protocol is not controlled or regulated by standards organizations." [ref=e1096] [cursor=pointer]:
+            - generic [ref=e1098]: A
+            - generic [ref=e1099]: An open standard protocol is not controlled or regulated by standards organizations.
+          - button "B A company can monopolize the market." [ref=e1100] [cursor=pointer]:
+            - generic [ref=e1102]: B
+            - generic [ref=e1103]: A company can monopolize the market.
+          - button "C It encourages competition and promotes choices." [ref=e1104] [cursor=pointer]:
+            - generic [ref=e1106]: C
+            - generic [ref=e1107]: It encourages competition and promotes choices.
+          - button "D The protocol can only be run on equipment from a specific vendor." [ref=e1108] [cursor=pointer]:
+            - generic [ref=e1110]: D
+            - generic [ref=e1111]: The protocol can only be run on equipment from a specific vendor.
+        - generic [ref=e1112]:
+          - button "Previous" [ref=e1113] [cursor=pointer]
+          - generic [ref=e1114]: 36 / 36
+          - button "Next" [ref=e1115] [cursor=pointer]
+    - generic [ref=e1116]:
+      - generic [ref=e1117]:
+        - generic [ref=e1118]: Q 37
+        - generic [ref=e1119]: Single Choice
+      - generic [ref=e1120]:
+        - paragraph [ref=e1121]: Which type of server relies on record types such as A, NS, AAAA, and MX in order to provide services?
+        - generic [ref=e1122]:
+          - button "A email" [ref=e1123] [cursor=pointer]:
+            - generic [ref=e1125]: A
+            - generic [ref=e1126]: email
+          - button "B file" [ref=e1127] [cursor=pointer]:
+            - generic [ref=e1129]: B
+            - generic [ref=e1130]: file
+          - button "C web" [ref=e1131] [cursor=pointer]:
+            - generic [ref=e1133]: C
+            - generic [ref=e1134]: web
+          - button "D DNS" [ref=e1135] [cursor=pointer]:
+            - generic [ref=e1137]: D
+            - generic [ref=e1138]: DNS
+        - generic [ref=e1139]:
+          - button "Previous" [ref=e1140] [cursor=pointer]
+          - generic [ref=e1141]: 37 / 37
+          - button "Next" [ref=e1142] [cursor=pointer]
+    - generic [ref=e1143]:
+      - generic [ref=e1144]:
+        - generic [ref=e1145]: Q 38
+        - generic [ref=e1146]: Single Choice
+      - generic [ref=e1147]:
+        - paragraph [ref=e1148]: Match a statement to the related network model.
+        - generic [ref=e1149]:
+          - button "A Peer-to-peer networks do not require the use of a dedicated server, and devices can assume both client and server roles simultaneously on a per request basis." [ref=e1150] [cursor=pointer]:
+            - generic [ref=e1152]: A
+            - generic [ref=e1153]: Peer-to-peer networks do not require the use of a dedicated server, and devices can assume both client and server roles simultaneously on a per request basis.
+          - button "B Because they do not require formalized accounts or permissions, they are best used in limited situations." [ref=e1154] [cursor=pointer]:
+            - generic [ref=e1156]: B
+            - generic [ref=e1157]: Because they do not require formalized accounts or permissions, they are best used in limited situations.
+          - button "C Peer-to-peer applications require a user interface and background service to be running, and can be used in more diverse situations." [ref=e1158] [cursor=pointer]:
+            - generic [ref=e1160]: C
+            - generic [ref=e1161]: Peer-to-peer applications require a user interface and background service to be running, and can be used in more diverse situations.
+          - button "D All of the above." [ref=e1162] [cursor=pointer]:
+            - generic [ref=e1164]: D
+            - generic [ref=e1165]: All of the above.
+        - generic [ref=e1166]:
+          - button "Previous" [ref=e1167] [cursor=pointer]
+          - generic [ref=e1168]: 38 / 38
+          - button "Next" [ref=e1169] [cursor=pointer]
+    - generic [ref=e1170]:
+      - generic [ref=e1171]:
+        - generic [ref=e1172]: Q 39
+        - generic [ref=e1173]: Single Choice
+      - generic [ref=e1174]:
+        - paragraph [ref=e1175]: "A network administrator wants to have the same network mask for all networks at a particular small site. The site has the following networks and number of devices: IP phones – 22 addresses PCs – 20 addresses needed Printers – 2 addresses needed Scanners – 2 addresses needed The network administrator has deemed that 192.168.10.0/24 is to be the network used at this site. Which single subnet mask would make the most efficient use of the available addresses to use for the four subnetworks?"
+        - generic [ref=e1176]:
+          - button "A 255.255.255.240" [ref=e1177] [cursor=pointer]:
+            - generic [ref=e1179]: A
+            - generic [ref=e1180]: 255.255.255.240
+          - button "B 255.255.255.0" [ref=e1181] [cursor=pointer]:
+            - generic [ref=e1183]: B
+            - generic [ref=e1184]: 255.255.255.0
+          - button "C 255.255.255.192" [ref=e1185] [cursor=pointer]:
+            - generic [ref=e1187]: C
+            - generic [ref=e1188]: 255.255.255.192
+          - button "D 255.255.255.224" [ref=e1189] [cursor=pointer]:
+            - generic [ref=e1191]: D
+            - generic [ref=e1192]: 255.255.255.224
+          - button "E 255.255.255.248" [ref=e1193] [cursor=pointer]:
+            - generic [ref=e1195]: E
+            - generic [ref=e1196]: 255.255.255.248
+          - button "F 255.255.255.252" [ref=e1197] [cursor=pointer]:
+            - generic [ref=e1199]: F
+            - generic [ref=e1200]: 255.255.255.252
+        - generic [ref=e1201]:
+          - button "Previous" [ref=e1202] [cursor=pointer]
+          - generic [ref=e1203]: 39 / 39
+          - button "Next" [ref=e1204] [cursor=pointer]
+    - generic [ref=e1205]:
+      - generic [ref=e1206]:
+        - generic [ref=e1207]: Q 40
+        - generic [ref=e1208]: Single Choice
+      - generic [ref=e1209]:
+        - paragraph [ref=e1210]: The network administrator has assigned the LAN of LBMISS an address range of 192.168.10.0. This address range has been subnetted using a /29 prefix. In order to accommodate a new building, the technician has decided to use the fifth subnet for configuring the new network (subnet zero is the first subnet). By company policies, the router interface is always assigned the first usable host address and the workgroup server is given the last usable host address. Which configuration should be entered into the properties of the workgroup server to allow connectivity to the Internet?
+        - generic [ref=e1211]:
+          - 'button "A IP address: 192.168.10.38 subnet mask: 255.255.255.248, default gateway: 192.168.10.33" [ref=e1212] [cursor=pointer]':
+            - generic [ref=e1214]: A
+            - generic [ref=e1215]: "IP address: 192.168.10.38 subnet mask: 255.255.255.248, default gateway: 192.168.10.33"
+          - 'button "B IP address: 192.168.10.38 subnet mask: 255.255.255.240, default gateway: 192.168.10.33" [ref=e1216] [cursor=pointer]':
+            - generic [ref=e1218]: B
+            - generic [ref=e1219]: "IP address: 192.168.10.38 subnet mask: 255.255.255.240, default gateway: 192.168.10.33"
+          - 'button "C IP address: 192.168.10.254 subnet mask: 255.255.255.0, default gateway: 192.168.10.1" [ref=e1220] [cursor=pointer]':
+            - generic [ref=e1222]: C
+            - generic [ref=e1223]: "IP address: 192.168.10.254 subnet mask: 255.255.255.0, default gateway: 192.168.10.1"
+          - 'button "D IP address: 192.168.10.41 subnet mask: 255.255.255.248, default gateway: 192.168.10.46" [ref=e1224] [cursor=pointer]':
+            - generic [ref=e1226]: D
+            - generic [ref=e1227]: "IP address: 192.168.10.41 subnet mask: 255.255.255.248, default gateway: 192.168.10.46"
+          - 'button "E IP address: 192.168.10.65 subnet mask: 255.255.255.240, default gateway: 192.168.10.76" [ref=e1228] [cursor=pointer]':
+            - generic [ref=e1230]: E
+            - generic [ref=e1231]: "IP address: 192.168.10.65 subnet mask: 255.255.255.240, default gateway: 192.168.10.76"
+        - generic [ref=e1232]:
+          - button "Previous" [ref=e1233] [cursor=pointer]
+          - generic [ref=e1234]: 40 / 40
+          - button "Finish" [ref=e1235] [cursor=pointer]
+    - generic [ref=e1236]:
+      - generic [ref=e1237]:
+        - generic [ref=e1238]: Q 41
+        - generic [ref=e1239]: Single Choice
+      - generic [ref=e1240]:
+        - paragraph [ref=e1241]: Refer to the exhibit. A network engineer has been given the network address of 192.168.99.0 and a subnet mask of 255.255.255.192 to subnet across the four networks shown. How many total host addresses are unused across all four subnets?
+        - generic [ref=e1242]:
+          - button "A 158" [ref=e1243] [cursor=pointer]:
+            - generic [ref=e1245]: A
+            - generic [ref=e1246]: "158"
+          - button "B 200" [ref=e1247] [cursor=pointer]:
+            - generic [ref=e1249]: B
+            - generic [ref=e1250]: "200"
+          - button "C 224" [ref=e1251] [cursor=pointer]:
+            - generic [ref=e1253]: C
+            - generic [ref=e1254]: "224"
+          - button "D 88" [ref=e1255] [cursor=pointer]:
+            - generic [ref=e1257]: D
+            - generic [ref=e1258]: "88"
+          - button "E 72" [ref=e1259] [cursor=pointer]:
+            - generic [ref=e1261]: E
+            - generic [ref=e1262]: "72"
+        - generic [ref=e1263]:
+          - button "Previous" [ref=e1264] [cursor=pointer]
+          - generic [ref=e1265]: 41 / 50
+          - button "Next" [ref=e1266] [cursor=pointer]
+    - generic [ref=e1267]:
+      - generic [ref=e1268]:
+        - generic [ref=e1269]: Q 42
+        - generic [ref=e1270]: Single Choice
+      - generic [ref=e1271]:
+        - paragraph [ref=e1272]: What would be the interface ID of an IPv6 enabled interface with a MAC address of 1C-6F-65-C2-BD-F8 when the interface ID is generated by using the EUI-64 process?
+        - generic [ref=e1273]:
+          - button "A 1E6F:65FF:FEC2:BDF8" [ref=e1274] [cursor=pointer]:
+            - generic [ref=e1276]: A
+            - generic [ref=e1277]: 1E6F:65FF:FEC2:BDF8
+          - button "B 106F:65FF:FEC2:BDF8" [ref=e1278] [cursor=pointer]:
+            - generic [ref=e1280]: B
+            - generic [ref=e1281]: 106F:65FF:FEC2:BDF8
+          - button "C C16F:65FF:FEC2:BDF8" [ref=e1282] [cursor=pointer]:
+            - generic [ref=e1284]: C
+            - generic [ref=e1285]: C16F:65FF:FEC2:BDF8
+          - button "D 0C6F:65FF:FEC2:BDF8" [ref=e1286] [cursor=pointer]:
+            - generic [ref=e1288]: D
+            - generic [ref=e1289]: 0C6F:65FF:FEC2:BDF8
+        - generic [ref=e1290]:
+          - button "Previous" [ref=e1291] [cursor=pointer]
+          - generic [ref=e1292]: 42 / 50
+          - button "Next" [ref=e1293] [cursor=pointer]
+    - generic [ref=e1294]:
+      - generic [ref=e1295]:
+        - generic [ref=e1296]: Q 43
+        - generic [ref=e1297]: Single Choice
+      - generic [ref=e1298]:
+        - paragraph [ref=e1299]: Which information does the show startup-config command display?
+        - generic [ref=e1300]:
+          - button "A the IOS image copied into RAM" [ref=e1301] [cursor=pointer]:
+            - generic [ref=e1303]: A
+            - generic [ref=e1304]: the IOS image copied into RAM
+          - button "B the bootstrap program in the ROM" [ref=e1305] [cursor=pointer]:
+            - generic [ref=e1307]: B
+            - generic [ref=e1308]: the bootstrap program in the ROM
+          - button "C the contents of the saved configuration file in the NVRAM" [ref=e1309] [cursor=pointer]:
+            - generic [ref=e1311]: C
+            - generic [ref=e1312]: the contents of the saved configuration file in the NVRAM
+          - button "D the contents of the current running configuration file in the RAM" [ref=e1313] [cursor=pointer]:
+            - generic [ref=e1315]: D
+            - generic [ref=e1316]: the contents of the current running configuration file in the RAM
+        - generic [ref=e1317]:
+          - button "Previous" [ref=e1318] [cursor=pointer]
+          - generic [ref=e1319]: 43 / 50
+          - button "Next" [ref=e1320] [cursor=pointer]
+    - generic [ref=e1321]:
+      - generic [ref=e1322]:
+        - generic [ref=e1323]: Q 44
+        - generic [ref=e1324]: Choose 2
+      - generic [ref=e1325]:
+        - paragraph [ref=e1326]: What are two primary responsibilities of the Ethernet MAC sublayer? (Choose two.)
+        - generic [ref=e1327]:
+          - button "A accessing the media" [ref=e1328] [cursor=pointer]:
+            - generic [ref=e1330]: A
+            - generic [ref=e1331]: accessing the media
+          - button "B data encapsulation" [ref=e1332] [cursor=pointer]:
+            - generic [ref=e1334]: B
+            - generic [ref=e1335]: data encapsulation
+          - button "C logical addressing" [ref=e1336] [cursor=pointer]:
+            - generic [ref=e1338]: C
+            - generic [ref=e1339]: logical addressing
+          - button "D error detection" [ref=e1340] [cursor=pointer]:
+            - generic [ref=e1342]: D
+            - generic [ref=e1343]: error detection
+          - button "E frame delimiting" [ref=e1344] [cursor=pointer]:
+            - generic [ref=e1346]: E
+            - generic [ref=e1347]: frame delimiting
+        - generic [ref=e1348]:
+          - button "Previous" [ref=e1349] [cursor=pointer]
+          - generic [ref=e1350]: 44 / 50
+          - button "Next" [ref=e1351] [cursor=pointer]
+    - generic [ref=e1352]:
+      - generic [ref=e1353]:
+        - generic [ref=e1354]: Q 45
+        - generic [ref=e1355]: Single Choice
+      - generic [ref=e1356]:
+        - paragraph [ref=e1357]: Which switching method drops frames that fail the FCS check?
+        - generic [ref=e1358]:
+          - button "A store-and-forward switching" [ref=e1359] [cursor=pointer]:
+            - generic [ref=e1361]: A
+            - generic [ref=e1362]: store-and-forward switching
+          - button "B ingress port buffering" [ref=e1363] [cursor=pointer]:
+            - generic [ref=e1365]: B
+            - generic [ref=e1366]: ingress port buffering
+          - button "C cut-through switching" [ref=e1367] [cursor=pointer]:
+            - generic [ref=e1369]: C
+            - generic [ref=e1370]: cut-through switching
+          - button "D borderless switching" [ref=e1371] [cursor=pointer]:
+            - generic [ref=e1373]: D
+            - generic [ref=e1374]: borderless switching
+        - generic [ref=e1375]:
+          - button "Previous" [ref=e1376] [cursor=pointer]
+          - generic [ref=e1377]: 45 / 50
+          - button "Next" [ref=e1378] [cursor=pointer]
+    - generic [ref=e1379]:
+      - generic [ref=e1380]:
+        - generic [ref=e1381]: Q 46
+        - generic [ref=e1382]: Single Choice
+      - generic [ref=e1383]:
+        - paragraph [ref=e1384]: What is an advantage for small organizations of adopting IMAP instead of POP?
+        - generic [ref=e1385]:
+          - button "A IMAP sends and retrieves email, but POP only retrieves email." [ref=e1386] [cursor=pointer]:
+            - generic [ref=e1388]: A
+            - generic [ref=e1389]: IMAP sends and retrieves email, but POP only retrieves email.
+          - button "B POP only allows the client to store messages in a centralized way, while IMAP allows distributed storage." [ref=e1390] [cursor=pointer]:
+            - generic [ref=e1392]: B
+            - generic [ref=e1393]: POP only allows the client to store messages in a centralized way, while IMAP allows distributed storage.
+          - button "C Messages are kept in the mail servers until they are manually deleted from the email client." [ref=e1394] [cursor=pointer]:
+            - generic [ref=e1396]: C
+            - generic [ref=e1397]: Messages are kept in the mail servers until they are manually deleted from the email client.
+          - button "D When the user connects to a POP server, copies of the messages are kept in the mail server for a short time, but IMAP keeps them for a long time." [ref=e1398] [cursor=pointer]:
+            - generic [ref=e1400]: D
+            - generic [ref=e1401]: When the user connects to a POP server, copies of the messages are kept in the mail server for a short time, but IMAP keeps them for a long time.
+        - generic [ref=e1402]:
+          - button "Previous" [ref=e1403] [cursor=pointer]
+          - generic [ref=e1404]: 46 / 50
+          - button "Next" [ref=e1405] [cursor=pointer]
+    - generic [ref=e1406]:
+      - generic [ref=e1407]:
+        - generic [ref=e1408]: Q 47
+        - generic [ref=e1409]: Single Choice
+      - generic [ref=e1410]:
+        - paragraph [ref=e1411]: A wired laser printer is attached to a home computer. That printer has been shared so that other computers on the home network can also use the printer. What networking model is in use?
+        - generic [ref=e1412]:
+          - button "A point-to-point" [ref=e1413] [cursor=pointer]:
+            - generic [ref=e1415]: A
+            - generic [ref=e1416]: point-to-point
+          - button "B client-based" [ref=e1417] [cursor=pointer]:
+            - generic [ref=e1419]: B
+            - generic [ref=e1420]: client-based
+          - button "C peer-to-peer (P2P)" [ref=e1421] [cursor=pointer]:
+            - generic [ref=e1423]: C
+            - generic [ref=e1424]: peer-to-peer (P2P)
+          - button "D master-slave" [ref=e1425] [cursor=pointer]:
+            - generic [ref=e1427]: D
+            - generic [ref=e1428]: master-slave
+        - generic [ref=e1429]:
+          - button "Previous" [ref=e1430] [cursor=pointer]
+          - generic [ref=e1431]: 47 / 50
+          - button "Next" [ref=e1432] [cursor=pointer]
+    - generic [ref=e1433]:
+      - generic [ref=e1434]:
+        - generic [ref=e1435]: Q 48
+        - generic [ref=e1436]: Single Choice
+      - generic [ref=e1437]:
+        - paragraph [ref=e1438]: A network administrator is adding a new LAN to a branch office. The new LAN must support 200 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+        - generic [ref=e1439]:
+          - button "A 255.255.255.224" [ref=e1440] [cursor=pointer]:
+            - generic [ref=e1442]: A
+            - generic [ref=e1443]: 255.255.255.224
+          - button "B 255.255.255.240" [ref=e1444] [cursor=pointer]:
+            - generic [ref=e1446]: B
+            - generic [ref=e1447]: 255.255.255.240
+          - button "C 255.255.255.192" [ref=e1448] [cursor=pointer]:
+            - generic [ref=e1450]: C
+            - generic [ref=e1451]: 255.255.255.192
+          - button "D 255.255.255.0" [ref=e1452] [cursor=pointer]:
+            - generic [ref=e1454]: D
+            - generic [ref=e1455]: 255.255.255.0
+        - generic [ref=e1456]:
+          - button "Previous" [ref=e1457] [cursor=pointer]
+          - generic [ref=e1458]: 48 / 50
+          - button "Next" [ref=e1459] [cursor=pointer]
+    - generic [ref=e1460]:
+      - generic [ref=e1461]:
+        - generic [ref=e1462]: Q 49
+        - generic [ref=e1463]: Single Choice
+      - generic [ref=e1464]:
+        - paragraph [ref=e1465]: Which wireless technology has low-power and data rate requirements making it popular in home automation applications?
+        - generic [ref=e1466]:
+          - button "A ZigBee" [ref=e1467] [cursor=pointer]:
+            - generic [ref=e1469]: A
+            - generic [ref=e1470]: ZigBee
+          - button "B 5G" [ref=e1471] [cursor=pointer]:
+            - generic [ref=e1473]: B
+            - generic [ref=e1474]: 5G
+          - button "C Wi-Fi" [ref=e1475] [cursor=pointer]:
+            - generic [ref=e1477]: C
+            - generic [ref=e1478]: Wi-Fi
+          - button "D LoRaWAN" [ref=e1479] [cursor=pointer]:
+            - generic [ref=e1481]: D
+            - generic [ref=e1482]: LoRaWAN
+        - generic [ref=e1483]:
+          - button "Previous" [ref=e1484] [cursor=pointer]
+          - generic [ref=e1485]: 49 / 50
+          - button "Next" [ref=e1486] [cursor=pointer]
+    - generic [ref=e1487]:
+      - generic [ref=e1488]:
+        - generic [ref=e1489]: Q 50
+        - generic [ref=e1490]: Choose 2
+      - generic [ref=e1491]:
+        - paragraph [ref=e1492]: What are two characteristics shared by TCP and UDP? (Choose two.)
+        - generic [ref=e1493]:
+          - button "A ability to to carry digitized voice" [ref=e1494] [cursor=pointer]:
+            - generic [ref=e1496]: A
+            - generic [ref=e1497]: ability to to carry digitized voice
+          - button "B 3-way handshake" [ref=e1498] [cursor=pointer]:
+            - generic [ref=e1500]: B
+            - generic [ref=e1501]: 3-way handshake
+          - button "C default window size" [ref=e1502] [cursor=pointer]:
+            - generic [ref=e1504]: C
+            - generic [ref=e1505]: default window size
+          - button "D connectionless communication" [ref=e1506] [cursor=pointer]:
+            - generic [ref=e1508]: D
+            - generic [ref=e1509]: connectionless communication
+          - button "E port numbering" [ref=e1510] [cursor=pointer]:
+            - generic [ref=e1512]: E
+            - generic [ref=e1513]: port numbering
+          - button "F use of checksum" [ref=e1514] [cursor=pointer]:
+            - generic [ref=e1516]: F
+            - generic [ref=e1517]: use of checksum
+        - generic [ref=e1518]:
+          - button "Previous" [ref=e1519] [cursor=pointer]
+          - generic [ref=e1520]: 50 / 50
+          - button "Finish" [ref=e1521] [cursor=pointer]
+    - generic [ref=e1522]:
+      - generic [ref=e1523]:
+        - generic [ref=e1524]: Q 51
+        - generic [ref=e1525]: Single Choice
+      - generic [ref=e1526]:
+        - paragraph [ref=e1527]: A client packet is received by a server. The packet has a destination port number of 69. What service is the client requesting?
+        - generic [ref=e1528]:
+          - button "A DHCP" [ref=e1529] [cursor=pointer]:
+            - generic [ref=e1531]: A
+            - generic [ref=e1532]: DHCP
+          - button "B SMTP" [ref=e1533] [cursor=pointer]:
+            - generic [ref=e1535]: B
+            - generic [ref=e1536]: SMTP
+          - button "C TFTP" [ref=e1537] [cursor=pointer]:
+            - generic [ref=e1539]: C
+            - generic [ref=e1540]: TFTP
+          - button "D DNS" [ref=e1541] [cursor=pointer]:
+            - generic [ref=e1543]: D
+            - generic [ref=e1544]: DNS
+        - generic [ref=e1545]:
+          - button "Previous" [ref=e1546] [cursor=pointer]
+          - generic [ref=e1547]: 51 / 60
+          - button "Next" [ref=e1548] [cursor=pointer]
+    - generic [ref=e1549]:
+      - generic [ref=e1550]:
+        - generic [ref=e1551]: Q 52
+        - generic [ref=e1552]: Single Choice
+      - generic [ref=e1553]:
+        - paragraph [ref=e1554]: What service is provided by Internet Messenger?
+        - generic [ref=e1555]:
+          - button "A An application that allows real-time chatting among remote users." [ref=e1556] [cursor=pointer]:
+            - generic [ref=e1558]: A
+            - generic [ref=e1559]: An application that allows real-time chatting among remote users.
+          - button "B Resolves domain names, such as cisco.com, into IP addresses." [ref=e1560] [cursor=pointer]:
+            - generic [ref=e1562]: B
+            - generic [ref=e1563]: Resolves domain names, such as cisco.com, into IP addresses.
+          - button "C Uses encryption to provide secure remote access to network devices and servers." [ref=e1564] [cursor=pointer]:
+            - generic [ref=e1566]: C
+            - generic [ref=e1567]: Uses encryption to provide secure remote access to network devices and servers.
+          - button "D Allows remote access to network devices and servers." [ref=e1568] [cursor=pointer]:
+            - generic [ref=e1570]: D
+            - generic [ref=e1571]: Allows remote access to network devices and servers.
+        - generic [ref=e1572]:
+          - button "Previous" [ref=e1573] [cursor=pointer]
+          - generic [ref=e1574]: 52 / 60
+          - button "Next" [ref=e1575] [cursor=pointer]
+    - generic [ref=e1576]:
+      - generic [ref=e1577]:
+        - generic [ref=e1578]: Q 53
+        - generic [ref=e1579]: Single Choice
+      - generic [ref=e1580]:
+        - paragraph [ref=e1581]: What characteristic describes antispyware?
+        - generic [ref=e1582]:
+          - button "A a tunneling protocol that provides remote users with secure access into the network of an organization" [ref=e1583] [cursor=pointer]:
+            - generic [ref=e1585]: A
+            - generic [ref=e1586]: a tunneling protocol that provides remote users with secure access into the network of an organization
+          - button "B a network device that filters access and traffic coming into a network" [ref=e1587] [cursor=pointer]:
+            - generic [ref=e1589]: B
+            - generic [ref=e1590]: a network device that filters access and traffic coming into a network
+          - button "C applications that protect end devices from becoming infected with malicious software" [ref=e1591] [cursor=pointer]:
+            - generic [ref=e1593]: C
+            - generic [ref=e1594]: applications that protect end devices from becoming infected with malicious software
+          - button "D software on a router that filters traffic based on IP addresses or applications" [ref=e1595] [cursor=pointer]:
+            - generic [ref=e1597]: D
+            - generic [ref=e1598]: software on a router that filters traffic based on IP addresses or applications
+        - generic [ref=e1599]:
+          - button "Previous" [ref=e1600] [cursor=pointer]
+          - generic [ref=e1601]: 53 / 60
+          - button "Next" [ref=e1602] [cursor=pointer]
+    - generic [ref=e1603]:
+      - generic [ref=e1604]:
+        - generic [ref=e1605]: Q 54
+        - generic [ref=e1606]: Single Choice
+      - generic [ref=e1607]:
+        - paragraph [ref=e1608]:
+          - text: "A network administrator wants to have the same subnet mask for three subnetworks at a small site. The site has the following networks and numbers of devices:"
+          - text: "Subnetwork A: IP phones – 10 addresses"
+          - text: "Subnetwork B: PCs – 8 addresses"
+          - text: "Subnetwork C: Printers – 2 addresses"
+          - text: What single subnet mask would be appropriate to use for the three subnetworks?
+        - generic [ref=e1609]:
+          - button "A 255.255.255.240" [ref=e1610] [cursor=pointer]:
+            - generic [ref=e1612]: A
+            - generic [ref=e1613]: 255.255.255.240
+          - button "B 255.255.255.0" [ref=e1614] [cursor=pointer]:
+            - generic [ref=e1616]: B
+            - generic [ref=e1617]: 255.255.255.0
+          - button "C 255.255.255.248" [ref=e1618] [cursor=pointer]:
+            - generic [ref=e1620]: C
+            - generic [ref=e1621]: 255.255.255.248
+          - button "D 255.255.255.252" [ref=e1622] [cursor=pointer]:
+            - generic [ref=e1624]: D
+            - generic [ref=e1625]: 255.255.255.252
+        - generic [ref=e1626]:
+          - button "Previous" [ref=e1627] [cursor=pointer]
+          - generic [ref=e1628]: 54 / 60
+          - button "Next" [ref=e1629] [cursor=pointer]
+    - generic [ref=e1630]:
+      - generic [ref=e1631]:
+        - generic [ref=e1632]: Q 55
+        - generic [ref=e1633]: Single Choice
+      - generic [ref=e1634]:
+        - paragraph [ref=e1635]: Refer to the exhibit. A company uses the address block of 128.107.0.0/16 for its network. What subnet mask would provide the maximum number of equal size subnets while providing enough host addresses for each subnet in the exhibit?
+        - generic [ref=e1636]:
+          - button "A 255.255.255.128" [ref=e1637] [cursor=pointer]:
+            - generic [ref=e1639]: A
+            - generic [ref=e1640]: 255.255.255.128
+          - button "B 255.255.255.224" [ref=e1641] [cursor=pointer]:
+            - generic [ref=e1643]: B
+            - generic [ref=e1644]: 255.255.255.224
+          - button "C 255.255.255.192" [ref=e1645] [cursor=pointer]:
+            - generic [ref=e1647]: C
+            - generic [ref=e1648]: 255.255.255.192
+          - button "D 255.255.255.0" [ref=e1649] [cursor=pointer]:
+            - generic [ref=e1651]: D
+            - generic [ref=e1652]: 255.255.255.0
+          - button "E 255.255.255.240" [ref=e1653] [cursor=pointer]:
+            - generic [ref=e1655]: E
+            - generic [ref=e1656]: 255.255.255.240
+        - generic [ref=e1657]:
+          - button "Previous" [ref=e1658] [cursor=pointer]
+          - generic [ref=e1659]: 55 / 60
+          - button "Next" [ref=e1660] [cursor=pointer]
+    - generic [ref=e1661]:
+      - generic [ref=e1662]:
+        - generic [ref=e1663]: Q 56
+        - generic [ref=e1664]: Single Choice
+      - generic [ref=e1665]:
+        - paragraph [ref=e1666]: Refer to the exhibit. Which protocol was responsible for building the table that is shown?
+        - generic [ref=e1667]:
+          - button "A ARP" [ref=e1668] [cursor=pointer]:
+            - generic [ref=e1670]: A
+            - generic [ref=e1671]: ARP
+          - button "B DNS" [ref=e1672] [cursor=pointer]:
+            - generic [ref=e1674]: B
+            - generic [ref=e1675]: DNS
+          - button "C DHCP" [ref=e1676] [cursor=pointer]:
+            - generic [ref=e1678]: C
+            - generic [ref=e1679]: DHCP
+          - button "D ICMP" [ref=e1680] [cursor=pointer]:
+            - generic [ref=e1682]: D
+            - generic [ref=e1683]: ICMP
+        - generic [ref=e1684]:
+          - button "Previous" [ref=e1685] [cursor=pointer]
+          - generic [ref=e1686]: 56 / 60
+          - button "Next" [ref=e1687] [cursor=pointer]
+    - generic [ref=e1688]:
+      - generic [ref=e1689]:
+        - generic [ref=e1690]: Q 57
+        - generic [ref=e1691]: Choose 2
+      - generic [ref=e1692]:
+        - paragraph [ref=e1693]: Which two traffic types use the Real-Time Transport Protocol (RTP)? (Choose two.)
+        - generic [ref=e1694]:
+          - button "A web" [ref=e1695] [cursor=pointer]:
+            - generic [ref=e1697]: A
+            - generic [ref=e1698]: web
+          - button "B peer to peer" [ref=e1699] [cursor=pointer]:
+            - generic [ref=e1701]: B
+            - generic [ref=e1702]: peer to peer
+          - button "C file transfer" [ref=e1703] [cursor=pointer]:
+            - generic [ref=e1705]: C
+            - generic [ref=e1706]: file transfer
+          - button "D video" [ref=e1707] [cursor=pointer]:
+            - generic [ref=e1709]: D
+            - generic [ref=e1710]: video
+          - button "E voice" [ref=e1711] [cursor=pointer]:
+            - generic [ref=e1713]: E
+            - generic [ref=e1714]: voice
+        - generic [ref=e1715]:
+          - button "Previous" [ref=e1716] [cursor=pointer]
+          - generic [ref=e1717]: 57 / 60
+          - button "Next" [ref=e1718] [cursor=pointer]
+    - generic [ref=e1719]:
+      - generic [ref=e1720]:
+        - generic [ref=e1721]: Q 58
+        - generic [ref=e1722]: Single Choice
+      - generic [ref=e1723]:
+        - paragraph [ref=e1724]: What is the purpose of the TCP sliding window?
+        - generic [ref=e1725]:
+          - button "A to ensure that segments arrive in order at the destination" [ref=e1726] [cursor=pointer]:
+            - generic [ref=e1728]: A
+            - generic [ref=e1729]: to ensure that segments arrive in order at the destination
+          - button "B to request that a source decrease the rate at which it transmits data" [ref=e1730] [cursor=pointer]:
+            - generic [ref=e1732]: B
+            - generic [ref=e1733]: to request that a source decrease the rate at which it transmits data
+          - button "C to inform a source to retransmit data from a specific point forward" [ref=e1734] [cursor=pointer]:
+            - generic [ref=e1736]: C
+            - generic [ref=e1737]: to inform a source to retransmit data from a specific point forward
+          - button "D to end communication when data transmission is complete" [ref=e1738] [cursor=pointer]:
+            - generic [ref=e1740]: D
+            - generic [ref=e1741]: to end communication when data transmission is complete
+        - generic [ref=e1742]:
+          - button "Previous" [ref=e1743] [cursor=pointer]
+          - generic [ref=e1744]: 58 / 60
+          - button "Next" [ref=e1745] [cursor=pointer]
+    - generic [ref=e1746]:
+      - generic [ref=e1747]:
+        - generic [ref=e1748]: Q 59
+        - generic [ref=e1749]: Single Choice
+      - generic [ref=e1750]:
+        - paragraph [ref=e1751]: What technique is used with UTP cable to help protect against signal interference from crosstalk?
+        - generic [ref=e1752]:
+          - button "A terminating the cable with special grounded connectors" [ref=e1753] [cursor=pointer]:
+            - generic [ref=e1755]: A
+            - generic [ref=e1756]: terminating the cable with special grounded connectors
+          - button "B twisting the wires together into pairs" [ref=e1757] [cursor=pointer]:
+            - generic [ref=e1759]: B
+            - generic [ref=e1760]: twisting the wires together into pairs
+          - button "C wrapping a foil shield around the wire pairs" [ref=e1761] [cursor=pointer]:
+            - generic [ref=e1763]: C
+            - generic [ref=e1764]: wrapping a foil shield around the wire pairs
+          - button "D encasing the cables within a flexible plastic sheath" [ref=e1765] [cursor=pointer]:
+            - generic [ref=e1767]: D
+            - generic [ref=e1768]: encasing the cables within a flexible plastic sheath
+        - generic [ref=e1769]:
+          - button "Previous" [ref=e1770] [cursor=pointer]
+          - generic [ref=e1771]: 59 / 60
+          - button "Next" [ref=e1772] [cursor=pointer]
+    - generic [ref=e1773]:
+      - generic [ref=e1774]:
+        - generic [ref=e1775]: Q 60
+        - generic [ref=e1776]: Choose 2
+      - generic [ref=e1777]:
+        - paragraph [ref=e1778]: A network technician is researching the use of fiber optic cabling in a new technology center. Which two issues should be considered before implementing fiber optic media? (Choose two.)
+        - generic [ref=e1779]:
+          - button "A Fiber optic cabling requires different termination and splicing expertise from what copper cabling requires." [ref=e1780] [cursor=pointer]:
+            - generic [ref=e1782]: A
+            - generic [ref=e1783]: Fiber optic cabling requires different termination and splicing expertise from what copper cabling requires.
+          - button "B Fiber optic cabling requires specific grounding to be immune to EMI." [ref=e1784] [cursor=pointer]:
+            - generic [ref=e1786]: B
+            - generic [ref=e1787]: Fiber optic cabling requires specific grounding to be immune to EMI.
+          - button "C Fiber optic cabling is susceptible to loss of signal due to RFI." [ref=e1788] [cursor=pointer]:
+            - generic [ref=e1790]: C
+            - generic [ref=e1791]: Fiber optic cabling is susceptible to loss of signal due to RFI.
+          - button "D Fiber optic provides higher data capacity but is more expensive than copper cabling." [ref=e1792] [cursor=pointer]:
+            - generic [ref=e1794]: D
+            - generic [ref=e1795]: Fiber optic provides higher data capacity but is more expensive than copper cabling.
+          - button "E Fiber optic cable is able to withstand rough handling." [ref=e1796] [cursor=pointer]:
+            - generic [ref=e1798]: E
+            - generic [ref=e1799]: Fiber optic cable is able to withstand rough handling.
+        - generic [ref=e1800]:
+          - button "Previous" [ref=e1801] [cursor=pointer]
+          - generic [ref=e1802]: 60 / 60
+          - button "Finish" [ref=e1803] [cursor=pointer]
+    - generic [ref=e1804]:
+      - generic [ref=e1805]:
+        - generic [ref=e1806]: Q 61
+        - generic [ref=e1807]: Matching
+      - generic [ref=e1808]:
+        - paragraph [ref=e1809]: Match the type of threat with the cause. (Not all options are used.)
+        - generic [ref=e1810]:
+          - button "A Hardware threats – physical damage to servers, routers, switches, cabling plants, and workstations" [ref=e1811] [cursor=pointer]:
+            - generic [ref=e1813]: A
+            - generic [ref=e1814]: Hardware threats – physical damage to servers, routers, switches, cabling plants, and workstations
+          - button "B Environmental threats – temperature extremes (too hot or too cold) or humidity extremes (too wet or too dry)" [ref=e1815] [cursor=pointer]:
+            - generic [ref=e1817]: B
+            - generic [ref=e1818]: Environmental threats – temperature extremes (too hot or too cold) or humidity extremes (too wet or too dry)
+          - button "C Electrical threats – voltage spikes, insufficient supply voltage (brownouts), unconditioned power (noise), and total power loss" [ref=e1819] [cursor=pointer]:
+            - generic [ref=e1821]: C
+            - generic [ref=e1822]: Electrical threats – voltage spikes, insufficient supply voltage (brownouts), unconditioned power (noise), and total power loss
+          - button "D Maintenance threats – unauthorized access resulting in loss of data, poor maintenance practices" [ref=e1823] [cursor=pointer]:
+            - generic [ref=e1825]: D
+            - generic [ref=e1826]: Maintenance threats – unauthorized access resulting in loss of data, poor maintenance practices
+        - generic [ref=e1827]:
+          - button "Previous" [ref=e1828] [cursor=pointer]
+          - generic [ref=e1829]: 61 / 70
+          - button "Next" [ref=e1830] [cursor=pointer]
+    - generic [ref=e1831]:
+      - generic [ref=e1832]:
+        - generic [ref=e1833]: Q 62
+        - generic [ref=e1834]: Single Choice
+      - generic [ref=e1835]:
+        - paragraph [ref=e1836]: Refer to the exhibit. The switches are in their default configuration. Host A needs to communicate with host D, but host A does not have the MAC address for its default gateway. Which network hosts will receive the ARP request sent by host A?
+        - generic [ref=e1837]:
+          - button "A only hosts A, B, C, and D" [ref=e1838] [cursor=pointer]:
+            - generic [ref=e1840]: A
+            - generic [ref=e1841]: only hosts A, B, C, and D
+          - button "B only router R1" [ref=e1842] [cursor=pointer]:
+            - generic [ref=e1844]: B
+            - generic [ref=e1845]: only router R1
+          - button "C only hosts A, B, and C" [ref=e1846] [cursor=pointer]:
+            - generic [ref=e1848]: C
+            - generic [ref=e1849]: only hosts A, B, and C
+          - button "D only hosts B and C" [ref=e1850] [cursor=pointer]:
+            - generic [ref=e1852]: D
+            - generic [ref=e1853]: only hosts B and C
+          - button "E only hosts B, C, and router R1" [ref=e1854] [cursor=pointer]:
+            - generic [ref=e1856]: E
+            - generic [ref=e1857]: only hosts B, C, and router R1
+          - button "F only host D" [ref=e1858] [cursor=pointer]:
+            - generic [ref=e1860]: F
+            - generic [ref=e1861]: only host D
+        - generic [ref=e1862]:
+          - button "Previous" [ref=e1863] [cursor=pointer]
+          - generic [ref=e1864]: 62 / 70
+          - button "Next" [ref=e1865] [cursor=pointer]
+    - generic [ref=e1866]:
+      - generic [ref=e1867]:
+        - generic [ref=e1868]: Q 63
+        - generic [ref=e1869]: Single Choice
+      - generic [ref=e1870]:
+        - paragraph [ref=e1871]: Which value, that is contained in an IPv4 header field, is decremented by each router that receives a packet?
+        - generic [ref=e1872]:
+          - button "A Differentiated Services" [ref=e1873] [cursor=pointer]:
+            - generic [ref=e1875]: A
+            - generic [ref=e1876]: Differentiated Services
+          - button "B Fragment Occset" [ref=e1877] [cursor=pointer]:
+            - generic [ref=e1879]: B
+            - generic [ref=e1880]: Fragment Occset
+          - button "C Header Length" [ref=e1881] [cursor=pointer]:
+            - generic [ref=e1883]: C
+            - generic [ref=e1884]: Header Length
+          - button "D Time-to-Live" [ref=e1885] [cursor=pointer]:
+            - generic [ref=e1887]: D
+            - generic [ref=e1888]: Time-to-Live
+        - generic [ref=e1889]:
+          - button "Previous" [ref=e1890] [cursor=pointer]
+          - generic [ref=e1891]: 63 / 70
+          - button "Next" [ref=e1892] [cursor=pointer]
+    - generic [ref=e1893]:
+      - generic [ref=e1894]:
+        - generic [ref=e1895]: Q 64
+        - generic [ref=e1896]: Single Choice
+      - generic [ref=e1897]:
+        - paragraph [ref=e1898]: Refer to the exhibit. The IP address of which device interface should be used as the default gateway setting of host H1?
+        - generic [ref=e1899]:
+          - 'button "A R2: S0/0/1" [ref=e1900] [cursor=pointer]':
+            - generic [ref=e1902]: A
+            - generic [ref=e1903]: "R2: S0/0/1"
+          - 'button "B R1: G0/0" [ref=e1904] [cursor=pointer]':
+            - generic [ref=e1906]: B
+            - generic [ref=e1907]: "R1: G0/0"
+          - 'button "C R2: S0/0/0" [ref=e1908] [cursor=pointer]':
+            - generic [ref=e1910]: C
+            - generic [ref=e1911]: "R2: S0/0/0"
+          - 'button "D R1: S0/0/0" [ref=e1912] [cursor=pointer]':
+            - generic [ref=e1914]: D
+            - generic [ref=e1915]: "R1: S0/0/0"
+        - generic [ref=e1916]:
+          - button "Previous" [ref=e1917] [cursor=pointer]
+          - generic [ref=e1918]: 64 / 70
+          - button "Next" [ref=e1919] [cursor=pointer]
+    - generic [ref=e1920]:
+      - generic [ref=e1921]:
+        - generic [ref=e1922]: Q 65
+        - generic [ref=e1923]: Choose 2
+      - generic [ref=e1924]:
+        - paragraph [ref=e1925]: Which two statements describe features of an IPv4 routing table on a router? (Choose two.)
+        - generic [ref=e1926]:
+          - 'button "A Directly connected interfaces will have two route source codes in the routing table: C and S ." [ref=e1927] [cursor=pointer]':
+            - generic [ref=e1929]: A
+            - generic [ref=e1930]: "Directly connected interfaces will have two route source codes in the routing table: C and S ."
+          - button "B The netstat -r command can be used to display the routing table of a router." [ref=e1931] [cursor=pointer]:
+            - generic [ref=e1933]: B
+            - generic [ref=e1934]: The netstat -r command can be used to display the routing table of a router.
+          - button "C If there are two or more possible routes to the same destination, the route associated with the higher metric value is included in the routing table." [ref=e1935] [cursor=pointer]:
+            - generic [ref=e1937]: C
+            - generic [ref=e1938]: If there are two or more possible routes to the same destination, the route associated with the higher metric value is included in the routing table.
+          - button "D The routing table lists the MAC addresses of each active interface." [ref=e1939] [cursor=pointer]:
+            - generic [ref=e1941]: D
+            - generic [ref=e1942]: The routing table lists the MAC addresses of each active interface.
+          - button "E If a default static route is configured in the router, an entry will be included in the routing table with source code S." [ref=e1943] [cursor=pointer]:
+            - generic [ref=e1945]: E
+            - generic [ref=e1946]: If a default static route is configured in the router, an entry will be included in the routing table with source code S.
+          - button "F It stores information about routes derived from the active router interfaces." [ref=e1947] [cursor=pointer]:
+            - generic [ref=e1949]: F
+            - generic [ref=e1950]: It stores information about routes derived from the active router interfaces.
+        - generic [ref=e1951]:
+          - button "Previous" [ref=e1952] [cursor=pointer]
+          - generic [ref=e1953]: 65 / 70
+          - button "Next" [ref=e1954] [cursor=pointer]
+    - generic [ref=e1955]:
+      - generic [ref=e1956]:
+        - generic [ref=e1957]: Q 66
+        - generic [ref=e1958]: Single Choice
+      - generic [ref=e1959]:
+        - paragraph [ref=e1960]: Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?
+        - generic [ref=e1961]:
+          - button "A financial transactions, web page, audio conference" [ref=e1962] [cursor=pointer]:
+            - generic [ref=e1964]: A
+            - generic [ref=e1965]: financial transactions, web page, audio conference
+          - button "B financial transactions, audio conference, web page" [ref=e1966] [cursor=pointer]:
+            - generic [ref=e1968]: B
+            - generic [ref=e1969]: financial transactions, audio conference, web page
+          - button "C audio conference, financial transactions, web page" [ref=e1970] [cursor=pointer]:
+            - generic [ref=e1972]: C
+            - generic [ref=e1973]: audio conference, financial transactions, web page
+          - button "D audio conference, web page, financial transactions" [ref=e1974] [cursor=pointer]:
+            - generic [ref=e1976]: D
+            - generic [ref=e1977]: audio conference, web page, financial transactions
+        - generic [ref=e1978]:
+          - button "Previous" [ref=e1979] [cursor=pointer]
+          - generic [ref=e1980]: 66 / 70
+          - button "Next" [ref=e1981] [cursor=pointer]
+    - generic [ref=e1982]:
+      - generic [ref=e1983]:
+        - generic [ref=e1984]: Q 67
+        - generic [ref=e1985]: Single Choice
+      - generic [ref=e1986]:
+        - paragraph [ref=e1987]: What is the consequence of configuring a router with the ipv6 unicast-routing global configuration command?
+        - generic [ref=e1988]:
+          - button "A All router interfaces will be automatically activated." [ref=e1989] [cursor=pointer]:
+            - generic [ref=e1991]: A
+            - generic [ref=e1992]: All router interfaces will be automatically activated.
+          - button "B Each router interface will generate an IPv6 link-local address." [ref=e1993] [cursor=pointer]:
+            - generic [ref=e1995]: B
+            - generic [ref=e1996]: Each router interface will generate an IPv6 link-local address.
+          - button "C The IPv6 enabled router interfaces begin sending ICMPv6 Router Advertisement messages." [ref=e1997] [cursor=pointer]:
+            - generic [ref=e1999]: C
+            - generic [ref=e2000]: The IPv6 enabled router interfaces begin sending ICMPv6 Router Advertisement messages.
+          - button "D It statically creates a global unicast address on this router." [ref=e2001] [cursor=pointer]:
+            - generic [ref=e2003]: D
+            - generic [ref=e2004]: It statically creates a global unicast address on this router.
+        - generic [ref=e2005]:
+          - button "Previous" [ref=e2006] [cursor=pointer]
+          - generic [ref=e2007]: 67 / 70
+          - button "Next" [ref=e2008] [cursor=pointer]
+    - generic [ref=e2009]:
+      - generic [ref=e2010]:
+        - generic [ref=e2011]: Q 68
+        - generic [ref=e2012]: Single Choice
+      - generic [ref=e2013]:
+        - paragraph [ref=e2014]: Refer to the exhibit. If Host1 were to transfer a file to the server, what layers of the TCP/IP model would be used?
+        - generic [ref=e2015]:
+          - button "A only application, Internet, and network access layers" [ref=e2016] [cursor=pointer]:
+            - generic [ref=e2018]: A
+            - generic [ref=e2019]: only application, Internet, and network access layers
+          - button "B only application, transport, network, data link, and physical layers" [ref=e2020] [cursor=pointer]:
+            - generic [ref=e2022]: B
+            - generic [ref=e2023]: only application, transport, network, data link, and physical layers
+          - button "C application, session, transport, network, data link, and physical layers" [ref=e2024] [cursor=pointer]:
+            - generic [ref=e2026]: C
+            - generic [ref=e2027]: application, session, transport, network, data link, and physical layers
+          - button "D only application and Internet layers" [ref=e2028] [cursor=pointer]:
+            - generic [ref=e2030]: D
+            - generic [ref=e2031]: only application and Internet layers
+          - button "E application, transport, Internet, and network access layers" [ref=e2032] [cursor=pointer]:
+            - generic [ref=e2034]: E
+            - generic [ref=e2035]: application, transport, Internet, and network access layers
+          - button "F only Internet and network access layers" [ref=e2036] [cursor=pointer]:
+            - generic [ref=e2038]: F
+            - generic [ref=e2039]: only Internet and network access layers
+        - generic [ref=e2040]:
+          - button "Previous" [ref=e2041] [cursor=pointer]
+          - generic [ref=e2042]: 68 / 70
+          - button "Next" [ref=e2043] [cursor=pointer]
+    - generic [ref=e2044]:
+      - generic [ref=e2045]:
+        - generic [ref=e2046]: Q 69
+        - generic [ref=e2047]: Single Choice
+      - generic [ref=e2048]:
+        - paragraph [ref=e2049]: The global configuration command ip default-gateway 172.16.100.1 is applied to a switch. What is the effect of this command?
+        - generic [ref=e2050]:
+          - button "A The switch can communicate with other hosts on the 172.16.100.0 network." [ref=e2051] [cursor=pointer]:
+            - generic [ref=e2053]: A
+            - generic [ref=e2054]: The switch can communicate with other hosts on the 172.16.100.0 network.
+          - button "B The switch can be remotely managed from a host on another network." [ref=e2055] [cursor=pointer]:
+            - generic [ref=e2057]: B
+            - generic [ref=e2058]: The switch can be remotely managed from a host on another network.
+          - button "C The switch will have a management interface with the address 172.16.100.1." [ref=e2059] [cursor=pointer]:
+            - generic [ref=e2061]: C
+            - generic [ref=e2062]: The switch will have a management interface with the address 172.16.100.1.
+          - button "D The switch is limited to sending and receiving frames to and from the gateway 172.16.100.1." [ref=e2063] [cursor=pointer]:
+            - generic [ref=e2065]: D
+            - generic [ref=e2066]: The switch is limited to sending and receiving frames to and from the gateway 172.16.100.1.
+        - generic [ref=e2067]:
+          - button "Previous" [ref=e2068] [cursor=pointer]
+          - generic [ref=e2069]: 69 / 70
+          - button "Next" [ref=e2070] [cursor=pointer]
+    - generic [ref=e2071]:
+      - generic [ref=e2072]:
+        - generic [ref=e2073]: Q 70
+        - generic [ref=e2074]: Single Choice
+      - generic [ref=e2075]:
+        - paragraph [ref=e2076]: What characteristic describes adware?
+        - generic [ref=e2077]:
+          - button "A a network device that filters access and traffic coming into a network" [ref=e2078] [cursor=pointer]:
+            - generic [ref=e2080]: A
+            - generic [ref=e2081]: a network device that filters access and traffic coming into a network
+          - button "B an attack that slows or crashes a device or network service" [ref=e2082] [cursor=pointer]:
+            - generic [ref=e2084]: B
+            - generic [ref=e2085]: an attack that slows or crashes a device or network service
+          - button "C the use of stolen credentials to access private data" [ref=e2086] [cursor=pointer]:
+            - generic [ref=e2088]: C
+            - generic [ref=e2089]: the use of stolen credentials to access private data
+          - button "D software that is installed on a user device and collects information about the user" [ref=e2090] [cursor=pointer]:
+            - generic [ref=e2092]: D
+            - generic [ref=e2093]: software that is installed on a user device and collects information about the user
+        - generic [ref=e2094]:
+          - button "Previous" [ref=e2095] [cursor=pointer]
+          - generic [ref=e2096]: 70 / 70
+          - button "Finish" [ref=e2097] [cursor=pointer]
+    - generic [ref=e2098]:
+      - generic [ref=e2099]:
+        - generic [ref=e2100]: Q 71
+        - generic [ref=e2101]: Choose 2
+      - generic [ref=e2102]:
+        - paragraph [ref=e2103]: Which two statements are correct about MAC and IP addresses during data transmission if NAT is not involved? (Choose two.)
+        - generic [ref=e2104]:
+          - button "A Destination MAC addresses will never change in a frame that goes across seven routers." [ref=e2105] [cursor=pointer]:
+            - generic [ref=e2107]: A
+            - generic [ref=e2108]: Destination MAC addresses will never change in a frame that goes across seven routers.
+          - button "B A packet that has crossed four routers has changed the destination IP address four times." [ref=e2109] [cursor=pointer]:
+            - generic [ref=e2111]: B
+            - generic [ref=e2112]: A packet that has crossed four routers has changed the destination IP address four times.
+          - button "C Every time a frame is encapsulated with a new destination MAC address, a new destination IP address is needed." [ref=e2113] [cursor=pointer]:
+            - generic [ref=e2115]: C
+            - generic [ref=e2116]: Every time a frame is encapsulated with a new destination MAC address, a new destination IP address is needed.
+          - button "D Destination and source MAC addresses have local significance and change every time a frame goes from one LAN to another." [ref=e2117] [cursor=pointer]:
+            - generic [ref=e2119]: D
+            - generic [ref=e2120]: Destination and source MAC addresses have local significance and change every time a frame goes from one LAN to another.
+          - button "E Destination IP addresses in a packet header remain constant along the entire path to a target host." [ref=e2121] [cursor=pointer]:
+            - generic [ref=e2123]: E
+            - generic [ref=e2124]: Destination IP addresses in a packet header remain constant along the entire path to a target host.
+        - generic [ref=e2125]:
+          - button "Previous" [ref=e2126] [cursor=pointer]
+          - generic [ref=e2127]: 71 / 80
+          - button "Next" [ref=e2128] [cursor=pointer]
+    - generic [ref=e2129]:
+      - generic [ref=e2130]:
+        - generic [ref=e2131]: Q 72
+        - generic [ref=e2132]: Choose 3
+      - generic [ref=e2133]:
+        - paragraph [ref=e2134]: Refer to the exhibit. What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)
+        - generic [ref=e2135]:
+          - button "A Two devices are attached to the switch." [ref=e2136] [cursor=pointer]:
+            - generic [ref=e2138]: A
+            - generic [ref=e2139]: Two devices are attached to the switch.
+          - button "B The default SVI has been configured." [ref=e2140] [cursor=pointer]:
+            - generic [ref=e2142]: B
+            - generic [ref=e2143]: The default SVI has been configured.
+          - button "C The switch can be remotely managed." [ref=e2144] [cursor=pointer]:
+            - generic [ref=e2146]: C
+            - generic [ref=e2147]: The switch can be remotely managed.
+          - button "D Two physical interfaces have been configured." [ref=e2148] [cursor=pointer]:
+            - generic [ref=e2150]: D
+            - generic [ref=e2151]: Two physical interfaces have been configured.
+          - button "E Passwords have been configured on the switch." [ref=e2152] [cursor=pointer]:
+            - generic [ref=e2154]: E
+            - generic [ref=e2155]: Passwords have been configured on the switch.
+          - button "F One device is attached to a physical interface." [ref=e2156] [cursor=pointer]:
+            - generic [ref=e2158]: F
+            - generic [ref=e2159]: One device is attached to a physical interface.
+        - generic [ref=e2160]:
+          - button "Previous" [ref=e2161] [cursor=pointer]
+          - generic [ref=e2162]: 72 / 80
+          - button "Next" [ref=e2163] [cursor=pointer]
+    - generic [ref=e2164]:
+      - generic [ref=e2165]:
+        - generic [ref=e2166]: Q 73
+        - generic [ref=e2167]: Single Choice
+      - generic [ref=e2168]:
+        - paragraph [ref=e2169]: A user is executing a tracert to a remote device. At what point would a router, which is in the path to the destination device, stop forwarding the packet?
+        - generic [ref=e2170]:
+          - button "A when the values of both the Echo Request and Echo Reply messages reach zero" [ref=e2171] [cursor=pointer]:
+            - generic [ref=e2173]: A
+            - generic [ref=e2174]: when the values of both the Echo Request and Echo Reply messages reach zero
+          - button "B when the value in the TTL field reaches zero" [ref=e2175] [cursor=pointer]:
+            - generic [ref=e2177]: B
+            - generic [ref=e2178]: when the value in the TTL field reaches zero
+          - button "C when the router receives an ICMP Time Exceeded message" [ref=e2179] [cursor=pointer]:
+            - generic [ref=e2181]: C
+            - generic [ref=e2182]: when the router receives an ICMP Time Exceeded message
+          - button "D when the host responds with an ICMP Echo Reply message" [ref=e2183] [cursor=pointer]:
+            - generic [ref=e2185]: D
+            - generic [ref=e2186]: when the host responds with an ICMP Echo Reply message
+          - button "E when the RTT value reaches zero" [ref=e2187] [cursor=pointer]:
+            - generic [ref=e2189]: E
+            - generic [ref=e2190]: when the RTT value reaches zero
+        - generic [ref=e2191]:
+          - button "Previous" [ref=e2192] [cursor=pointer]
+          - generic [ref=e2193]: 73 / 80
+          - button "Next" [ref=e2194] [cursor=pointer]
+    - generic [ref=e2195]:
+      - generic [ref=e2196]:
+        - generic [ref=e2197]: Q 74
+        - generic [ref=e2198]: Choose 2
+      - generic [ref=e2199]:
+        - paragraph [ref=e2200]: What are two functions that are provided by the network layer? (Choose two.)
+        - generic [ref=e2201]:
+          - button "A carrying data between processes that are running on source and destination hosts" [ref=e2202] [cursor=pointer]:
+            - generic [ref=e2204]: A
+            - generic [ref=e2205]: carrying data between processes that are running on source and destination hosts
+          - button "B directing data packets to destination hosts on other networks" [ref=e2206] [cursor=pointer]:
+            - generic [ref=e2208]: B
+            - generic [ref=e2209]: directing data packets to destination hosts on other networks
+          - button "C providing dedicated end-to-end connections" [ref=e2210] [cursor=pointer]:
+            - generic [ref=e2212]: C
+            - generic [ref=e2213]: providing dedicated end-to-end connections
+          - button "D placing data on the network medium" [ref=e2214] [cursor=pointer]:
+            - generic [ref=e2216]: D
+            - generic [ref=e2217]: placing data on the network medium
+          - button "E providing end devices with a unique network identifier" [ref=e2218] [cursor=pointer]:
+            - generic [ref=e2220]: E
+            - generic [ref=e2221]: providing end devices with a unique network identifier
+        - generic [ref=e2222]:
+          - button "Previous" [ref=e2223] [cursor=pointer]
+          - generic [ref=e2224]: 74 / 80
+          - button "Next" [ref=e2225] [cursor=pointer]
+    - generic [ref=e2226]:
+      - generic [ref=e2227]:
+        - generic [ref=e2228]: Q 75
+        - generic [ref=e2229]: Single Choice
+      - generic [ref=e2230]:
+        - paragraph [ref=e2231]: A network administrator is adding a new LAN to a branch office. The new LAN must support 61 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+        - generic [ref=e2232]:
+          - button "A 255.255.255.224" [ref=e2233] [cursor=pointer]:
+            - generic [ref=e2235]: A
+            - generic [ref=e2236]: 255.255.255.224
+          - button "B 255.255.255.240" [ref=e2237] [cursor=pointer]:
+            - generic [ref=e2239]: B
+            - generic [ref=e2240]: 255.255.255.240
+          - button "C 255.255.255.192" [ref=e2241] [cursor=pointer]:
+            - generic [ref=e2243]: C
+            - generic [ref=e2244]: 255.255.255.192
+          - button "D 255.255.255.128" [ref=e2245] [cursor=pointer]:
+            - generic [ref=e2247]: D
+            - generic [ref=e2248]: 255.255.255.128
+        - generic [ref=e2249]:
+          - button "Previous" [ref=e2250] [cursor=pointer]
+          - generic [ref=e2251]: 75 / 80
+          - button "Next" [ref=e2252] [cursor=pointer]
+    - generic [ref=e2253]:
+      - generic [ref=e2254]:
+        - generic [ref=e2255]: Q 76
+        - generic [ref=e2256]: Single Choice
+      - generic [ref=e2257]:
+        - paragraph [ref=e2258]: A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in the ARP cache. How will the device obtain a destination MAC address?
+        - generic [ref=e2259]:
+          - button "A It will send an ARP request for the MAC address of the destination device." [ref=e2260] [cursor=pointer]:
+            - generic [ref=e2262]: A
+            - generic [ref=e2263]: It will send an ARP request for the MAC address of the destination device.
+          - button "B It will send the frame with a broadcast MAC address." [ref=e2264] [cursor=pointer]:
+            - generic [ref=e2266]: B
+            - generic [ref=e2267]: It will send the frame with a broadcast MAC address.
+          - button "C It will send the frame and use the device MAC address as the destination." [ref=e2268] [cursor=pointer]:
+            - generic [ref=e2270]: C
+            - generic [ref=e2271]: It will send the frame and use the device MAC address as the destination.
+          - button "D It will send an ARP request for the MAC address of the default gateway." [ref=e2272] [cursor=pointer]:
+            - generic [ref=e2274]: D
+            - generic [ref=e2275]: It will send an ARP request for the MAC address of the default gateway.
+          - button "E It will send an ARP request to the DNS server for the destination MAC address." [ref=e2276] [cursor=pointer]:
+            - generic [ref=e2278]: E
+            - generic [ref=e2279]: It will send an ARP request to the DNS server for the destination MAC address.
+        - generic [ref=e2280]:
+          - button "Previous" [ref=e2281] [cursor=pointer]
+          - generic [ref=e2282]: 76 / 80
+          - button "Next" [ref=e2283] [cursor=pointer]
+    - generic [ref=e2284]:
+      - generic [ref=e2285]:
+        - generic [ref=e2286]: Q 77
+        - generic [ref=e2287]: Single Choice
+      - generic [ref=e2288]:
+        - paragraph [ref=e2289]: What characteristic describes a virus?
+        - generic [ref=e2290]:
+          - button "A the use of stolen credentials to access private data" [ref=e2291] [cursor=pointer]:
+            - generic [ref=e2293]: A
+            - generic [ref=e2294]: the use of stolen credentials to access private data
+          - button "B a network device that filters access and traffic coming into a network" [ref=e2295] [cursor=pointer]:
+            - generic [ref=e2297]: B
+            - generic [ref=e2298]: a network device that filters access and traffic coming into a network
+          - button "C malicious software or code running on an end device" [ref=e2299] [cursor=pointer]:
+            - generic [ref=e2301]: C
+            - generic [ref=e2302]: malicious software or code running on an end device
+          - button "D an attack that slows or crashes a device or network service" [ref=e2303] [cursor=pointer]:
+            - generic [ref=e2305]: D
+            - generic [ref=e2306]: an attack that slows or crashes a device or network service
+        - generic [ref=e2307]:
+          - button "Previous" [ref=e2308] [cursor=pointer]
+          - generic [ref=e2309]: 77 / 80
+          - button "Next" [ref=e2310] [cursor=pointer]
+    - generic [ref=e2311]:
+      - generic [ref=e2312]:
+        - generic [ref=e2313]: Q 78
+        - generic [ref=e2314]: Single Choice
+      - generic [ref=e2315]:
+        - paragraph [ref=e2316]: A disgruntled employee is using some free wireless networking tools to determine information about the enterprise wireless networks. This person is planning on using this information to hack the wireless network. What type of attack is this?
+        - generic [ref=e2317]:
+          - button "A access" [ref=e2318] [cursor=pointer]:
+            - generic [ref=e2320]: A
+            - generic [ref=e2321]: access
+          - button "B DoS" [ref=e2322] [cursor=pointer]:
+            - generic [ref=e2324]: B
+            - generic [ref=e2325]: DoS
+          - button "C Trojan horse" [ref=e2326] [cursor=pointer]:
+            - generic [ref=e2328]: C
+            - generic [ref=e2329]: Trojan horse
+          - button "D reconnaissance" [ref=e2330] [cursor=pointer]:
+            - generic [ref=e2332]: D
+            - generic [ref=e2333]: reconnaissance
+        - generic [ref=e2334]:
+          - button "Previous" [ref=e2335] [cursor=pointer]
+          - generic [ref=e2336]: 78 / 80
+          - button "Next" [ref=e2337] [cursor=pointer]
+    - generic [ref=e2338]:
+      - generic [ref=e2339]:
+        - generic [ref=e2340]: Q 79
+        - generic [ref=e2341]: Single Choice
+      - generic [ref=e2342]:
+        - paragraph [ref=e2343]: What service is provided by POP3?
+        - generic [ref=e2344]:
+          - button "A Uses encryption to provide secure remote access to network devices and servers." [ref=e2345] [cursor=pointer]:
+            - generic [ref=e2347]: A
+            - generic [ref=e2348]: Uses encryption to provide secure remote access to network devices and servers.
+          - button "B Retrieves email from the server by downloading the email to the local mail application of the client." [ref=e2349] [cursor=pointer]:
+            - generic [ref=e2351]: B
+            - generic [ref=e2352]: Retrieves email from the server by downloading the email to the local mail application of the client.
+          - button "C Allows remote access to network devices and servers." [ref=e2353] [cursor=pointer]:
+            - generic [ref=e2355]: C
+            - generic [ref=e2356]: Allows remote access to network devices and servers.
+          - button "D An application that allows real-time chatting among remote users." [ref=e2357] [cursor=pointer]:
+            - generic [ref=e2359]: D
+            - generic [ref=e2360]: An application that allows real-time chatting among remote users.
+        - generic [ref=e2361]:
+          - button "Previous" [ref=e2362] [cursor=pointer]
+          - generic [ref=e2363]: 79 / 80
+          - button "Next" [ref=e2364] [cursor=pointer]
+    - generic [ref=e2365]:
+      - generic [ref=e2366]:
+        - generic [ref=e2367]: Q 80
+        - generic [ref=e2368]: Single Choice
+      - generic [ref=e2369]:
+        - paragraph [ref=e2370]: What command can be used on a Windows PC to see the IP configuration of that computer?
+        - generic [ref=e2371]:
+          - button "A ipconfig" [ref=e2372] [cursor=pointer]:
+            - generic [ref=e2374]: A
+            - generic [ref=e2375]: ipconfig
+          - button "B show interfaces" [ref=e2376] [cursor=pointer]:
+            - generic [ref=e2378]: B
+            - generic [ref=e2379]: show interfaces
+          - button "C ping" [ref=e2380] [cursor=pointer]:
+            - generic [ref=e2382]: C
+            - generic [ref=e2383]: ping
+          - button "D show ip interface brief" [ref=e2384] [cursor=pointer]:
+            - generic [ref=e2386]: D
+            - generic [ref=e2387]: show ip interface brief
+        - generic [ref=e2388]:
+          - button "Previous" [ref=e2389] [cursor=pointer]
+          - generic [ref=e2390]: 80 / 80
+          - button "Finish" [ref=e2391] [cursor=pointer]
+    - generic [ref=e2392]:
+      - generic [ref=e2393]:
+        - generic [ref=e2394]: Q 81
+        - generic [ref=e2395]: Single Choice
+      - generic [ref=e2396]:
+        - paragraph [ref=e2397]: A network administrator needs to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?
+        - generic [ref=e2398]:
+          - button "A AUX" [ref=e2399] [cursor=pointer]:
+            - generic [ref=e2401]: A
+            - generic [ref=e2402]: AUX
+          - button "B Telnet" [ref=e2403] [cursor=pointer]:
+            - generic [ref=e2405]: B
+            - generic [ref=e2406]: Telnet
+          - button "C SSH" [ref=e2407] [cursor=pointer]:
+            - generic [ref=e2409]: C
+            - generic [ref=e2410]: SSH
+          - button "D Console" [ref=e2411] [cursor=pointer]:
+            - generic [ref=e2413]: D
+            - generic [ref=e2414]: Console
+        - generic [ref=e2415]:
+          - button "Previous" [ref=e2416] [cursor=pointer]
+          - generic [ref=e2417]: 81 / 90
+          - button "Next" [ref=e2418] [cursor=pointer]
+    - generic [ref=e2419]:
+      - generic [ref=e2420]:
+        - generic [ref=e2421]: Q 82
+        - generic [ref=e2422]: Single Choice
+      - generic [ref=e2423]:
+        - paragraph [ref=e2424]: A user sends an HTTP request to a web server on a remote network. During encapsulation for this request, what information is added to the address field of a frame to indicate the destination?
+        - generic [ref=e2425]:
+          - button "A the network domain of the destination host" [ref=e2426] [cursor=pointer]:
+            - generic [ref=e2428]: A
+            - generic [ref=e2429]: the network domain of the destination host
+          - button "B the MAC address of the default gateway" [ref=e2430] [cursor=pointer]:
+            - generic [ref=e2432]: B
+            - generic [ref=e2433]: the MAC address of the default gateway
+          - button "C the IP address of the default gateway" [ref=e2434] [cursor=pointer]:
+            - generic [ref=e2436]: C
+            - generic [ref=e2437]: the IP address of the default gateway
+          - button "D the MAC address of the destination host" [ref=e2438] [cursor=pointer]:
+            - generic [ref=e2440]: D
+            - generic [ref=e2441]: the MAC address of the destination host
+        - generic [ref=e2442]:
+          - button "Previous" [ref=e2443] [cursor=pointer]
+          - generic [ref=e2444]: 82 / 90
+          - button "Next" [ref=e2445] [cursor=pointer]
+    - generic [ref=e2446]:
+      - generic [ref=e2447]:
+        - generic [ref=e2448]: Q 83
+        - generic [ref=e2449]: Choose 2
+      - generic [ref=e2450]:
+        - paragraph [ref=e2451]: Which two commands can be used on a Windows host to display the routing table? (Choose two.)
+        - generic [ref=e2452]:
+          - button "A route print" [ref=e2453] [cursor=pointer]:
+            - generic [ref=e2455]: A
+            - generic [ref=e2456]: route print
+          - button "B show ip route" [ref=e2457] [cursor=pointer]:
+            - generic [ref=e2459]: B
+            - generic [ref=e2460]: show ip route
+          - button "C netstat -r" [ref=e2461] [cursor=pointer]:
+            - generic [ref=e2463]: C
+            - generic [ref=e2464]: netstat -r
+          - button "D netstat -s" [ref=e2465] [cursor=pointer]:
+            - generic [ref=e2467]: D
+            - generic [ref=e2468]: netstat -s
+          - button "E tracert" [ref=e2469] [cursor=pointer]:
+            - generic [ref=e2471]: E
+            - generic [ref=e2472]: tracert
+        - generic [ref=e2473]:
+          - button "Previous" [ref=e2474] [cursor=pointer]
+          - generic [ref=e2475]: 83 / 90
+          - button "Next" [ref=e2476] [cursor=pointer]
+    - generic [ref=e2477]:
+      - generic [ref=e2478]:
+        - generic [ref=e2479]: Q 84
+        - generic [ref=e2480]: Single Choice
+      - generic [ref=e2481]:
+        - paragraph [ref=e2482]: A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?
+        - generic [ref=e2483]:
+          - button "A The data flow is being tracked based on the source port number that is used by each application." [ref=e2484] [cursor=pointer]:
+            - generic [ref=e2486]: A
+            - generic [ref=e2487]: The data flow is being tracked based on the source port number that is used by each application.
+          - button "B The data flow is being tracked based on the destination IP address that is used by the PC of the technician." [ref=e2488] [cursor=pointer]:
+            - generic [ref=e2490]: B
+            - generic [ref=e2491]: The data flow is being tracked based on the destination IP address that is used by the PC of the technician.
+          - button "C The data flow is being tracked based on the source IP address that is used by the PC of the technician." [ref=e2492] [cursor=pointer]:
+            - generic [ref=e2494]: C
+            - generic [ref=e2495]: The data flow is being tracked based on the source IP address that is used by the PC of the technician.
+          - button "D The data flow is being tracked based on the destination MAC address of the technician PC." [ref=e2496] [cursor=pointer]:
+            - generic [ref=e2498]: D
+            - generic [ref=e2499]: The data flow is being tracked based on the destination MAC address of the technician PC.
+        - generic [ref=e2500]:
+          - button "Previous" [ref=e2501] [cursor=pointer]
+          - generic [ref=e2502]: 84 / 90
+          - button "Next" [ref=e2503] [cursor=pointer]
+    - generic [ref=e2504]:
+      - generic [ref=e2505]:
+        - generic [ref=e2506]: Q 85
+        - generic [ref=e2507]: Single Choice
+      - generic [ref=e2508]:
+        - paragraph [ref=e2509]: A client packet is received by a server. The packet has a destination port number of 80. What service is the client requesting?
+        - generic [ref=e2510]:
+          - button "A DNS" [ref=e2511] [cursor=pointer]:
+            - generic [ref=e2513]: A
+            - generic [ref=e2514]: DNS
+          - button "B HTTP" [ref=e2515] [cursor=pointer]:
+            - generic [ref=e2517]: B
+            - generic [ref=e2518]: HTTP
+          - button "C DHCP" [ref=e2519] [cursor=pointer]:
+            - generic [ref=e2521]: C
+            - generic [ref=e2522]: DHCP
+          - button "D SMTP" [ref=e2523] [cursor=pointer]:
+            - generic [ref=e2525]: D
+            - generic [ref=e2526]: SMTP
+        - generic [ref=e2527]:
+          - button "Previous" [ref=e2528] [cursor=pointer]
+          - generic [ref=e2529]: 85 / 90
+          - button "Next" [ref=e2530] [cursor=pointer]
+    - generic [ref=e2531]:
+      - generic [ref=e2532]:
+        - generic [ref=e2533]: Q 86
+        - generic [ref=e2534]: Choose 2
+      - generic [ref=e2535]:
+        - paragraph [ref=e2536]: A user is attempting to access http://www.cisco.com/ without success. Which two configuration values must be set on the host to allow this access? (Choose two.)
+        - generic [ref=e2537]:
+          - button "A source port number" [ref=e2538] [cursor=pointer]:
+            - generic [ref=e2540]: A
+            - generic [ref=e2541]: source port number
+          - button "B HTTP server" [ref=e2542] [cursor=pointer]:
+            - generic [ref=e2544]: B
+            - generic [ref=e2545]: HTTP server
+          - button "C source MAC address" [ref=e2546] [cursor=pointer]:
+            - generic [ref=e2548]: C
+            - generic [ref=e2549]: source MAC address
+          - button "D DNS server" [ref=e2550] [cursor=pointer]:
+            - generic [ref=e2552]: D
+            - generic [ref=e2553]: DNS server
+          - button "E default gateway" [ref=e2554] [cursor=pointer]:
+            - generic [ref=e2556]: E
+            - generic [ref=e2557]: default gateway
+        - generic [ref=e2558]:
+          - button "Previous" [ref=e2559] [cursor=pointer]
+          - generic [ref=e2560]: 86 / 90
+          - button "Next" [ref=e2561] [cursor=pointer]
+    - generic [ref=e2562]:
+      - generic [ref=e2563]:
+        - generic [ref=e2564]: Q 87
+        - generic [ref=e2565]: Single Choice
+      - generic [ref=e2566]:
+        - paragraph [ref=e2567]: What method is used to manage contention-based access on a wireless network?
+        - generic [ref=e2568]:
+          - button "A CSMA/CD" [ref=e2569] [cursor=pointer]:
+            - generic [ref=e2571]: A
+            - generic [ref=e2572]: CSMA/CD
+          - button "B priority ordering" [ref=e2573] [cursor=pointer]:
+            - generic [ref=e2575]: B
+            - generic [ref=e2576]: priority ordering
+          - button "C CSMA/CA" [ref=e2577] [cursor=pointer]:
+            - generic [ref=e2579]: C
+            - generic [ref=e2580]: CSMA/CA
+          - button "D token passing" [ref=e2581] [cursor=pointer]:
+            - generic [ref=e2583]: D
+            - generic [ref=e2584]: token passing
+        - generic [ref=e2585]:
+          - button "Previous" [ref=e2586] [cursor=pointer]
+          - generic [ref=e2587]: 87 / 90
+          - button "Next" [ref=e2588] [cursor=pointer]
+    - generic [ref=e2589]:
+      - generic [ref=e2590]:
+        - generic [ref=e2591]: Q 88
+        - generic [ref=e2592]: Choose 2
+      - generic [ref=e2593]:
+        - paragraph [ref=e2594]: What are two ICMPv6 messages that are not present in ICMP for IPv4? (Choose two.)
+        - generic [ref=e2595]:
+          - button "A Router Advertisement" [ref=e2596] [cursor=pointer]:
+            - generic [ref=e2598]: A
+            - generic [ref=e2599]: Router Advertisement
+          - button "B Destination Unreachable" [ref=e2600] [cursor=pointer]:
+            - generic [ref=e2602]: B
+            - generic [ref=e2603]: Destination Unreachable
+          - button "C Neighbor Solicitation" [ref=e2604] [cursor=pointer]:
+            - generic [ref=e2606]: C
+            - generic [ref=e2607]: Neighbor Solicitation
+          - button "D Route Redirection" [ref=e2608] [cursor=pointer]:
+            - generic [ref=e2610]: D
+            - generic [ref=e2611]: Route Redirection
+          - button "E Host Confirmation" [ref=e2612] [cursor=pointer]:
+            - generic [ref=e2614]: E
+            - generic [ref=e2615]: Host Confirmation
+          - button "F Time Exceeded" [ref=e2616] [cursor=pointer]:
+            - generic [ref=e2618]: F
+            - generic [ref=e2619]: Time Exceeded
+        - generic [ref=e2620]:
+          - button "Previous" [ref=e2621] [cursor=pointer]
+          - generic [ref=e2622]: 88 / 90
+          - button "Next" [ref=e2623] [cursor=pointer]
+    - generic [ref=e2624]:
+      - generic [ref=e2625]:
+        - generic [ref=e2626]: Q 89
+        - generic [ref=e2627]: Single Choice
+      - generic [ref=e2628]:
+        - paragraph [ref=e2629]: An organization is assigned an IPv6 address block of 2001:db8:0:ca00::/56. How many subnets can be created without using bits in the interface ID space?
+        - generic [ref=e2630]:
+          - button "A 4096" [ref=e2631] [cursor=pointer]:
+            - generic [ref=e2633]: A
+            - generic [ref=e2634]: "4096"
+          - button "B 256" [ref=e2635] [cursor=pointer]:
+            - generic [ref=e2637]: B
+            - generic [ref=e2638]: "256"
+          - button "C 512" [ref=e2639] [cursor=pointer]:
+            - generic [ref=e2641]: C
+            - generic [ref=e2642]: "512"
+          - button "D 1024" [ref=e2643] [cursor=pointer]:
+            - generic [ref=e2645]: D
+            - generic [ref=e2646]: "1024"
+        - generic [ref=e2647]:
+          - button "Previous" [ref=e2648] [cursor=pointer]
+          - generic [ref=e2649]: 89 / 90
+          - button "Next" [ref=e2650] [cursor=pointer]
+    - generic [ref=e2651]:
+      - generic [ref=e2652]:
+        - generic [ref=e2653]: Q 90
+        - generic [ref=e2654]: Single Choice
+      - generic [ref=e2655]:
+        - paragraph [ref=e2656]: What subnet mask is needed if an IPv4 network has 40 devices that need IP addresses and address space is not to be wasted?
+        - generic [ref=e2657]:
+          - button "A 255.255.255.224" [ref=e2658] [cursor=pointer]:
+            - generic [ref=e2660]: A
+            - generic [ref=e2661]: 255.255.255.224
+          - button "B 255.255.255.128" [ref=e2662] [cursor=pointer]:
+            - generic [ref=e2664]: B
+            - generic [ref=e2665]: 255.255.255.128
+          - button "C 255.255.255.240" [ref=e2666] [cursor=pointer]:
+            - generic [ref=e2668]: C
+            - generic [ref=e2669]: 255.255.255.240
+          - button "D 255.255.255.192" [ref=e2670] [cursor=pointer]:
+            - generic [ref=e2672]: D
+            - generic [ref=e2673]: 255.255.255.192
+          - button "E 255.255.255.0" [ref=e2674] [cursor=pointer]:
+            - generic [ref=e2676]: E
+            - generic [ref=e2677]: 255.255.255.0
+        - generic [ref=e2678]:
+          - button "Previous" [ref=e2679] [cursor=pointer]
+          - generic [ref=e2680]: 90 / 90
+          - button "Finish" [ref=e2681] [cursor=pointer]
+    - generic [ref=e2682]:
+      - generic [ref=e2683]:
+        - generic [ref=e2684]: Q 91
+        - generic [ref=e2685]: Single Choice
+      - generic [ref=e2686]:
+        - paragraph [ref=e2687]: What characteristic describes a VPN?
+        - generic [ref=e2688]:
+          - button "A software on a router that filters traffic based on IP addresses or applications" [ref=e2689] [cursor=pointer]:
+            - generic [ref=e2691]: A
+            - generic [ref=e2692]: software on a router that filters traffic based on IP addresses or applications
+          - button "B a tunneling protocol that provides remote users with secure access into the network of an organization" [ref=e2693] [cursor=pointer]:
+            - generic [ref=e2695]: B
+            - generic [ref=e2696]: a tunneling protocol that provides remote users with secure access into the network of an organization
+          - button "C a network device that filters access and traffic coming into a network" [ref=e2697] [cursor=pointer]:
+            - generic [ref=e2699]: C
+            - generic [ref=e2700]: a network device that filters access and traffic coming into a network
+          - button "D software that identifies fast-spreading threats" [ref=e2701] [cursor=pointer]:
+            - generic [ref=e2703]: D
+            - generic [ref=e2704]: software that identifies fast-spreading threats
+        - generic [ref=e2705]:
+          - button "Previous" [ref=e2706] [cursor=pointer]
+          - generic [ref=e2707]: 91 / 100
+          - button "Next" [ref=e2708] [cursor=pointer]
+    - generic [ref=e2709]:
+      - generic [ref=e2710]:
+        - generic [ref=e2711]: Q 92
+        - generic [ref=e2712]: Single Choice
+      - generic [ref=e2713]:
+        - paragraph [ref=e2714]: A network administrator is adding a new LAN to a branch office. The new LAN must support 4 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+        - generic [ref=e2715]:
+          - button "A 255.255.255.192" [ref=e2716] [cursor=pointer]:
+            - generic [ref=e2718]: A
+            - generic [ref=e2719]: 255.255.255.192
+          - button "B 255.255.255.248" [ref=e2720] [cursor=pointer]:
+            - generic [ref=e2722]: B
+            - generic [ref=e2723]: 255.255.255.248
+          - button "C 255.255.255.240" [ref=e2724] [cursor=pointer]:
+            - generic [ref=e2726]: C
+            - generic [ref=e2727]: 255.255.255.240
+          - button "D 255.255.255.224" [ref=e2728] [cursor=pointer]:
+            - generic [ref=e2730]: D
+            - generic [ref=e2731]: 255.255.255.224
+        - generic [ref=e2732]:
+          - button "Previous" [ref=e2733] [cursor=pointer]
+          - generic [ref=e2734]: 92 / 100
+          - button "Next" [ref=e2735] [cursor=pointer]
+    - generic [ref=e2736]:
+      - generic [ref=e2737]:
+        - generic [ref=e2738]: Q 93
+        - generic [ref=e2739]: Single Choice
+      - generic [ref=e2740]:
+        - paragraph [ref=e2741]: During the process of forwarding traffic, what will the router do immediately after matching the destination IP address to a network on a directly connected routing table entry?
+        - generic [ref=e2742]:
+          - button "A switch the packet to the directly connected interface" [ref=e2743] [cursor=pointer]:
+            - generic [ref=e2745]: A
+            - generic [ref=e2746]: switch the packet to the directly connected interface
+          - button "B discard the traffic after consulting the route table" [ref=e2747] [cursor=pointer]:
+            - generic [ref=e2749]: B
+            - generic [ref=e2750]: discard the traffic after consulting the route table
+          - button "C look up the next-hop address for the packet" [ref=e2751] [cursor=pointer]:
+            - generic [ref=e2753]: C
+            - generic [ref=e2754]: look up the next-hop address for the packet
+          - button "D analyze the destination IP address" [ref=e2755] [cursor=pointer]:
+            - generic [ref=e2757]: D
+            - generic [ref=e2758]: analyze the destination IP address
+        - generic [ref=e2759]:
+          - button "Previous" [ref=e2760] [cursor=pointer]
+          - generic [ref=e2761]: 93 / 100
+          - button "Next" [ref=e2762] [cursor=pointer]
+    - generic [ref=e2763]:
+      - generic [ref=e2764]:
+        - generic [ref=e2765]: Q 94
+        - generic [ref=e2766]: Single Choice
+      - generic [ref=e2767]:
+        - paragraph [ref=e2768]: What service is provided by BOOTP?
+        - generic [ref=e2769]:
+          - button "A Allows for data transfers between a client and a file server." [ref=e2770] [cursor=pointer]:
+            - generic [ref=e2772]: A
+            - generic [ref=e2773]: Allows for data transfers between a client and a file server.
+          - button "B Legacy application that enables a diskless workstation to discover its own IP address and find a BOOTP server on the network." [ref=e2774] [cursor=pointer]:
+            - generic [ref=e2776]: B
+            - generic [ref=e2777]: Legacy application that enables a diskless workstation to discover its own IP address and find a BOOTP server on the network.
+          - button "C Uses encryption to secure the exchange of text, graphic images, sound, and video on the web." [ref=e2778] [cursor=pointer]:
+            - generic [ref=e2780]: C
+            - generic [ref=e2781]: Uses encryption to secure the exchange of text, graphic images, sound, and video on the web.
+          - button "D A basic set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the web." [ref=e2782] [cursor=pointer]:
+            - generic [ref=e2784]: D
+            - generic [ref=e2785]: A basic set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the web.
+        - generic [ref=e2786]:
+          - button "Previous" [ref=e2787] [cursor=pointer]
+          - generic [ref=e2788]: 94 / 100
+          - button "Next" [ref=e2789] [cursor=pointer]
+    - generic [ref=e2790]:
+      - generic [ref=e2791]:
+        - generic [ref=e2792]: Q 95
+        - generic [ref=e2793]: Single Choice
+      - generic [ref=e2794]:
+        - paragraph [ref=e2795]: A client packet is received by a server. The packet has a destination port number of 21. What service is the client requesting?
+        - generic [ref=e2796]:
+          - button "A DHCP" [ref=e2797] [cursor=pointer]:
+            - generic [ref=e2799]: A
+            - generic [ref=e2800]: DHCP
+          - button "B FTP" [ref=e2801] [cursor=pointer]:
+            - generic [ref=e2803]: B
+            - generic [ref=e2804]: FTP
+          - button "C TFTP" [ref=e2805] [cursor=pointer]:
+            - generic [ref=e2807]: C
+            - generic [ref=e2808]: TFTP
+          - button "D DNS" [ref=e2809] [cursor=pointer]:
+            - generic [ref=e2811]: D
+            - generic [ref=e2812]: DNS
+        - generic [ref=e2813]:
+          - button "Previous" [ref=e2814] [cursor=pointer]
+          - generic [ref=e2815]: 95 / 100
+          - button "Next" [ref=e2816] [cursor=pointer]
+    - generic [ref=e2817]:
+      - generic [ref=e2818]:
+        - generic [ref=e2819]: Q 96
+        - generic [ref=e2820]: Single Choice
+      - generic [ref=e2821]:
+        - paragraph [ref=e2822]: A technician can ping the IP address of the web server of a remote company but cannot successfully ping the URL address of the same web server. Which software utility can the technician use to diagnose the problem?
+        - generic [ref=e2823]:
+          - button "A tracert" [ref=e2824] [cursor=pointer]:
+            - generic [ref=e2826]: A
+            - generic [ref=e2827]: tracert
+          - button "B netstat" [ref=e2828] [cursor=pointer]:
+            - generic [ref=e2830]: B
+            - generic [ref=e2831]: netstat
+          - button "C nslookup" [ref=e2832] [cursor=pointer]:
+            - generic [ref=e2834]: C
+            - generic [ref=e2835]: nslookup
+          - button "D ipconfig" [ref=e2836] [cursor=pointer]:
+            - generic [ref=e2838]: D
+            - generic [ref=e2839]: ipconfig
+        - generic [ref=e2840]:
+          - button "Previous" [ref=e2841] [cursor=pointer]
+          - generic [ref=e2842]: 96 / 100
+          - button "Next" [ref=e2843] [cursor=pointer]
+    - generic [ref=e2844]:
+      - generic [ref=e2845]:
+        - generic [ref=e2846]: Q 97
+        - generic [ref=e2847]: Choose 2
+      - generic [ref=e2848]:
+        - paragraph [ref=e2849]: What two ICMPv6 message types must be permitted through IPv6 access control lists to allow resolution of Layer 3 addresses to Layer 2 MAC addresses? (Choose two.)
+        - generic [ref=e2850]:
+          - button "A echo requests" [ref=e2851] [cursor=pointer]:
+            - generic [ref=e2853]: A
+            - generic [ref=e2854]: echo requests
+          - button "B router solicitations" [ref=e2855] [cursor=pointer]:
+            - generic [ref=e2857]: B
+            - generic [ref=e2858]: router solicitations
+          - button "C router advertisements" [ref=e2859] [cursor=pointer]:
+            - generic [ref=e2861]: C
+            - generic [ref=e2862]: router advertisements
+          - button "D neighbor advertisements" [ref=e2863] [cursor=pointer]:
+            - generic [ref=e2865]: D
+            - generic [ref=e2866]: neighbor advertisements
+          - button "E echo replies" [ref=e2867] [cursor=pointer]:
+            - generic [ref=e2869]: E
+            - generic [ref=e2870]: echo replies
+          - button "F neighbor solicitations" [ref=e2871] [cursor=pointer]:
+            - generic [ref=e2873]: F
+            - generic [ref=e2874]: neighbor solicitations
+        - generic [ref=e2875]:
+          - button "Previous" [ref=e2876] [cursor=pointer]
+          - generic [ref=e2877]: 97 / 100
+          - button "Next" [ref=e2878] [cursor=pointer]
+    - generic [ref=e2879]:
+      - generic [ref=e2880]:
+        - generic [ref=e2881]: Q 98
+        - generic [ref=e2882]: Single Choice
+      - generic [ref=e2883]:
+        - paragraph [ref=e2884]: What is a benefit of using cloud computing in networking?
+        - generic [ref=e2885]:
+          - button "A Technology is integrated into every-day appliances allowing them to interconnect with other devices, making them more 'smart' or automated." [ref=e2886] [cursor=pointer]:
+            - generic [ref=e2888]: A
+            - generic [ref=e2889]: Technology is integrated into every-day appliances allowing them to interconnect with other devices, making them more 'smart' or automated.
+          - button "B Network capabilities are extended without requiring investment in new infrastructure, personnel, or software." [ref=e2890] [cursor=pointer]:
+            - generic [ref=e2892]: B
+            - generic [ref=e2893]: Network capabilities are extended without requiring investment in new infrastructure, personnel, or software.
+          - button "C Home networking uses existing electrical wiring to connect devices to the network wherever there is an electrical outlet, saving the cost of installing data cables." [ref=e2894] [cursor=pointer]:
+            - generic [ref=e2896]: C
+            - generic [ref=e2897]: Home networking uses existing electrical wiring to connect devices to the network wherever there is an electrical outlet, saving the cost of installing data cables.
+          - button "D End users have the freedom to use personal tools to access information and communicate across a business network." [ref=e2898] [cursor=pointer]:
+            - generic [ref=e2900]: D
+            - generic [ref=e2901]: End users have the freedom to use personal tools to access information and communicate across a business network.
+        - generic [ref=e2902]:
+          - button "Previous" [ref=e2903] [cursor=pointer]
+          - generic [ref=e2904]: 98 / 100
+          - button "Next" [ref=e2905] [cursor=pointer]
+    - generic [ref=e2906]:
+      - generic [ref=e2907]:
+        - generic [ref=e2908]: Q 99
+        - generic [ref=e2909]: Single Choice
+      - generic [ref=e2910]:
+        - paragraph [ref=e2911]: What service is provided by SMTP?
+        - generic [ref=e2912]:
+          - button "A Allows remote access to network devices and servers." [ref=e2913] [cursor=pointer]:
+            - generic [ref=e2915]: A
+            - generic [ref=e2916]: Allows remote access to network devices and servers.
+          - button "B Uses encryption to provide secure remote access to network devices and servers." [ref=e2917] [cursor=pointer]:
+            - generic [ref=e2919]: B
+            - generic [ref=e2920]: Uses encryption to provide secure remote access to network devices and servers.
+          - button "C Allows clients to send email to a mail server and the servers to send email to other servers." [ref=e2921] [cursor=pointer]:
+            - generic [ref=e2923]: C
+            - generic [ref=e2924]: Allows clients to send email to a mail server and the servers to send email to other servers.
+          - button "D An application that allows real-time chatting among remote users." [ref=e2925] [cursor=pointer]:
+            - generic [ref=e2927]: D
+            - generic [ref=e2928]: An application that allows real-time chatting among remote users.
+        - generic [ref=e2929]:
+          - button "Previous" [ref=e2930] [cursor=pointer]
+          - generic [ref=e2931]: 99 / 100
+          - button "Next" [ref=e2932] [cursor=pointer]
+    - generic [ref=e2933]:
+      - generic [ref=e2934]:
+        - generic [ref=e2935]: Q 100
+        - generic [ref=e2936]: Single Choice
+      - generic [ref=e2937]:
+        - paragraph [ref=e2938]: A client packet is received by a server. The packet has a destination port number of 22. What service is the client requesting?
+        - generic [ref=e2939]:
+          - button "A SSH" [ref=e2940] [cursor=pointer]:
+            - generic [ref=e2942]: A
+            - generic [ref=e2943]: SSH
+          - button "B DNS" [ref=e2944] [cursor=pointer]:
+            - generic [ref=e2946]: B
+            - generic [ref=e2947]: DNS
+          - button "C DHCP" [ref=e2948] [cursor=pointer]:
+            - generic [ref=e2950]: C
+            - generic [ref=e2951]: DHCP
+          - button "D TFTP" [ref=e2952] [cursor=pointer]:
+            - generic [ref=e2954]: D
+            - generic [ref=e2955]: TFTP
+        - generic [ref=e2956]:
+          - button "Previous" [ref=e2957] [cursor=pointer]
+          - generic [ref=e2958]: 100 / 100
+          - button "Finish" [ref=e2959] [cursor=pointer]
+    - generic [ref=e2960]:
+      - generic [ref=e2961]:
+        - generic [ref=e2962]: Q 101
+        - generic [ref=e2963]: Single Choice
+      - generic [ref=e2964]:
+        - paragraph [ref=e2965]: A network administrator is adding a new LAN to a branch office. The new LAN must support 10 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+        - generic [ref=e2966]:
+          - button "A 255.255.255.240" [ref=e2967] [cursor=pointer]:
+            - generic [ref=e2969]: A
+            - generic [ref=e2970]: 255.255.255.240
+          - button "B 255.255.255.224" [ref=e2971] [cursor=pointer]:
+            - generic [ref=e2973]: B
+            - generic [ref=e2974]: 255.255.255.224
+          - button "C 255.255.255.192" [ref=e2975] [cursor=pointer]:
+            - generic [ref=e2977]: C
+            - generic [ref=e2978]: 255.255.255.192
+          - button "D 255.255.255.248" [ref=e2979] [cursor=pointer]:
+            - generic [ref=e2981]: D
+            - generic [ref=e2982]: 255.255.255.248
+        - generic [ref=e2983]:
+          - button "Previous" [ref=e2984] [cursor=pointer]
+          - generic [ref=e2985]: 101 / 109
+          - button "Next" [ref=e2986] [cursor=pointer]
+    - generic [ref=e2987]:
+      - generic [ref=e2988]:
+        - generic [ref=e2989]: Q 102
+        - generic [ref=e2990]: Choose 2
+      - generic [ref=e2991]:
+        - paragraph [ref=e2992]: Which two statements describe how to assess traffic flow patterns and network traffic types using a protocol analyzer? (Choose two.)
+        - generic [ref=e2993]:
+          - button "A Capture traffic on the weekends when most employees are off work." [ref=e2994] [cursor=pointer]:
+            - generic [ref=e2996]: A
+            - generic [ref=e2997]: Capture traffic on the weekends when most employees are off work.
+          - button "B Only capture traffic in the areas of the network that receive most of the traffic such as the data center." [ref=e2998] [cursor=pointer]:
+            - generic [ref=e3000]: B
+            - generic [ref=e3001]: Only capture traffic in the areas of the network that receive most of the traffic such as the data center.
+          - button "C Capture traffic during peak utilization times to get a good representation of the different traffic types." [ref=e3002] [cursor=pointer]:
+            - generic [ref=e3004]: C
+            - generic [ref=e3005]: Capture traffic during peak utilization times to get a good representation of the different traffic types.
+          - button "D Perform the capture on different network segments." [ref=e3006] [cursor=pointer]:
+            - generic [ref=e3008]: D
+            - generic [ref=e3009]: Perform the capture on different network segments.
+          - button "E Only capture WAN traffic because traffic to the web is responsible for the largest amount of traffic on a network." [ref=e3010] [cursor=pointer]:
+            - generic [ref=e3012]: E
+            - generic [ref=e3013]: Only capture WAN traffic because traffic to the web is responsible for the largest amount of traffic on a network.
+        - generic [ref=e3014]:
+          - button "Previous" [ref=e3015] [cursor=pointer]
+          - generic [ref=e3016]: 102 / 109
+          - button "Next" [ref=e3017] [cursor=pointer]
+    - generic [ref=e3018]:
+      - generic [ref=e3019]:
+        - generic [ref=e3020]: Q 103
+        - generic [ref=e3021]: Single Choice
+      - generic [ref=e3022]:
+        - paragraph [ref=e3023]: What characteristic describes a DoS attack?
+        - generic [ref=e3024]:
+          - button "A an attack that slows or crashes a device or network service" [ref=e3025] [cursor=pointer]:
+            - generic [ref=e3027]: A
+            - generic [ref=e3028]: an attack that slows or crashes a device or network service
+          - button "B the use of stolen credentials to access private data" [ref=e3029] [cursor=pointer]:
+            - generic [ref=e3031]: B
+            - generic [ref=e3032]: the use of stolen credentials to access private data
+          - button "C a network device that filters access and traffic coming into a network" [ref=e3033] [cursor=pointer]:
+            - generic [ref=e3035]: C
+            - generic [ref=e3036]: a network device that filters access and traffic coming into a network
+          - button "D software that is installed on a user device and collects information about the user" [ref=e3037] [cursor=pointer]:
+            - generic [ref=e3039]: D
+            - generic [ref=e3040]: software that is installed on a user device and collects information about the user
+        - generic [ref=e3041]:
+          - button "Previous" [ref=e3042] [cursor=pointer]
+          - generic [ref=e3043]: 103 / 109
+          - button "Next" [ref=e3044] [cursor=pointer]
+    - generic [ref=e3045]:
+      - generic [ref=e3046]:
+        - generic [ref=e3047]: Q 104
+        - generic [ref=e3048]: Single Choice
+      - generic [ref=e3049]:
+        - paragraph [ref=e3050]: A network administrator is adding a new LAN to a branch office. The new LAN must support 200 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+        - generic [ref=e3051]:
+          - button "A 255.255.255.0" [ref=e3052] [cursor=pointer]:
+            - generic [ref=e3054]: A
+            - generic [ref=e3055]: 255.255.255.0
+          - button "B 255.255.255.224" [ref=e3056] [cursor=pointer]:
+            - generic [ref=e3058]: B
+            - generic [ref=e3059]: 255.255.255.224
+          - button "C 255.255.255.248" [ref=e3060] [cursor=pointer]:
+            - generic [ref=e3062]: C
+            - generic [ref=e3063]: 255.255.255.248
+          - button "D 255.255.255.240" [ref=e3064] [cursor=pointer]:
+            - generic [ref=e3066]: D
+            - generic [ref=e3067]: 255.255.255.240
+        - generic [ref=e3068]:
+          - button "Previous" [ref=e3069] [cursor=pointer]
+          - generic [ref=e3070]: 104 / 109
+          - button "Next" [ref=e3071] [cursor=pointer]
+    - generic [ref=e3072]:
+      - generic [ref=e3073]:
+        - generic [ref=e3074]: Q 105
+        - generic [ref=e3075]: Single Choice
+      - generic [ref=e3076]:
+        - paragraph [ref=e3077]: What service is provided by DHCP?
+        - generic [ref=e3078]:
+          - button "A Dynamically assigns IP addresses to end and intermediary devices." [ref=e3079] [cursor=pointer]:
+            - generic [ref=e3081]: A
+            - generic [ref=e3082]: Dynamically assigns IP addresses to end and intermediary devices.
+          - button "B Allows remote access to network devices and servers." [ref=e3083] [cursor=pointer]:
+            - generic [ref=e3085]: B
+            - generic [ref=e3086]: Allows remote access to network devices and servers.
+          - button "C Uses encryption to provide secure remote access to network devices and servers." [ref=e3087] [cursor=pointer]:
+            - generic [ref=e3089]: C
+            - generic [ref=e3090]: Uses encryption to provide secure remote access to network devices and servers.
+          - button "D An application that allows real-time chatting among remote users." [ref=e3091] [cursor=pointer]:
+            - generic [ref=e3093]: D
+            - generic [ref=e3094]: An application that allows real-time chatting among remote users.
+        - generic [ref=e3095]:
+          - button "Previous" [ref=e3096] [cursor=pointer]
+          - generic [ref=e3097]: 105 / 109
+          - button "Next" [ref=e3098] [cursor=pointer]
+    - generic [ref=e3099]:
+      - generic [ref=e3100]:
+        - generic [ref=e3101]: Q 106
+        - generic [ref=e3102]: Single Choice
+      - generic [ref=e3103]:
+        - paragraph [ref=e3104]: What service is provided by FTP?
+        - generic [ref=e3105]:
+          - button "A Allows for data transfers between a client and a file server." [ref=e3106] [cursor=pointer]:
+            - generic [ref=e3108]: A
+            - generic [ref=e3109]: Allows for data transfers between a client and a file server.
+          - button "B A basic set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the web." [ref=e3110] [cursor=pointer]:
+            - generic [ref=e3112]: B
+            - generic [ref=e3113]: A basic set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the web.
+          - button "C Uses encryption to secure the exchange of text, graphic images, sound, and video on the web." [ref=e3114] [cursor=pointer]:
+            - generic [ref=e3116]: C
+            - generic [ref=e3117]: Uses encryption to secure the exchange of text, graphic images, sound, and video on the web.
+          - button "D An application that allows real-time chatting among remote users." [ref=e3118] [cursor=pointer]:
+            - generic [ref=e3120]: D
+            - generic [ref=e3121]: An application that allows real-time chatting among remote users.
+        - generic [ref=e3122]:
+          - button "Previous" [ref=e3123] [cursor=pointer]
+          - generic [ref=e3124]: 106 / 109
+          - button "Next" [ref=e3125] [cursor=pointer]
+    - generic [ref=e3126]:
+      - generic [ref=e3127]:
+        - generic [ref=e3128]: Q 107
+        - generic [ref=e3129]: Single Choice
+      - generic [ref=e3130]:
+        - paragraph [ref=e3131]: Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?
+        - generic [ref=e3132]:
+          - button "A audio conference, financial transactions, web page" [ref=e3133] [cursor=pointer]:
+            - generic [ref=e3135]: A
+            - generic [ref=e3136]: audio conference, financial transactions, web page
+          - button "B financial transactions, web page, audio conference" [ref=e3137] [cursor=pointer]:
+            - generic [ref=e3139]: B
+            - generic [ref=e3140]: financial transactions, web page, audio conference
+          - button "C audio conference, web page, financial transactions" [ref=e3141] [cursor=pointer]:
+            - generic [ref=e3143]: C
+            - generic [ref=e3144]: audio conference, web page, financial transactions
+          - button "D financial transactions, audio conference, web page" [ref=e3145] [cursor=pointer]:
+            - generic [ref=e3147]: D
+            - generic [ref=e3148]: financial transactions, audio conference, web page
+        - generic [ref=e3149]:
+          - button "Previous" [ref=e3150] [cursor=pointer]
+          - generic [ref=e3151]: 107 / 109
+          - button "Next" [ref=e3152] [cursor=pointer]
+    - generic [ref=e3153]:
+      - generic [ref=e3154]:
+        - generic [ref=e3155]: Q 108
+        - generic [ref=e3156]: Single Choice
+      - generic [ref=e3157]:
+        - paragraph [ref=e3158]: A network administrator is adding a new LAN to a branch office. The new LAN must support 61 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+        - generic [ref=e3159]:
+          - button "A 255.255.255.192" [ref=e3160] [cursor=pointer]:
+            - generic [ref=e3162]: A
+            - generic [ref=e3163]: 255.255.255.192
+          - button "B 255.255.255.224" [ref=e3164] [cursor=pointer]:
+            - generic [ref=e3166]: B
+            - generic [ref=e3167]: 255.255.255.224
+          - button "C 255.255.255.240" [ref=e3168] [cursor=pointer]:
+            - generic [ref=e3170]: C
+            - generic [ref=e3171]: 255.255.255.240
+          - button "D 255.255.255.128" [ref=e3172] [cursor=pointer]:
+            - generic [ref=e3174]: D
+            - generic [ref=e3175]: 255.255.255.128
+        - generic [ref=e3176]:
+          - button "Previous" [ref=e3177] [cursor=pointer]
+          - generic [ref=e3178]: 108 / 109
+          - button "Next" [ref=e3179] [cursor=pointer]
+    - generic [ref=e3180]:
+      - generic [ref=e3181]:
+        - generic [ref=e3182]: Q 109
+        - generic [ref=e3183]: Single Choice
+      - generic [ref=e3184]:
+        - paragraph [ref=e3185]: What characteristic describes an IPS?
+        - generic [ref=e3186]:
+          - button "A software that identifies fast-spreading threats" [ref=e3187] [cursor=pointer]:
+            - generic [ref=e3189]: A
+            - generic [ref=e3190]: software that identifies fast-spreading threats
+          - button "B software on a router that filters traffic based on IP addresses or applications" [ref=e3191] [cursor=pointer]:
+            - generic [ref=e3193]: B
+            - generic [ref=e3194]: software on a router that filters traffic based on IP addresses or applications
+          - button "C a network device that filters access and traffic coming into a network" [ref=e3195] [cursor=pointer]:
+            - generic [ref=e3197]: C
+            - generic [ref=e3198]: a network device that filters access and traffic coming into a network
+          - button "D a tunneling protocol that provides remote users with secure access into the network of an organization" [ref=e3199] [cursor=pointer]:
+            - generic [ref=e3201]: D
+            - generic [ref=e3202]: a tunneling protocol that provides remote users with secure access into the network of an organization
+        - generic [ref=e3203]:
+          - button "Previous" [ref=e3204] [cursor=pointer]
+          - generic [ref=e3205]: 109 / 111
+          - button "Next" [ref=e3206] [cursor=pointer]
+    - generic [ref=e3207]:
+      - generic [ref=e3208]:
+        - generic [ref=e3209]: Q 110
+        - generic [ref=e3210]: Choose 3
+      - generic [ref=e3211]:
+        - paragraph [ref=e3212]: A network administrator is designing the layout of a new wireless network. Which three areas of concern should be accounted for when building a wireless network? (Choose three.)
+        - generic [ref=e3213]:
+          - button "A mobility options" [ref=e3214] [cursor=pointer]:
+            - generic [ref=e3216]: A
+            - generic [ref=e3217]: mobility options
+          - button "B security" [ref=e3218] [cursor=pointer]:
+            - generic [ref=e3220]: B
+            - generic [ref=e3221]: security
+          - button "C interference" [ref=e3222] [cursor=pointer]:
+            - generic [ref=e3224]: C
+            - generic [ref=e3225]: interference
+          - button "D coverage area" [ref=e3226] [cursor=pointer]:
+            - generic [ref=e3228]: D
+            - generic [ref=e3229]: coverage area
+          - button "E packet collision" [ref=e3230] [cursor=pointer]:
+            - generic [ref=e3232]: E
+            - generic [ref=e3233]: packet collision
+          - button "F extensive cabling" [ref=e3234] [cursor=pointer]:
+            - generic [ref=e3236]: F
+            - generic [ref=e3237]: extensive cabling
+        - generic [ref=e3238]:
+          - button "Previous" [ref=e3239] [cursor=pointer]
+          - generic [ref=e3240]: 110 / 111
+          - button "Next" [ref=e3241] [cursor=pointer]
+    - generic [ref=e3242]:
+      - generic [ref=e3243]:
+        - generic [ref=e3244]: Q 111
+        - generic [ref=e3245]: Single Choice
+      - generic [ref=e3246]:
+        - paragraph [ref=e3247]: Refer to the exhibit. What is wrong with the displayed termination?
+        - generic [ref=e3248]:
+          - button "A The untwisted length of each wire is too long." [ref=e3249] [cursor=pointer]:
+            - generic [ref=e3251]: A
+            - generic [ref=e3252]: The untwisted length of each wire is too long.
+          - button "B The woven copper braid should not have been removed." [ref=e3253] [cursor=pointer]:
+            - generic [ref=e3255]: B
+            - generic [ref=e3256]: The woven copper braid should not have been removed.
+          - button "C The wrong type of connector is being used." [ref=e3257] [cursor=pointer]:
+            - generic [ref=e3259]: C
+            - generic [ref=e3260]: The wrong type of connector is being used.
+          - button "D The wires are too thick for the connector that is used." [ref=e3261] [cursor=pointer]:
+            - generic [ref=e3263]: D
+            - generic [ref=e3264]: The wires are too thick for the connector that is used.
+        - generic [ref=e3265]:
+          - button "Previous" [ref=e3266] [cursor=pointer]
+          - generic [ref=e3267]: 111 / 111
+          - button "Finish" [ref=e3268] [cursor=pointer]
+  - contentinfo [ref=e3269]:
+    - generic [ref=e3270]:
+      - generic [ref=e3271]: Questions
+      - generic "Q1"
+      - generic "Q2"
+      - generic "Q3"
+      - generic "Q4"
+      - generic "Q5"
+      - generic "Q6"
+      - generic "Q7"
+      - generic "Q8"
+      - generic "Q9"
+      - generic "Q10"
+      - generic "Q11"
+      - generic "Q12"
+      - generic "Q13"
+      - generic "Q14"
+      - generic "Q15"
+      - generic "Q16"
+      - generic "Q17"
+      - generic "Q18"
+      - generic "Q19"
+      - generic "Q20"
+      - generic "Q21"
+      - generic "Q22"
+      - generic "Q23"
+      - generic "Q24"
+      - generic "Q25"
+      - generic "Q26"
+      - generic "Q27"
+      - generic "Q28"
+      - generic "Q29"
+      - generic "Q30"
+      - generic "Q31"
+      - generic "Q32"
+      - generic "Q33"
+      - generic "Q34"
+      - generic "Q35"
+      - generic "Q36"
+      - generic "Q37"
+      - generic "Q38"
+      - generic "Q39"
+      - generic "Q40"
+      - generic "Q41"
+      - generic "Q42"
+      - generic "Q43"
+      - generic "Q44"
+      - generic "Q45"
+      - generic "Q46"
+      - generic "Q47"
+      - generic "Q48"
+      - generic "Q49"
+      - generic "Q50"
+      - generic "Q51"
+      - generic "Q52"
+      - generic "Q53"
+      - generic "Q54"
+      - generic "Q55"
+      - generic "Q56"
+      - generic "Q57"
+      - generic "Q58"
+      - generic "Q59"
+      - generic "Q60"
+      - generic "Q61"
+      - generic "Q62"
+      - generic "Q63"
+      - generic "Q64"
+      - generic "Q65"
+      - generic "Q66"
+      - generic "Q67"
+      - generic "Q68"
+      - generic "Q69"
+      - generic "Q70"
+      - generic "Q71"
+      - generic "Q72"
+      - generic "Q73"
+      - generic "Q74"
+      - generic "Q75"
+      - generic "Q76"
+      - generic "Q77"
+      - generic "Q78"
+      - generic "Q79"
+      - generic "Q80"
+      - generic "Q81"
+      - generic "Q82"
+      - generic "Q83"
+      - generic "Q84"
+      - generic "Q85"
+      - generic "Q86"
+      - generic "Q87"
+      - generic "Q88"
+      - generic "Q89"
+      - generic "Q90"
+      - generic "Q91"
+      - generic "Q92"
+      - generic "Q93"
+      - generic "Q94"
+      - generic "Q95"
+      - generic "Q96"
+      - generic "Q97"
+      - generic "Q98"
+      - generic "Q99"
+      - generic "Q100"
+      - generic "Q101"
+      - generic "Q102"
+      - generic "Q103"
+      - generic "Q104"
+      - generic "Q105"
+      - generic "Q106"
+      - generic "Q107"
+      - generic "Q108"
+      - generic "Q109"
+      - generic "Q110"
+      - generic "Q111"
+  - generic [ref=e3274]:
+    - button "Menu" [ref=e3275]:
+      - img [ref=e3277]
+      - generic: Menu
+    - button "Inspect" [ref=e3281]:
+      - img [ref=e3283]
+      - generic: Inspect
+    - button "Audit" [ref=e3285]:
+      - img [ref=e3287]
+      - generic: Audit
+    - button "Settings" [ref=e3290]:
+      - img [ref=e3292]
+      - generic: Settings

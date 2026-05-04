@@ -1,0 +1,60 @@
+<!--
+  --- Question 6 ---
+  This component represents the sixth question in the quiz.
+-->
+
+<div class="question-card" id="card-5" data-qid="5" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 06</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What happens when the <strong>transport input ssh</strong> command is entered on the switch vty lines?
+    </p>
+    <div class="options" id="opts-5">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">The switch requires a username/password combination for remote access.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">The SSH client on the switch is enabled.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Communication between the switch and remote users is encrypted.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">The switch requires remote connections via a proprietary client software.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-5" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-5">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-5"></span>
+      </div>
+      <div class="exp-body">
+        The <strong>transport input ssh</strong> command ensures that:
+        <ul>
+          <li><strong>Communication between the switch and remote users is encrypted</strong> &mdash; SSH provides secure, encrypted communication.</li>
+        </ul>
+        This command does not enable the SSH client or require proprietary software. It configures the switch to accept SSH connections for secure remote access.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-5">Previous</button>
+      <span class="page-indicator">6 / 6</span>
+      <button class="nav-btn" id="next-5">Next</button>
+    </div>
+  </div>
+</div>

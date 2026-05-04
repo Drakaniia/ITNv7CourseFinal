@@ -1,0 +1,79 @@
+<!--
+  --- Question 24 ---
+  This component represents the twenty-fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-23" data-qid="23" data-type="multi" data-choose="3">
+  <div class="card-header">
+    <span class="q-number">Q 24</span>
+    <span class="q-tag multi">Choose 3</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      An employee of a large corporation remotely logs into the company using the appropriate username and password. The employee is attending an important video conference with a customer concerning a large sale. It is important for the video quality to be excellent during the meeting. The employee is unaware that after a successful login, the connection to the company ISP failed. The secondary connection, however, activated within seconds. The disruption was not noticed by the employee or other employees.
+      What three network characteristics are described in this scenario? (Choose three.)
+    </p>
+    <div class="options" id="opts-23">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">integrity</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">scalability</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">quality of service</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">fault tolerance</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">powerline networking</span>
+      </button>
+      <button class="option-btn multi" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">security</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-23" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-23">0 / 3 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-23">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-23"></span>
+      </div>
+      <div class="exp-body">
+        The scenario described indicates the following three network characteristics:
+        <ul>
+          <li><strong>Quality of Service (QoS)</strong> – The emphasis on the video quality being excellent during the meeting suggests that there is a mechanism in place to prioritize video traffic over other types of traffic. Quality of Service is a set of technologies used to manage network traffic in a way that ensures good performance for critical applications, such as video conferencing.</li>
+          <li><strong>Fault Tolerance</strong> – The fact that the connection to the company ISP failed but a secondary connection activated within seconds, without any noticeable disruption, indicates a network design that accommodates for failures. This is referred to as fault tolerance, where systems are set up in a way that allows them to continue operating properly in the event of the failure of some (non-critical) components.</li>
+          <li><strong>Security</strong> – The mention of the employee logging in with a username and password indicates that there are security measures in place to control access to the network. This suggests that the network has security protocols to authenticate users, which is a fundamental aspect of network security.</li>
+        </ul>
+        The other options listed are not typically associated with the scenario provided:
+        <ul>
+          <li>Integrity in a networking context refers to the assurance that the data has not been altered during transmission, and while important, there is no specific mention of data being altered or kept intact in this scenario.</li>
+          <li>Scalability refers to the network’s ability to grow and handle an increasing number of clients or data traffic, and there is no information provided about the network’s growth or adaptability.</li>
+          <li>Powerline networking is a type of network where electrical power lines are used to transmit data, and there is no mention or implication of this technology being used in the scenario provided.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-23">Previous</button>
+      <span class="page-indicator">24 / 24</span>
+      <button class="nav-btn" id="next-23">Next</button>
+    </div>
+  </div>
+</div>

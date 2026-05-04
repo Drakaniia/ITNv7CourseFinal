@@ -1,0 +1,60 @@
+<!--
+  --- Question 54 ---
+  This component represents the fifty-fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-53" data-qid="53" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 54</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator wants to have the same subnet mask for three subnetworks at a small site. The site has the following networks and numbers of devices:<br>
+      Subnetwork A: IP phones – 10 addresses<br>
+      Subnetwork B: PCs – 8 addresses<br>
+      Subnetwork C: Printers – 2 addresses<br>
+      What single subnet mask would be appropriate to use for the three subnetworks?
+    </p>
+    <div class="options" id="opts-53">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.0</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.248</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.252</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-53" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-53">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-53"></span>
+      </div>
+      <div class="exp-body">
+        The largest subnet in the topology has 100 hosts in it so the subnet mask must have at least 7 host bits in it (2<sup>7</sup>-2=126). 255.255.255.0 has 8 hosts bits, but this does not meet the requirement of providing the maximum number of subnets.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-53">Previous</button>
+      <span class="page-indicator">54 / 60</span>
+      <button class="nav-btn" id="next-53">Next</button>
+    </div>
+  </div>
+</div>

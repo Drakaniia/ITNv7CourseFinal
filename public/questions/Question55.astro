@@ -1,0 +1,71 @@
+<!--
+  --- Question 55 ---
+  This component represents the fifty-fifth question in the quiz.
+-->
+
+<div class="question-card" id="card-54" data-qid="54" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 55</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Refer to the exhibit. A company uses the address block of 128.107.0.0/16 for its network. What subnet mask would provide the maximum number of equal size subnets while providing enough host addresses for each subnet in the exhibit?
+    </p>
+    <div class="options" id="opts-54">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.128</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.0</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-54" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-54">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-54"></span>
+      </div>
+      <div class="exp-body">
+        To determine the appropriate subnet mask for the network shown in the exhibit, we need to consider the subnet with the highest number of hosts since that will dictate the size of the subnet mask. According to the exhibit, the subnet with the largest number of hosts requires support for 100 hosts.
+        <br><br>
+        Here's how to calculate the subnet mask:
+        <ul>
+          <li>We need a subnet mask that allows for at least 100 hosts.</li>
+          <li>The formula to calculate the number of hosts is 2<sup>(32−n)</sup>−2, where n is the number of bits used for the network portion (including the subnet portion).</li>
+          <li>To support at least 100 hosts, we need to find n such that 2<sup>(32−n)</sup>−2≥100.</li>
+          <li>The /16 indicates that the first 16 bits are already used for the network part. So, we are left with 16 bits to play with for subnetting and hosts.</li>
+          <li>We need to find the smallest subnet size that can accommodate 100 hosts.</li>
+        </ul>
+        The subnet mask that would provide the maximum number of equal size subnets while providing enough host addresses for each subnet in the exhibit is 255.255.255.128. This subnet mask corresponds to a /25 subnet size, which supports up to 126 hosts per subnet (128 total addresses minus 2 for the network and broadcast addresses), and is the smallest subnet size that can accommodate the requirement for 100 hosts.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-54">Previous</button>
+      <span class="page-indicator">55 / 60</span>
+      <button class="nav-btn" id="next-54">Next</button>
+    </div>
+  </div>
+</div>

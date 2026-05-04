@@ -1,0 +1,61 @@
+<!--
+  --- Question 102 ---
+  This component represents the one hundred and second question in the quiz.
+-->
+
+<div class="question-card" id="card-101" data-qid="101" data-type="multi">
+  <div class="card-header">
+    <span class="q-number">Q 102</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which two statements describe how to assess traffic flow patterns and network traffic types using a protocol analyzer? (Choose two.)
+    </p>
+    <div class="options" id="opts-101">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Capture traffic on the weekends when most employees are off work.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Only capture traffic in the areas of the network that receive most of the traffic such as the data center.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Capture traffic during peak utilization times to get a good representation of the different traffic types.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">Perform the capture on different network segments.</span>
+      </button>
+      <button class="option-btn" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">Only capture WAN traffic because traffic to the web is responsible for the largest amount of traffic on a network.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-101" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-101">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-101"></span>
+      </div>
+      <div class="exp-body">
+        To effectively assess traffic flow patterns and network traffic types using a protocol analyzer, it's important to capture traffic during peak utilization times to get a good representation of the different traffic types, and to perform the capture on different network segments to understand the overall network behavior.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-101">Previous</button>
+      <span class="page-indicator">102 / 109</span>
+      <button class="nav-btn" id="next-101">Next</button>
+    </div>
+  </div>
+</div>

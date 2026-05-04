@@ -1,0 +1,56 @@
+<!--
+  --- Question 29 ---
+  This component represents the twenty-ninth question in the quiz.
+-->
+
+<div class="question-card" id="card-28" data-qid="28" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 29</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Why would a Layer 2 switch need an IP address?
+    </p>
+    <div class="options" id="opts-28">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">to enable the switch to be managed remotely</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">to enable the switch to receive frames from attached PCs</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">to enable the switch to send broadcast frames to attached PCs</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">to enable the switch to function as a default gateway</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-28" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-28">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-28"></span>
+      </div>
+      <div class="exp-body">
+        A switch, as a Layer 2 device, does not need an IP address to transmit frames to attached devices. However, when a switch is accessed remotely through the network, it must have a Layer 3 address. The IP address must be applied to a virtual interface rather than to a physical interface. Routers, not switches, function as default gateways.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-28">Previous</button>
+      <span class="page-indicator">29 / 29</span>
+      <button class="nav-btn" id="next-28">Next</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+<!--
+  --- Question 48 ---
+  This component represents the 48th question in the quiz.
+-->
+
+<div class="question-card" id="card-47" data-qid="47" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 48</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator is adding a new LAN to a branch office. The new LAN must support 200 connected devices. What is the smallest network mask that the network administrator can use for the new network?
+    </p>
+    <div class="options" id="opts-47">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">255.255.255.224</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">255.255.255.240</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">255.255.255.192</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">255.255.255.0</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-47" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-47">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-47"></span>
+      </div>
+      <div class="exp-body">
+        To determine the smallest network mask that can support 200 connected devices, you need to calculate the subnet size that can accommodate at least 200 host addresses.
+        <br><br>
+        Here's how to determine the required subnet size:
+        <ul>
+          <li>Each subnet has two addresses that cannot be used for hosts: the network address and the broadcast address.</li>
+          <li>The remaining number of addresses must be equal to or greater than the number of required hosts (200 in this case).</li>
+        </ul>
+        <br>
+        You will need to find the smallest subnet mask that provides at least 202 addresses (200 for the devices, plus 2 for the network and broadcast addresses).
+        <ul>
+          <li>A /27 subnet mask (255.255.255.224) provides 30 usable host addresses, which is not enough.</li>
+          <li>A /28 subnet mask (255.255.255.240) provides 14 usable host addresses, which is also not enough.</li>
+          <li>A /26 subnet mask (255.255.255.192) provides 62 usable host addresses, which is still not enough.</li>
+          <li>A /24 subnet mask (255.255.255.0) provides 254 usable host addresses, which is sufficient for 200 devices.</li>
+        </ul>
+        <br>
+        Therefore, the smallest subnet mask that the network administrator can use for the new LAN to support 200 connected devices is 255.255.255.0.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-47">Previous</button>
+      <span class="page-indicator">48 / 50</span>
+      <button class="nav-btn" id="next-47">Next</button>
+    </div>
+  </div>
+</div>

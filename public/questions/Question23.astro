@@ -1,0 +1,77 @@
+<!--
+  --- Question 23 ---
+  This component represents the twenty-third question in the quiz.
+-->
+
+<div class="question-card" id="card-22" data-qid="22" data-type="multi" data-choose="2">
+  <div class="card-header">
+    <span class="q-number">Q 23</span>
+    <span class="q-tag multi">Choose 2</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Which two protocols operate at the top layer of the TCP/IP protocol suite? (Choose two.)
+    </p>
+    <div class="options" id="opts-22">
+      <button class="option-btn multi" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">POP</span>
+      </button>
+      <button class="option-btn multi" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">DNS</span>
+      </button>
+      <button class="option-btn multi" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">IP</span>
+      </button>
+      <button class="option-btn multi" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">TCP</span>
+      </button>
+      <button class="option-btn multi" data-idx="4">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">E</span>
+        <span class="opt-text">Ethernet</span>
+      </button>
+      <button class="option-btn multi" data-idx="5">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">F</span>
+        <span class="opt-text">UDP</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn multi-pending" id="submit-22" disabled>Submit Answer</button>
+      <span class="pending-count" id="pendingCount-22">0 / 2 selected</span>
+    </div>
+
+    <div class="explanation" id="exp-22">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-22"></span>
+      </div>
+      <div class="exp-body">
+        The top layer of the TCP/IP protocol suite, commonly known as the application layer, is where protocols that facilitate user applications and end-to-end communications operate. The two protocols from your list that operate at this layer are:
+        <ul>
+          <li><strong>POP (Post office Protocol)</strong> – This is an application layer protocol used by local email clients to retrieve emails from a remote server over a TCP/IP connection.</li>
+          <li><strong>DNS (Domain Name System)</strong> – This is also an application layer protocol that translates human-readable domain names (like www.example.com) into machine-readable IP addresses.</li>
+        </ul>
+        The other protocols listed operate at different layers of the TCP/IP model:
+        <ul>
+          <li>IP (Internet Protocol) – Operates at the internet layer and is responsible for routing packets across network boundaries.</li>
+          <li>TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) – Both operate at the transport layer and are responsible for delivering data to the correct application protocols.</li>
+          <li>Ethernet – Operates at the link layer and is responsible for the transmission of data frames over a physical medium.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-22">Previous</button>
+      <span class="page-indicator">23 / 23</span>
+      <button class="nav-btn" id="next-22">Next</button>
+    </div>
+  </div>
+</div>

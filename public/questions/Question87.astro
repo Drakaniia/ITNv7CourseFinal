@@ -1,0 +1,56 @@
+<!--
+  --- Question 87 ---
+  This component represents the eighty-seventh question in the quiz.
+-->
+
+<div class="question-card" id="card-86" data-qid="86" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 87</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What method is used to manage contention-based access on a wireless network?
+    </p>
+    <div class="options" id="opts-86">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">CSMA/CD</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">priority ordering</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">CSMA/CA</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">token passing</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-86" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-86">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-86"></span>
+      </div>
+      <div class="exp-body">
+        The method used to manage contention-based access on a wireless network is CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance). Unlike Ethernet networks that use CSMA/CD (Carrier Sense Multiple Access with Collision Detection), wireless networks cannot reliably detect collisions due to the "hidden node problem." Therefore, they use a method to avoid collisions before they happen, which is what CSMA/CA is designed to do.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-86">Previous</button>
+      <span class="page-indicator">87 / 90</span>
+      <button class="nav-btn" id="next-86">Next</button>
+    </div>
+  </div>
+</div>

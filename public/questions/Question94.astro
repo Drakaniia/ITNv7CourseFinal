@@ -1,0 +1,56 @@
+<!--
+  --- Question 94 ---
+  This component represents the ninety-fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-93" data-qid="93" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 94</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      What service is provided by BOOTP?
+    </p>
+    <div class="options" id="opts-93">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">Allows for data transfers between a client and a file server.</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Legacy application that enables a diskless workstation to discover its own IP address and find a BOOTP server on the network.</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">Uses encryption to secure the exchange of text, graphic images, sound, and video on the web.</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">A basic set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the web.</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-93" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-93">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-93"></span>
+      </div>
+      <div class="exp-body">
+        BOOTP (Bootstrap Protocol) provides the service described as a legacy application that enables a diskless workstation to discover its own IP address and find a BOOTP server on the network. BOOTP was originally designed to allow diskless workstations to boot from a network server. It is able to automatically assign an IP address to networked computers and communicate with a BOOTP server to obtain boot files necessary to start up the system.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-93">Previous</button>
+      <span class="page-indicator">94 / 100</span>
+      <button class="nav-btn" id="next-93">Next</button>
+    </div>
+  </div>
+</div>

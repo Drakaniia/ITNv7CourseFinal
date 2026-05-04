@@ -1,0 +1,65 @@
+<!--
+  --- Question 64 ---
+  This component represents the sixty-fourth question in the quiz.
+-->
+
+<div class="question-card" id="card-63" data-qid="63" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 64</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Refer to the exhibit. The IP address of which device interface should be used as the default gateway setting of host H1?
+    </p>
+    <div class="options" id="opts-63">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">R2: S0/0/1</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">R1: G0/0</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">R2: S0/0/0</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">R1: S0/0/0</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-63" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-63">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-63"></span>
+      </div>
+      <div class="exp-body">
+        In a network topology, the default gateway for a host is the router interface that is on the same network as the host and is used to forward traffic to other networks. The default gateway should be set to the IP address of the router interface that is directly connected to the same subnet as the host.
+        <br><br>
+        Based on the exhibit provided, host H1 is directly connected to router R1. Therefore, the default gateway for H1 should be set to the IP address of the interface on R1 that is in the same network as H1. Given the options:
+        <ul>
+          <li>R2: S0/0/1 – This is an interface on R2, which is not directly connected to H1.</li>
+          <li>R1: G0/0 – This is the correct interface, as it is the Gigabit Ethernet interface on R1 that is likely to be connected to the same subnet as H1.</li>
+          <li>R2: S0/0/0 – This is another interface on R2, which is also not directly connected to H1.</li>
+          <li>R1: S0/0/0 – This is a serial interface on R1, which would typically be used to connect to other routers, not hosts.</li>
+        </ul>
+        The correct default gateway setting for host H1 would be the IP address assigned to R1: G0/0.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-63">Previous</button>
+      <span class="page-indicator">64 / 70</span>
+      <button class="nav-btn" id="next-63">Next</button>
+    </div>
+  </div>
+</div>

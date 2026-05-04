@@ -1,0 +1,56 @@
+<!--
+  --- Question 107 ---
+  This component represents the one hundred and seventh question in the quiz.
+-->
+
+<div class="question-card" id="card-106" data-qid="106" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 107</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?
+    </p>
+    <div class="options" id="opts-106">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">audio conference, financial transactions, web page</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">financial transactions, web page, audio conference</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">audio conference, web page, financial transactions</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">financial transactions, audio conference, web page</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-106" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-106">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-106"></span>
+      </div>
+      <div class="exp-body">
+        When QoS (Quality of Service) is implemented, real-time applications like audio conferences receive the highest priority because they are sensitive to delay and jitter. Financial transactions require reliability and timely delivery, so they receive medium priority. Web page browsing is less time-sensitive and receives the lowest priority. Therefore, the correct priority order is: audio conference, financial transactions, web page.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-106">Previous</button>
+      <span class="page-indicator">107 / 109</span>
+      <button class="nav-btn" id="next-106">Next</button>
+    </div>
+  </div>
+</div>

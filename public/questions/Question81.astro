@@ -1,0 +1,63 @@
+<!--
+  --- Question 81 ---
+  This component represents the eighty-first question in the quiz.
+-->
+
+<div class="question-card" id="card-80" data-qid="80" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 81</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A network administrator needs to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?
+    </p>
+    <div class="options" id="opts-80">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">AUX</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">Telnet</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">SSH</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">Console</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-80" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-80">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-80"></span>
+      </div>
+      <div class="exp-body">
+        The network administrator should choose SSH (Secure Shell) to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch. SSH provides a secure channel over an unsecured network by using encryption, which ensures confidentiality and integrity of data.
+        <br><br>
+        The other methods listed have the following characteristics:
+        <ul>
+          <li><strong>AUX (Auxiliary port):</strong> This is used for remote management similar to the console port but usually over a modem. It does not inherently provide encryption for security.</li>
+          <li><strong>Telnet:</strong> This is an older protocol that provides no encryption, making it insecure for transmitting sensitive information because the session contents, including user ID and password, can be intercepted.</li>
+          <li><strong>Console:</strong> The console port is for direct physical connection to the device and does not provide encryption because it's designed for a direct serial connection rather than remote access.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-80">Previous</button>
+      <span class="page-indicator">81 / 90</span>
+      <button class="nav-btn" id="next-80">Next</button>
+    </div>
+  </div>
+</div>

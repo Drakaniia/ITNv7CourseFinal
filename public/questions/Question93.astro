@@ -1,0 +1,65 @@
+<!--
+  --- Question 93 ---
+  This component represents the ninety-third question in the quiz.
+-->
+
+<div class="question-card" id="card-92" data-qid="92" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 93</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      During the process of forwarding traffic, what will the router do immediately after matching the destination IP address to a network on a directly connected routing table entry?
+    </p>
+    <div class="options" id="opts-92">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">switch the packet to the directly connected interface</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">discard the traffic after consulting the route table</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">look up the next-hop address for the packet</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">analyze the destination IP address</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-92" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-92">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-92"></span>
+      </div>
+      <div class="exp-body">
+        Immediately after matching the destination IP address to a network on a directly connected routing table entry, the router will switch the packet to the directly connected interface. This means that the router will forward the packet out of the interface that is connected to the destination network.
+        <br><br>
+        Here's a simplified sequence of steps a router typically follows when forwarding traffic:
+        <ol>
+          <li>Receive the packet and look up the routing table to find the best match for the destination IP address.</li>
+          <li>If the destination network is directly connected, it will then encapsulate the packet into the appropriate frame for the outgoing interface.</li>
+          <li>Finally, it will switch the packet to that interface for delivery to the destination.</li>
+        </ol>
+        <br>
+        There is no need for the router to look up a next-hop address because the destination is directly connected, meaning the router is directly on the same network as the destination IP address and can deliver the packet directly.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-92">Previous</button>
+      <span class="page-indicator">93 / 100</span>
+      <button class="nav-btn" id="next-92">Next</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<!--
+  --- Question 18 ---
+  This component represents the eighteenth question in the quiz.
+-->
+
+<div class="question-card" id="card-17" data-qid="17" data-type="single">
+  <div class="card-header">
+    <span class="q-number">Q 18</span>
+    <span class="q-tag single">Single Choice</span>
+  </div>
+  <div class="card-body">
+    <p class="question-text">
+      A company has a file server that shares a folder named Public. The network security policy specifies that the Public folder is assigned Read-Only rights to anyone who can log into the server while the Edit rights are assigned only to the network admin group. Which component is addressed in the AAA network service framework?
+    </p>
+    <div class="options" id="opts-17">
+      <button class="option-btn" data-idx="0">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">A</span>
+        <span class="opt-text">automation</span>
+      </button>
+      <button class="option-btn" data-idx="1">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">B</span>
+        <span class="opt-text">authorization</span>
+      </button>
+      <button class="option-btn" data-idx="2">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">C</span>
+        <span class="opt-text">accounting</span>
+      </button>
+      <button class="option-btn" data-idx="3">
+        <span class="opt-indicator"></span>
+        <span class="opt-letter">D</span>
+        <span class="opt-text">authentication</span>
+      </button>
+    </div>
+
+    <div class="submit-wrap" style="display: none;">
+      <button class="submit-btn" id="submit-17" disabled>Submit Answer</button>
+    </div>
+
+    <div class="explanation" id="exp-17">
+      <div class="exp-header">
+        <span class="exp-verdict" id="verdict-17"></span>
+      </div>
+      <div class="exp-body">
+        After a user is successfully authenticated (logged into the server), the authorization is the process of determining what network resources the user can access and what operations (such as read or edit) the user can perform.
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button class="nav-btn" id="prev-17">Previous</button>
+      <span class="page-indicator">18 / 109</span>
+      <button class="nav-btn" id="next-17">Next</button>
+    </div>
+  </div>
+</div>
